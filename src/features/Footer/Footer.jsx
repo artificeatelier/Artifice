@@ -46,6 +46,12 @@ export function Footer () {
                 {t("aboutUs")}
               </Link>
               <Link
+                to="/Work"
+                className="block text-gray-400 hover:text-white transition duration-300"
+              >
+                {t("PORTFOLIO")}
+              </Link>
+              <Link
                 to="/contact"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
@@ -60,22 +66,22 @@ export function Footer () {
             </h2>
             <nav className="space-y-3">
               <Link
-                to="/review"
+                to="/branding"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
-                {t("generalMenu")}
+                {t("Branding & Design")}
               </Link>
               <Link
-                to="/dishes"
+                to="/LogoDesign"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
-                {t("cookingClasses")}
+                {t("LogoDesign")}
               </Link>
               <Link
-                to="/gallery"
+                to="/WebDesign"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
-                {t("gallery")}
+                {t("WebDesign")}
               </Link>
             </nav>
           </div>
