@@ -49,7 +49,7 @@ export function Footer () {
                 to="/Work"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
-                {t("PORTFOLIO")}
+                {t("Portfolio")}
               </Link>
               <Link
                 to="/contact"
