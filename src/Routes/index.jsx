@@ -5,6 +5,8 @@ import AboutUs from '../features/AboutUs/AboutUs'
 import ContactUS from "../features/ContactUs/ContactUs"
 import Branding from "../features/Services/Branding"
 import Work from "../features/Work/Work"
+import LogoDesign from "../features/Services/LogoDesign"
+import WebDesign from "../features/Services/WebDesign"
 
 const router = createHashRouter([
     {
@@ -36,6 +38,14 @@ const router = createHashRouter([
             {
                 path: "/branding",
                 element: <Branding />,
+            },
+            {
+                path: "/LogoDesign",
+                element: <LogoDesign />,
+            },
+            {
+                path: "/WebDesign",
+                element: <WebDesign />,
             },
              {
                 path: "/work",

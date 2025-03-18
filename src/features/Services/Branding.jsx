@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import FAQ from '../../Assets/FAQs.jpg'
+import { useTranslation } from "react-i18next";
 
 const Branding = () => {
 
+  const { t, i18n } = useTranslation()
   const faqs = [
   {
     question: "What creative services does Artifice Studio offer?",
@@ -60,8 +62,8 @@ const Branding = () => {
       <section className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <h1 className="text-6xl pl-2 md:pl-20 font-bold  animate-fade-in">
-            Branding & <br/>
-            Design
+            {t("Branding")} & <br/>
+            {t("Design")}
           </h1>
           <p className="text-gray-300 pr-2 md:pr-28 leading-relaxed">
             Welcome to Akshar Concept's World of Creativity! In the digital universe, the heartbeat of a burgeoning website lies in advanced content. Akshar Concept welcomes you to a realm where creativity meets functionality, As businesses navigate the competitive landscape, the spotlight turns to exceptional design.

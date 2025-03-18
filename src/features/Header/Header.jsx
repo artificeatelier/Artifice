@@ -57,9 +57,9 @@ export function Header() {
     {
       text: t("Prestations"),
       dropdown: [
-        { to: "/branding", text: t("Notre Menu") },
-        { to: "/review", text: t("Menu Général") },
-        { to: "/gallery", text: t("Galerie") },
+        { to: "/branding", text: t("Branding & Design") },
+        { to: "/LogoDesign", text: t("LogoDesign") },
+        { to: "/WebDesign", text: t("WebDesign") },
       ],
     },
     { to: "/contact", text: t("Contactez-nous") },
