@@ -1,0 +1,143 @@
+{
+  "Accueil": "Accueil",
+  "Cours de cuisine": "Cours de cuisine",
+  "Portefeuille de travail": "Portefeuille de travail",
+  "Prestations": "Prestations",
+  "Contactez-nous": "Contactez-nous",
+
+  "WhoWeAre": "QUI NOUS SOMMES",
+  "DecribeWhoWeAre": "Nous sommes un studio graphique dynamique qui se consacre à la mise en valeur de votre marque grâce à la puissance du design. Spécialisés dans l'image de marque, la conception graphique, le développement web et le marketing numérique, nous transformons les idées en visuels convaincants qui attirent votre public cible. De la création de logos uniques aux campagnes publicitaires percutantes, nous concevons des solutions centrées sur l'utilisateur qui résonnent et inspirent, aidant votre entreprise à prospérer dans le paysage numérique.",
+  "OurMission": "Notre Mission",
+  "OurMissionText": "Chez Artifice Studio, nous donnons vie à des idées créatives grâce à des designs innovants qui valorisent les marques. Notre objectif est de créer des solutions visuellement convaincantes, des logos aux identités de marque, qui résonnent avec le public et favorisent le succès.",
+  "OurVision": "Notre Vision",
+  "OurVisionText": "Notre vision est d'être un studio de design leader qui inspire la créativité et redéfinit la narration visuelle. Nous visons à transformer la communication d'entreprise grâce à un design percutant qui élève les marques et favorise des liens plus profonds avec le public, faisant du design un facteur clé de succès.",
+  "OurValue": "Nos Valeurs",
+  "OurValueText": "Chez Artifice Studio, la créativité, la qualité et la collaboration animent tout ce que nous faisons. Nous travaillons en partenariat avec nos clients pour offrir des conceptions exceptionnelles avec intégrité et transparence, en adoptant l'innovation pour rester en avance sur les tendances et créer un impact durable.",
+  "OurApproach": "Notre Approche",
+  "OurApproachText": "Chez Artifice, nous privilégions la collaboration et la connaissance du client pour créer des designs qui correspondent à votre vision. En combinant créativité et stratégie, nous proposons des solutions percutantes et sur mesure qui dépassent les attentes et génèrent des résultats.",
+
+  "WhatWeProvide": "CE QUE NOUS PROPOSONS",
+  "WhatWeProvideDetail": "Nous adoptons une approche globale et collaborative pour faire rayonner votre marque sur différentes plateformes. Notre équipe d'experts propose des services allant de la conception de logos personnalisés à des solutions de branding sur mesure, garantissant que chaque projet s'aligne sur vos objectifs uniques. En prenant en compte chaque aspect, nous créons des expériences de marque percutantes qui trouvent un écho auprès de votre public.",
+  "Branding": "Image de marque",
+  "BrandingDetail": "Nous nous spécialisons dans la création d’identités de marque distinctives grâce au développement stratégique de la marque et à la narration visuelle, garantissant que votre entreprise capte l’attention et se démarque sur le marché.",
+  "SocialMediaDesign": "Conception des médias sociaux",
+  "SocialMediaDetail": "Nous créons des publications et des campagnes sur les réseaux sociaux visuellement attrayantes qui trouvent un écho auprès de votre public et renforcent la présence en ligne de votre marque.",
+  "PrintingDesign": "Conception d'impression",
+  "PrintingDetail": "Nos services de conception d'impression comprennent des dépliants, des affiches, des brochures, des cartes de visite et d'autres supports imprimés qui communiquent efficacement votre marque.",
+  "WebDesign": "Conception de sites Web",
+  "webDetail": "Nous concevons et développons des sites Web modernes et réactifs qui offrent une expérience utilisateur exceptionnelle tout en reflétant l'identité de votre marque.",
+  "LogoDesign": "Création de logo",
+  "LogoDesignDetail": "Nous nous spécialisons dans la création de logos personnalisés qui reflètent l’identité de votre marque, garantissant une présence visuelle forte et mémorable qui résonne auprès de votre public.",
+  "PackagingDesign": "Conception d'emballage",
+  "PackagingDesignDetail": "Nous créons des designs d’emballage qui non seulement se démarquent sur les étagères, mais communiquent également efficacement le message de votre marque au consommateur.",
+  "BrandnDesign": "Le marché évolue constamment, tout comme les besoins de votre public. Les marques doivent s'adapter et évoluer pour réussir à faire face à ce changement permanent.",
+  "WebSite": "Des solutions de sites Web personnalisées conçues pour votre réussite.",
+
+  "AboutUsPOne": "Artifice Studio est un studio de design spécialisé dans la création de solutions de branding innovantes, axées sur la création d'expériences de marque marquantes et mémorables. Nous combinons réflexion stratégique et design créatif pour aider les marques à établir un lien significatif avec leur public. De la stratégie de marque au développement de l'identité visuelle, nous travaillons en étroite collaboration avec les entreprises pour créer des designs uniques qui reflètent leurs valeurs et font une impression durable sur le marché.",
+  "AboutUsPTwo": "Nous sommes une équipe de professionnels dévoués, engagés à fournir des services de qualité supérieure. Notre mission est de fournir des solutions innovantes et fiables qui aident nos clients à atteindre leurs objectifs.",
+  "AboutUsPThree": "Fondé en 2018, Artifice Studio s'est forgé une solide réputation en créant des identités de marque exceptionnelles qui trouvent un écho auprès du public. Nous nous concentrons sur la création de designs visuellement saisissants et hautement fonctionnels qui laissent une impression durable. Notre objectif est d'aider votre marque à se démarquer de la concurrence, en alliant créativité et objectif pour assurer votre succès.",
+
+  "WEBDESING": "Conception de sites Web",
+  "BRANDINGDESIGN": "MARQUE ET DESIGN",
+
+  "Notre Menu": "Notre Menu",
+  "Menu Général": "Menu Général",
+  "Galerie": "Galerie",
+  "Traiteur": "Traiteur",
+
+  "WhatOurClientsSay": "CE QUE DISENT NOS CLIENTS",
+  "Testimonial1": "Leur conception a dépasser les attentes et a donné à notre marque un aspect professionnel et moderne qui trouve un écho auprès de notre public cible.",
+  "Testimonial2": "Artifice Studio a joué un rôle déterminant en aidant notre entreprise à développer une identité unique et percutante. Je recommande vivement leurs services pour leur créativité, leur réactivité et leur capacité à capturer et à mettre en œuvre parfaitement notre vision.",
+  "Testimonial3": "Artifice Studio a transformé notre identité de marque avec créativité et précision. Fortement recommandé pour tous ceux qui cherchent à élever leur marque.",
+
+  "description": "Artifice Studio est une agence de création spécialisée dans la création de logo, le design graphique, le branding Custom Web Design et la stratégie numérique.",
+  "FirstLine": "Une plate-forme pour la conception, l'image de marque, le développement et le marketing",
+
+  "CounterHead": "POURQUOI NOUS CHOISIR",
+  "YearOfExp": "Années d'excellence",
+  "HappyClient": "Des Clients Heureux",
+  "ProjectsAccomplished": "Projets Réalisés",
+  "TeamMembers": "Membres de l'équipe",
+
+  "FAQ": "Questions fréquemment posées",
+  "About_Q1": "Quels services créatifs propose Artifice Studio ?",
+  "About_A1": "Artifice Studio propose une gamme complète de services créatifs, incluant la conception d'identité de marque, l'illustration numérique et la création d'œuvres d'art personnalisées. Nous sommes spécialisés dans la création d'expériences visuelles uniques qui aident les marques à se démarquer dans le paysage numérique.",
+  "About_Q2": "Comment fonctionne votre processus de conception ?",
+  "About_A2": "Notre processus de conception commence par une consultation, suivie de recherche, de conceptualisation, de développement et de raffinement, garantissant un retour d'information continu pour des résultats optimaux.",
+  "About_Q3": "Qu'est-ce qui différencie Artifice Studio des autres studios de design ?",
+  "About_A3": "Artifice Studio allie expertise technique et innovation artistique pour créer des designs qui racontent des histoires et suscitent des émotions. Nos compétences diversifiées garantissent des solutions uniques et percutantes pour chaque client.",
+  "About_Q4": "Quel est le délai typique d'achèvement d'un projet ?",
+  "About_A4": "Les délais du projet dépendent de la portée et de la complexité du projet.",
+
+  "WORKWITHUS" : "TRAVAILLEZ AVEC NOUS",
+  "Elevate Your Brand with Expert Design": "Améliorez votre marque grâce à un design expert",
+  "From logos to full brand identities, we craft designs that make you stand out" : "Des logos aux identités de marque complètes, nous créons des designs qui vous permettent de vous démarquer",
+  "Explore Our Services" : "Découvrez nos services",
+
+  "OUR WORK" : "NOTRE TRAVAIL",
+  "PORTFOLIO" : "PORTEFEUILLE",
+  "contactUSLine1" : "Que vous ayez une question, besoin d'aide ou souhaitiez discuter d'un projet, nous sommes là pour vous aider. Remplissez le formulaire ci-dessous ou contactez-nous aux coordonnées indiquées.",
+  "contactUSLine2" : "Super ! Nous sommes ravis de vous rencontrer et avons hâte de créer quelque chose d'unique ensemble. N'hésitez pas à nous contacter pour toute question.",
+  "We’re Just a Message Away!" : " Nous sommes à un message près !",
+  "Say Hello" : "Dis bonjour",
+  "Name *" : "Nom *",
+
+  "contactUs": "Contactez-nous",
+  "LetTalk": "PARLONS-EN",
+
+  "followUs": "Suivez Notre Actualité",
+  "subscribe": "S'abonner",
+  "navigation": "Navigation",
+  "home": "Accueil",
+  "aboutUs": "À propos de nous",
+  "menu": "Notre Menu",
+  "ourservices": "Nos Prestations",
+  "generalMenu": "Menu Général",
+  "cookingClasses": "Cours de Cuisine",
+  "gallery": "Notre Galerie",
+  "contacte": "Contactez nous",
+  "email": "info@artificestudio.com",
+  "phone": "+32 493 03 94 40",
+  "address": "Rue Joseph Stevens 28\n1000 Bruxelles\nTVA 0744.562.496",
+  "copyright": "© 2024 Traiteur Joy. Tous droits réservés.",
+
+  "contact": {
+    "hero": {
+      "title": "Entrons en Contact",
+      "description": "Vous avez une question ou besoin de conseils ? Nous sommes là pour vous aider. Remplissez le formulaire ci-dessous et commençons une conversation qui pourrait mener à une brillance culinaire."
+    },
+    "info": {
+      "title": "Nous Serions Ravis de Vous Entendre",
+      "description": "Que vous soyez novice en cuisine ou chef chevronné, votre voyage avec nous commence ici. Partagez vos pensées, et créons ensemble quelque chose d'extraordinaire."
+    },
+    "address": {
+      "title": "Notre Adresse",
+      "line1": "Rue Joseph Stevens 28, 1000 Bruxelles",
+      "line2": "TVA 0744.562.496"
+    },
+    "email": {
+      "title": "Écrivez-nous",
+      "address": "info@artificestudio.com",
+      "action": "Envoyer un Email"
+    },
+    "phone": {
+      "title": "Appelez-nous",
+      "number": "+32 498 77 82 91",
+      "action": "Appeler Maintenant"
+    },
+    "form": {
+      "title": "Envoyez-nous un Message",
+      "firstname": "Prénom",
+      "firstnamePlaceholder": "ex: Marie",
+      "lastname": "Nom",
+      "lastnamePlaceholder": "ex: Dupont",
+      "email": "Adresse Email",
+      "emailPlaceholder": "vous@example.com",
+      "phone": "Numéro de Téléphone",
+      "phonePlaceholder": "ex: +32 598 80 83 21",
+      "message": "Votre Message",
+      "messagePlaceholder": "Parlez-nous de vos rêves culinaires...",
+      "submit": "Envoyer le Message"
+    }
+  }
+}

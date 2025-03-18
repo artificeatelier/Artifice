@@ -1,0 +1,144 @@
+{
+  "Accueil": "Home",
+  "Portefeuille de travail": "Work Portfolio",
+  "À propos de nous": "About Us",
+  "Prestations": "Services",
+  "Contactez-nous": "Contact Us",
+
+  "WhoWeAre": "Who We Are",
+  "DecribeWhoWeAre": "We are a dynamic graphic studio dedicated to elevating your brand through the power of design. Specializing in branding, graphic design, web development, and digital marketing, we transform ideas into compelling visuals that engage your target audience. From unique logo creation to impactful advertising campaigns, we craft user-centered solutions that resonate and inspire, helping your business thrive in the digital landscape",
+  "OurMission": "Our Mission",
+  "OurMissionText": "At Artifice Studio, we bring creative ideas to life through innovative designs that empower brands. Our goal is to create visually compelling solutions, from logos to brand identities, that resonate with audiences and drive success.",
+  "OurVision": "Our Vision",
+  "OurVisionText": "Our vision is to be a leading design studio that inspires creativity and redefines visual storytelling. We aim to transform business communication through impactful design that elevates brands and fosters deeper connections with audiences, making design a key driver of success.",
+  "OurValue": "Our Values",
+  "OurValueText": "At Artifice Studio, creativity, quality, and collaboration drive everything we do. We partner with clients to deliver exceptional designs with integrity and transparency, embracing innovation to stay ahead of trends and create lasting impact.",
+  "OurApproach": "Our Appraoch",
+  "OurApproachText": "At Artifice, we prioritize collaboration and client insight to create designs that align with your vision. Combining creativity with strategy, we deliver impactful, tailored solutions that exceed expectations and drive results.",
+
+  "WhatWeProvide": "What We Provide",
+  "WhatWeProvideDetail": "We take a holistic and collaborative approach to elevating your brand across platforms. Our team of experts offers services ranging from custom logo design to tailored branding solutions, ensuring each project aligns with your unique goals. By considering every aspect, we create impactful brand experiences that resonate with your audience.",
+  "Branding": "Branding",
+  "BrandingDetail": "We specialize in crafting distinctive brand identities through strategic brand development and visual storytelling, ensuring your business captures attention and stands out in the market.",
+  "SocialMediaDesign": "Social Media Design",
+  "SocialMediaDetail": "We create visually engaging social media posts and campaigns that resonate with your audience and boost your brand’s online presence.",
+  "PrintingDesign": "Printing Design",
+  "PrintingDetail": "Our printing design services include flyers, posters, brochures, business cards, and other print materials that communicate your brand effectively.",
+  "WebDesign": "Web Design",
+  "webDetail": "We design and develop modern, responsive websites that deliver an exceptional user experience while reflecting your brand’s identity.",
+  "LogoDesign": "Logo Design",
+  "LogoDesignDetail": "We specialize in creating custom logos that reflect your brand’s identity, ensuring a strong and memorable visual presence that resonates with your audience.",
+  "PackagingDesign": "Packaging Design",
+  "PackagingDesignDetail": "We create packaging designs that not only stand out on shelves but also communicate your brand’s message effectively to the consumer.",
+  "BrandnDesign": "The market is constantly evolving, and so are the needs of your audience. Brands must adapt and evolve to successfully navigate this ongoing change.",
+  "WebSite": "Personalized Website Solutions Built for Your Success.",
+
+  "AboutUsPOne": "Artifice Studio is a design studio that specializes in creating innovative branding solutions with a focus on building impactful, memorable brand experiences. We combine strategic thinking with creative design to help brands connect meaningfully with their audience. From brand strategy to visual identity development, we work closely with businesses to craft unique designs that reflect their values and make a lasting impression in the market.",
+  "AboutUsPTwo": "We are a dedicated team of professionals, committed to delivering top-quality services. Our mission is to provide innovative and reliable solutions that help our clients achieve their goals.",
+  "AboutUsPThree": "Founded in 2018, Artifice Studio has earned a reputation for crafting exceptional brand identities that resonate with audiences. We focus on creating visually striking, highly functional designs that leave a lasting impression. Our goal is to help your brand rise above the competition, blending creativity with purpose to ensure your success.",
+
+  "WEBDESING": "WEB DESING",
+  "BRANDINGDESIGN": "BRANDING & DESIGN",
+
+  "Notre Menu": "Our Menu",
+  "Menu Général": "General Menu",
+  "Galerie": "Gallery",
+  "Traiteur": "Traiteur ",
+
+  "WhatOurClientsSay": "What Our Clients Say",
+  "Testimonial1": "Their design exceeded expectations and gave our brand a professional, modern look that resonates with our target audience.",
+  "Testimonial2": "Artifice Studio has been instrumental in helping our business develop a unique and impactful identity. I highly recommend their services for their creativity, responsiveness, and ability to perfectly capture and implement our vision.",
+  "Testimonial3": "Artifice Studio transformed our brand identity with creativity and precision. Highly recommended for anyone looking to elevate their brand.",
+
+  "description": "Artifice Studio Is A Creative Firm That Offer Diverse Services including Logo Design, Poster Design, Custom Web Design, Branding & Digital Strategy.",
+  "FirstLine": "A Hub For Designing, Branding, Development and Marketing",
+
+  "CounterHead": "WHY CHOOSE US",
+  "YearOfExp": "Years of Excellence",
+  "HappyClient": "Happy Clients",
+  "ProjectsAccomplished": "Projects Accomplished",
+  "TeamMembers": "Team Members",
+
+  "FAQ": "Frequently Asked Questions",
+  "About_Q1": "What creative services does Artifice Studio offer?",
+  "About_A1": "Artifice Studio offers a comprehensive range of creative services including brand identity design, digital illustration, and custom artwork creation. We specialize in crafting unique visual experiences that help brands stand out in the digital landscape.",
+  "About_Q2": "How does your design process work?",
+  "About_A2": "Our design process begins with a consultation, followed by research, conceptualization, development, and refinement, ensuring continuous feedback for optimal results.",
+  "About_Q3": "What makes Artifice Studio different from other design studios?",
+  "About_A3": "Artifice Studio blends technical expertise with artistic innovation to craft designs that tell stories and evoke emotions. Our diverse skills ensure unique, impactful solutions for every client.",
+  "About_Q4": "How long does a typical project take to complete?",
+  "About_A4": "Project timelines depend on scope and complexity of Project.",
+
+  "WORKWITHUS" : "WORK WITH US",
+  "Elevate Your Brand with Expert Design" : "Elevate Your Brand with Expert Design",
+  "From logos to full brand identities, we craft designs that make you stand out" : "From logos to full brand identities, we craft designs that make you stand out",
+  "Explore Our Services" : "Explore Our Services",
+
+  "OUR WORK" : "OUR WORK",
+  "PORTFOLIO" : "PORTFOLIO",
+
+  "contactUs": "Contact Us",
+  "LetTalk": "LET'S TALK",
+  "contactUSLine1" : "Whether you have a question, need support, or want to discuss a project, we're here to help. Fill out the form below or reach us via the details provided.",
+  "contactUSLine2" : "Great! We're excited to connect with you and look forward to creating something special together. Feel free to reach out with any inquiries.",
+  "We’re Just a Message Away!" : "We’re Just a Message Away!",
+  "Say Hello" : "Say Hello",
+  "Name *" : "Name *", 
+
+  "followUs": "Follow Our News",
+  "subscribe": "Subscribe",
+  "navigation": "Navigation",
+  "home": "Home",
+  "aboutUs": "About Us",
+  "menu": "Our Menu",
+  "ourservices": "Our Services",
+  "generalMenu": "General Menu",
+  "cookingClasses": "Cooking Classes",
+  "gallery": "Our Gallery",
+  "contacte": "Contact Us",
+  "email": "info@artificestudio.com",
+  "phone": "+32 493 03 94 40",
+  "address": "Rue Joseph Stevens 28\n1000 Brussels\nVAT 0744.562.496",
+  "copyright": "© 2024 Traiteur Joy. All rights reserved.",
+
+  "contact": {
+    "hero": {
+      "title": "Let's Get in Touch",
+      "description": "Have a question or need advice? We're here to help. Fill out the form below and let's start a conversation that could lead to culinary brilliance."
+    },
+    "info": {
+      "title": "We'd Love to Hear from You",
+      "description": "Whether you're a novice cook or a seasoned chef, your journey with us begins here. Share your thoughts, and let's create something extraordinary together."
+    },
+    "address": {
+      "title": "Our Address",
+      "line1": "Rue Joseph Stevens 28, 1000 Brussels",
+      "line2": "VAT 0744.562.496"
+    },
+    "email": {
+      "title": "Write to Us",
+      "address": "info@artificestudio.com",
+      "action": "Send an Email"
+    },
+    "phone": {
+      "title": "Call Us",
+      "number": "+32 498 77 82 91",
+      "action": "Call Now"
+    },
+
+    "form": {
+      "title": "Send Us a Message",
+      "firstname": "First Name",
+      "firstnamePlaceholder": "e.g., John",
+      "lastname": "Last Name",
+      "lastnamePlaceholder": "e.g., Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "e.g., +32 598 80 83 21",
+      "message": "Your Message",
+      "messagePlaceholder": "Tell us about your culinary dreams...",
+      "submit": "Send Message"
+    }
+  }
+}
