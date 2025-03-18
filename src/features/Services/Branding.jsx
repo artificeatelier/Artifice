@@ -66,7 +66,7 @@ const Branding = () => {
             {t("Design")}
           </h1>
           <p className="text-gray-300 pr-2 md:pr-28 leading-relaxed">
-            Welcome to Akshar Concept's World of Creativity! In the digital universe, the heartbeat of a burgeoning website lies in advanced content. Akshar Concept welcomes you to a realm where creativity meets functionality, As businesses navigate the competitive landscape, the spotlight turns to exceptional design.
+            {t("ServiceText")}
           </p>
         </div>
       </section>
@@ -141,7 +141,7 @@ const Branding = () => {
 
           <div>
             <h2 className="text-4xl font-bold mb-12">
-              Frequently Asked Questions
+              {t("FAQ")}
             </h2>
 
             <div className="space-y-6">
@@ -183,17 +183,17 @@ const Branding = () => {
     {/* -----let's Talk----- */}
       <section className=" bg-black flex flex-col items-center justify-center px-4 py-20">
       <div className="inline-block px-6 py-2 border border-white rounded-full mb-8 transition-colors duration-300">
-        <span className="text-white text-sm tracking-wider uppercase">Work with us</span>
+        <span className="text-white text-sm tracking-wider uppercase">{t("WORKWITHUS")}</span>
       </div>
       <h2 className="text-4xl md:text-5xl lg:text-5xl text-white font-bold text-center max-w-4xl mb-16 leading-tight">
-        We would love to hear more 
-        <span className="block">about your project</span>
+        {t("We would love to hear more")} 
+        <span className="block">{t("about your project")}</span>
       </h2>
       <a 
         href="#contact" 
         className="group relative inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/20 text-white hover:border-white transition-colors duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] rounded-md"
       >
-        <span className="text-sm mr-2">Let's Talk</span>
+        <span className="text-sm mr-2">{t("LetTalk")}</span>
         <svg 
           className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
           viewBox="0 0 24 24"
