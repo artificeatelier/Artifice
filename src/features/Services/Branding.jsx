@@ -30,20 +30,20 @@ const Branding = () => {
 
    const services = [
     {
-      title: "Brand Identity & Strategy",
-      description: "As the business landscape evolves, the ongoing importance of brand identity and strategy remains a beacon for businesses striving to leave a lasting imprint in the hearts and minds of their audience."
+      title: t("Brand Identity & Strategy"),
+      description: t("As the business landscape evolves, the ongoing importance of brand identity and strategy remains a beacon for businesses striving to leave a lasting imprint in the hearts and minds of their audience.")
     },
     {
-      title: "Graphic Design",
-      description: "graphic design is more than aesthetics – it's a language that speaks to the hearts and minds of the audience."
+      title: t("Graphic Design"),
+      description: t("graphic design is more than aesthetics – it's a language that speaks to the hearts and minds of the audience.")
     },
     {
-      title: "Digital Profile Design",
-      description: "you can shape a digital presence that authentically reflects your identity, resonates with your audience, and propels you toward your personal and professional goals."
+      title: t("Digital Profile Design"),
+      description: t("you can shape a digital presence that authentically reflects your identity, resonates with your audience, and propels you toward your personal and professional goals.")
     },
     {
-      title: "Packaging Design",
-      description: "packaging design remains a linchpin in the competitive market, where first impressions matter."
+      title: t("Packaging Design"),
+      description: t("packaging design remains a linchpin in the competitive market, where first impressions matter.")
     }
   ]
 
@@ -128,7 +128,7 @@ const Branding = () => {
 
 
     {/* -----FAQ----- */}
-      <section className="bg-black text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+      {/* <section className="bg-black text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="relative">
@@ -177,7 +177,7 @@ const Branding = () => {
           </div>
         </div>
       </div>
-      </section>
+      </section> */}
 
 
     {/* -----let's Talk----- */}

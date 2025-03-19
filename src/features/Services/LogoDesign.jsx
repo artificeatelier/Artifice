@@ -102,38 +102,8 @@ const LogoDesign = () => {
         </div>
       </section> */}
 
-        {/* ------Service Section----- */}
-        <section className="bg-black  flex items-center justify-center px-4 sm:px-6 py-1 sm:py-16">
-          <div className="max-w-7xl mx-auto">
-            {/* Timeline dots and line */}
-            <div className="md:relative flex justify-between mb-16">
-              <div className="absolute top-1/2 left-0 right-0 h-[1px] md:bg-white/20 -translate-y-1/2 w-full" />
-              {[0, 1, 2, 3].map((dot) => (
-                <div
-                  key={dot}
-                  className="w-2 h-2 md:bg-white rounded-full relative z-10"
-                />
-              ))}
-            </div>
-
-            {/* Services grid */}
-            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
-              {services.map((service, index) => (
-                <div key={index} className="space-y-4">
-                  <h3 className="text-white text-xl font-semibold leading-tight min-h-[60px]">
-                    {service.title}
-                  </h3>
-                  <p className="text-white/80 text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* -----FAQ----- */}
-        <section className="bg-black text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+        {/* <section className="bg-black text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="relative">
@@ -179,7 +149,7 @@ const LogoDesign = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* -----let's Talk----- */}
         <section className=" bg-black flex flex-col items-center justify-center px-4 py-20">
