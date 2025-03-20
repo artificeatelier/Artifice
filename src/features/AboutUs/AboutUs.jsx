@@ -19,7 +19,8 @@ export default function AboutUS() {
         "Digital Profile Design",
         "Packaging Design",
         "Event Branding",
-        "Brand Activation"
+        "Brand Activation",
+        "UI/Ux"
       ]
     },
     {
