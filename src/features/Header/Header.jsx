@@ -217,17 +217,18 @@ export function Header() {
               <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
                   <button
-                    onClick={() => changeLanguage("fr")}
-                    className={`text-gray-700 block w-full px-4 py-2 text-left text-sm hover:bg-gray-100 hover:text-gray-900 transition-colors ${currentLanguage === "fr" ? "font-bold" : ""}`}
-                  >
-                    Français
-                  </button>
-                  <button
                     onClick={() => changeLanguage("en")}
                     className={`text-gray-700 block w-full px-4 py-2 text-left text-sm hover:bg-gray-100 hover:text-gray-900 transition-colors ${currentLanguage === "en" ? "font-bold" : ""}`}
                   >
                     English
                   </button>
+                  <button
+                    onClick={() => changeLanguage("fr")}
+                    className={`text-gray-700 block w-full px-4 py-2 text-left text-sm hover:bg-gray-100 hover:text-gray-900 transition-colors ${currentLanguage === "fr" ? "font-bold" : ""}`}
+                  >
+                    Français
+                  </button>
+                  
                 </div>
               </div>
             )}
@@ -269,17 +270,18 @@ export function Header() {
               <div className="absolute mt-2 w-24 items-center origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
                   <button
-                    onClick={() => changeLanguage("fr")}
-                    className={`block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 ${currentLanguage === "fr" ? "font-bold" : ""}`}
-                  >
-                    Français
-                  </button>
-                  <button
                     onClick={() => changeLanguage("en")}
                     className={`block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 ${currentLanguage === "en" ? "font-bold" : ""}`}
                   >
                     English
                   </button>
+                  <button
+                    onClick={() => changeLanguage("fr")}
+                    className={`block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 ${currentLanguage === "fr" ? "font-bold" : ""}`}
+                  >
+                    Français
+                  </button>
+                  
                 </div>
               </div>
             )}
