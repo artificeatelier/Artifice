@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Artifice/static/css/main.70105b3a.css",
-    "main.js": "/Artifice/static/js/main.92aa02bc.js",
+    "main.css": "/Artifice/static/css/main.171ff57c.css",
+    "main.js": "/Artifice/static/js/main.da4ba0c0.js",
     "static/js/453.be1c574b.chunk.js": "/Artifice/static/js/453.be1c574b.chunk.js",
     "static/media/Testimonial2.jpg": "/Artifice/static/media/Testimonial2.8a95697a319e9616ef86.jpg",
     "static/media/FAQs.jpg": "/Artifice/static/media/FAQs.418711c4f9c8509e2a86.jpg",
     "static/media/Testimonial3.jpg": "/Artifice/static/media/Testimonial3.11acc2d4d98c0c04f715.jpg",
     "static/media/About.jpg": "/Artifice/static/media/About.43414750b9431c4b7498.jpg",
-    "static/media/aboutus.jpg": "/Artifice/static/media/aboutus.cb4f35c4d10d5aa94c64.jpg",
     "static/media/Testimonial4.jpg": "/Artifice/static/media/Testimonial4.a603037cf1f6d2bf9eca.jpg",
     "static/media/Testimonial1.jpg": "/Artifice/static/media/Testimonial1.8707e0e93cfcb82c4f5f.jpg",
     "static/media/hero.png": "/Artifice/static/media/hero.0777ae4dfdc0ab3ed84c.png",
+    "static/media/aboutus.jpg": "/Artifice/static/media/aboutus.cf0dca54f83c551e9357.jpg",
     "static/media/Customer.jpeg": "/Artifice/static/media/Customer.76cfcee78069035e5bbe.jpeg",
     "index.html": "/Artifice/index.html",
-    "main.70105b3a.css.map": "/Artifice/static/css/main.70105b3a.css.map",
-    "main.92aa02bc.js.map": "/Artifice/static/js/main.92aa02bc.js.map",
+    "main.171ff57c.css.map": "/Artifice/static/css/main.171ff57c.css.map",
+    "main.da4ba0c0.js.map": "/Artifice/static/js/main.da4ba0c0.js.map",
     "453.be1c574b.chunk.js.map": "/Artifice/static/js/453.be1c574b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70105b3a.css",
-    "static/js/main.92aa02bc.js"
+    "static/css/main.171ff57c.css",
+    "static/js/main.da4ba0c0.js"
   ]
 }
