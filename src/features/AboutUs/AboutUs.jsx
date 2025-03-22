@@ -104,7 +104,7 @@ export default function AboutUS() {
 
       {/* Content Overlay */}
       <div className="relative z-10 md:h-[calc(100vh)] flex items-start">
-        <div className="w-full md:w-1/2 lg:w-1/3 md:ml-auto lg:mr-40 p-8 md:p-16 bg-black  md:bg-black md:bg-opacity-70 text-white min-h-[80vh] md:min-h-full flex flex-col justify-center">
+        <div className="w-full  lg:w-1/3 md:ml-auto lg:ml-32 p-8 md:p-16 bg-black  md:bg-black md:bg-opacity-70 text-white min-h-[80vh] md:min-h-full flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl mb-6 font-light">
             Hello, we are,
             <br />
