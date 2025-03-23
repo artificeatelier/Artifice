@@ -1,8 +1,28 @@
 import React, { useState } from 'react'
 import FAQ from '../../Assets/FAQs.jpg'
 import { useTranslation } from "react-i18next";
+import One from "../../Assets/Portfolio_Logo/1.png"
+import Two from "../../Assets/Portfolio_Logo/2.png"
+import Three from "../../Assets/Portfolio_Logo/3.png"
+import Four from "../../Assets/Portfolio_Logo/4.png"
+import Five from "../../Assets/Portfolio_Logo/5.png"
+import Six from "../../Assets/Portfolio_Logo/6.png"
 
 const LogoDesign = () => {
+
+  
+  const [hoveredLogo, setHoveredLogo] = useState(null);
+
+  const logos = [
+    { id: 1, name: "metisOrigins", image: One },
+    { id: 2, name: "Avalanche", image: Two },
+    { id: 3, name: "Naturosolide", image: Three },
+    { id: 4, name: "Maz Design Bulid", image: Four },
+    { id: 5, name: "Efemeri", image: Five },
+    { id: 6, name: "Data Trust Solution", image: Six },
+  ];
+
+
   const { t, i18n } = useTranslation();
   const faqs = [
     {
@@ -65,8 +85,9 @@ const LogoDesign = () => {
   return (
     <div className="pt-28 sm:pt-24 md:pt-28 lg:pt-28 xl:pt-28 top-1 ">
       <div className="min-h-screen bg-black text-white">
+
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-20">
+        <section className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <h1 className="text-6xl pl-2 md:pl-20 font-bold  animate-fade-in">
               {t("LogoDesign")}
@@ -76,6 +97,48 @@ const LogoDesign = () => {
              {t("ServiceText")}
             </p>
           </div>
+        </section>
+
+
+        {/*Logo Grid */}
+        <section>
+          <div className="bg-black text-white  px-4 md:px-8 py-20">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-8 text-center">
+          <div className="flex items-center justify-center mb-6">
+            <span className="text-lg tracking-widest">CREATIVE LOGOS</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+            WHAT IS YOUR VISUAL IDENTITY?
+          </h1>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1 w-full max-w-7xl mx-auto">
+          {logos.map((logo, index) => (
+            <div
+              key={logo.id}
+              className="relative bg-zinc-900 w-full h-48 md:h-48 flex items-center justify-center cursor-pointer overflow-hidden rounded-lg"
+              onMouseEnter={() => setHoveredLogo(index)}
+              onMouseLeave={() => setHoveredLogo(null)}
+            >
+
+              <div className="relative z-10 flex items-center justify-center">
+                <img
+                  src={logo.image}
+                  alt={logo.name}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+
+              {hoveredLogo === index && (
+                <div className="absolute inset-0 bg-black bg-opacity-100 z-0 transition-all duration-300"></div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    
         </section>
 
         {/* Bottom Content Section */}
@@ -103,7 +166,7 @@ const LogoDesign = () => {
       </section> */}
 
         {/* -----FAQ----- */}
-        {/* <section className="bg-black text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+        <section className="bg-black text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="relative">
@@ -149,7 +212,8 @@ const LogoDesign = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
+
 
         {/* -----let's Talk----- */}
         <section className=" bg-black flex flex-col items-center justify-center px-4 py-20">
@@ -181,6 +245,7 @@ const LogoDesign = () => {
             </svg>
           </a>
         </section>
+
       </div>
     </div>
   );
