@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/Artifice/static/css/main.171ff57c.css",
-    "main.js": "/Artifice/static/js/main.da4ba0c0.js",
+    "main.css": "/Artifice/static/css/main.cf621a5e.css",
+    "main.js": "/Artifice/static/js/main.797e0846.js",
     "static/js/453.be1c574b.chunk.js": "/Artifice/static/js/453.be1c574b.chunk.js",
+    "static/media/About.jpg": "/Artifice/static/media/About.f45933e719ce72bbac2f.jpg",
     "static/media/Testimonial2.jpg": "/Artifice/static/media/Testimonial2.8a95697a319e9616ef86.jpg",
     "static/media/FAQs.jpg": "/Artifice/static/media/FAQs.418711c4f9c8509e2a86.jpg",
     "static/media/Testimonial3.jpg": "/Artifice/static/media/Testimonial3.11acc2d4d98c0c04f715.jpg",
-    "static/media/About.jpg": "/Artifice/static/media/About.43414750b9431c4b7498.jpg",
     "static/media/Testimonial4.jpg": "/Artifice/static/media/Testimonial4.a603037cf1f6d2bf9eca.jpg",
     "static/media/Testimonial1.jpg": "/Artifice/static/media/Testimonial1.8707e0e93cfcb82c4f5f.jpg",
     "static/media/hero.png": "/Artifice/static/media/hero.0777ae4dfdc0ab3ed84c.png",
     "static/media/aboutus.jpg": "/Artifice/static/media/aboutus.cf0dca54f83c551e9357.jpg",
     "static/media/Customer.jpeg": "/Artifice/static/media/Customer.76cfcee78069035e5bbe.jpeg",
+    "static/media/4.png": "/Artifice/static/media/4.3589039dff903784e2da.png",
+    "static/media/3.png": "/Artifice/static/media/3.73436c053516983628ce.png",
+    "static/media/2.png": "/Artifice/static/media/2.3b4d0495b2580e78993a.png",
+    "static/media/1.png": "/Artifice/static/media/1.d7a3d9d85d8f7cf1ee79.png",
+    "static/media/6.png": "/Artifice/static/media/6.b4b5df96999daf78020a.png",
+    "static/media/5.png": "/Artifice/static/media/5.65889f45200e90a827d0.png",
     "index.html": "/Artifice/index.html",
-    "main.171ff57c.css.map": "/Artifice/static/css/main.171ff57c.css.map",
-    "main.da4ba0c0.js.map": "/Artifice/static/js/main.da4ba0c0.js.map",
+    "main.cf621a5e.css.map": "/Artifice/static/css/main.cf621a5e.css.map",
+    "main.797e0846.js.map": "/Artifice/static/js/main.797e0846.js.map",
     "453.be1c574b.chunk.js.map": "/Artifice/static/js/453.be1c574b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.171ff57c.css",
-    "static/js/main.da4ba0c0.js"
+    "static/css/main.cf621a5e.css",
+    "static/js/main.797e0846.js"
   ]
 }
