@@ -15,11 +15,11 @@ const LogoDesign = () => {
 
   const logos = [
     { id: 1, name: "metisOrigins", image: One },
-    { id: 2, name: "Avalanche", image: Two },
+    { id: 2, name: "Kat Sleep", image: Two },
     { id: 3, name: "Naturosolide", image: Three },
-    { id: 4, name: "Maz Design Bulid", image: Four },
+    { id: 4, name: "Avalanche", image: Four },
     { id: 5, name: "Efemeri", image: Five },
-    { id: 6, name: "Data Trust Solution", image: Six },
+    { id: 6, name: "Kopi Croissanc", image: Six },
   ];
 
 
