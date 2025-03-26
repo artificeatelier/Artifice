@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 export const Work = ({ images, className }) => {
   const { t, i18n } = useTranslation()
   
-  
   return (
 
     <div className="bg-black min-h-screen pt-28 text-white">
