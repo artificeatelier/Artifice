@@ -90,7 +90,25 @@ return (
         </div>
 
         {/* Right Column - Form */}
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={(e)=>{
+          debugger
+          e.preventDefault();
+          console.log("Form Submitting")
+          fetch("/api/ContactUS",{
+            method : "POST",
+            body : JSON.stringify(formData) ,
+             headers: {
+              "Content-Type": "application/json"
+            },
+          }).then((res)=>{
+            setFormData({
+              name: '',
+              email: '',
+              phone: '',
+              message: ''
+            })
+          })
+        }}>
           <div className="space-y-4">
             <div>
               <input
