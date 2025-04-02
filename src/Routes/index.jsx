@@ -7,6 +7,7 @@ import Branding from "../features/Services/Branding"
 import Work from "../features/Work/Work"
 import LogoDesign from "../features/Services/LogoDesign"
 import WebDesign from "../features/Services/WebDesign"
+import Logos from "../features/Work/Logos"
 
 const router = createHashRouter([
     {
@@ -47,9 +48,13 @@ const router = createHashRouter([
                 path: "/WebDesign",
                 element: <WebDesign />,
             },
-             {
+            {
                 path: "/work",
                 element: <Work />,
+            },
+             {
+                path: "/Logos",
+                element: <Logos />,
             },
         ]
     }
