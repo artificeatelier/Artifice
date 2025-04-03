@@ -1,8 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import about from '../../Assets/About.jpg'
-
-
+import B_Card from '../../Assets/B_Card.jpg'
 
 export const Work = ({ images, className }) => {
   const { t, i18n } = useTranslation()
@@ -16,10 +15,10 @@ export const Work = ({ images, className }) => {
   },
   {
     id: 2,
-    title: "Global Art Festival",
-    category: "Logo Design",
-    image: about,
-    link: "/portfolio/global-art",
+    title: "Business Card",
+    category: "Branding",
+    image: B_Card,
+    link: "#/BCard",
   },
   {
     id: 3,

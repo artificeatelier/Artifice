@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 export function Footer () {
  const {t} = useTranslation();
   return (
-    <div className="bg-black text-white rounded-t-3xl shadow-2xl">
+    <div className="bg-black text-white shadow-2xl">
       <div className="container mx-auto p-8 md:p-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="">

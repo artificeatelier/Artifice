@@ -8,6 +8,7 @@ import Work from "../features/Work/Work"
 import LogoDesign from "../features/Services/LogoDesign"
 import WebDesign from "../features/Services/WebDesign"
 import Logos from "../features/Work/Logos"
+import BCard from "../features/Work/BCard"
 
 const router = createHashRouter([
     {
@@ -52,9 +53,13 @@ const router = createHashRouter([
                 path: "/work",
                 element: <Work />,
             },
-             {
+            {
                 path: "/Logos",
                 element: <Logos />,
+            },
+            {
+                path: "/BCard",
+                element: <BCard />,
             },
         ]
     }
