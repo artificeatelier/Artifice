@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FAQ from '../../Assets/FAQs.jpg'
 import { useTranslation } from "react-i18next";
+import Web from '../../Assets/web.jpg'
 
 const WebDesign = () => {
   const { t, i18n } = useTranslation();
@@ -78,28 +79,26 @@ const WebDesign = () => {
         </section>
 
         {/* Bottom Content Section */}
-        {/* <section className="container mx-auto px-4 py-20">
-        <h2 className="text-4xl font-bold mb-12">
-          Showcasing the expertise and transformative power of the Akshar Concept.
-        </h2>
+        <section className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <img 
-              src="https://www.aksharconcept.com/assets/imgs/thumb/dev-01.jpg" 
+              src= {Web}
               alt="Collaboration" 
-              className="w-full rounded-lg"
+              className="w-fit rounded-lg"
             />
           </div>
-          <div className="space-y-8">
+          <div className="space-y-8 content-center">
             <p className="text-gray-300">
-              Elevate your brand with a holistic design approach encompassing logo creation, brand identity, graphic design, brochure creation, digital profile shaping, packaging innovation, event branding, and brand activation. Craft timeless logos with transformative impact, nurture consistent brand identities and master the art of visual communication.
+              {t("Web_Content")}
             </p>
             <p className="text-gray-300">
-              Design impactful brochures, shape a strong online profile, and create packaging that sells. Unleash unforgettable event experiences through strategic branding, and ignite brands with effective brand activation strategies. Learn, apply, and measure success for a well-rounded design journey.
+             {t("Web_Content_Two")}
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
+
 
         {/* -----FAQ----- */}
         {/* <section className="bg-black text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">

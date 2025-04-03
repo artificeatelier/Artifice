@@ -79,6 +79,13 @@
   "About_Q4": "Quel est le délai typique d'achèvement d'un projet ?",
   "About_A4": "Les délais du projet dépendent de la portée et de la complexité du projet.",
 
+  "Logo_Q1" : "Combien de temps dure le processus de création d'un logo ?",
+  "Logo_A1" : "Le délai varie en fonction de la complexité et des révisions. En général, un logo de base prend 1 à 2 jours, un logo standard avec plusieurs concepts prend 2 à 3 jours et un logo haut de gamme prend 2 à 3 jours.",
+  "Logo_Q2" : "Proposez-vous des révisions si je ne suis pas satisfait de la conception ?",
+  "Logo_A2" : "Oui, je propose des révisions sur la base de vos commentaires. Le nombre de révisions gratuites dépend du forfait choisi. Des révisions supplémentaires peuvent être disponibles moyennant un coût additionnel.",
+  "Logo_Q3" : "Mon logo sera-t-il adapté à l'impression et à l'utilisation numérique ?",
+  "Logo_A3" : "Oui, je fournis des fichiers haute résolution optimisés pour l'impression (cartes de visite, bannières, marchandises) et les plateformes numériques (sites web, médias sociaux).",
+
   "WORKWITHUS" : "TRAVAILLEZ AVEC NOUS",
   "Elevate Your Brand with Expert Design": "Améliorez votre marque grâce à un design expert",
   "From logos to full brand identities, we craft designs that make you stand out" : "Des logos aux identités de marque complètes, nous créons des designs qui vous permettent de vous démarquer",
@@ -91,6 +98,9 @@
   "ServiceText" : "Bienvenue à Artifice Studio, où l'imagination alimente l'innovation ! Dans le paysage numérique en constante évolution, un contenu convaincant définit la véritable essence d'un site web. Chez Artifice Studio, nous combinons harmonieusement la créativité et l'objectif, en créant des designs qui se démarquent dans un monde concurrentiel. Entrez dans un espace où l'art rencontre la fonctionnalité, transformant les idées en chefs-d'œuvre.",
   "We would love to hear more" : "Nous aimerions en savoir plus",
   "about your project" : "à propos de votre projet",
+
+  "Web_Content" : "Chez Artifice, nous sommes spécialisés dans la conception de sites web modernes, réactifs et visuellement attrayants qui aident les entreprises à établir une forte présence en ligne. Notre équipe se concentre sur la création de designs conviviaux et attrayants qui fonctionnent de manière transparente sur tous les appareils. Que vous ayez besoin d'un site professionnel, d'une boutique en ligne ou d'une solution web personnalisée, nous veillons à ce que votre site reflète l'identité de votre marque tout en offrant une excellente expérience utilisateur.",
+  "Web_Content_Two" : "Nous allions la créativité à la fonctionnalité, en veillant à ce que votre site web soit non seulement attrayant, mais aussi facile à naviguer et hautement interactif. Notre objectif est de donner vie à votre vision en vous proposant un design unique et attrayant qui vous démarque. Créons ensemble quelque chose d'extraordinaire - contactez-nous dès aujourd'hui !",
 
   "contactUSLine1" : "Que vous ayez une question, besoin d'aide ou souhaitiez discuter d'un projet, nous sommes là pour vous aider. Remplissez le formulaire ci-dessous ou contactez-nous aux coordonnées indiquées.",
   "contactUSLine2" : "Super ! Nous sommes ravis de vous rencontrer et avons hâte de créer quelque chose d'unique ensemble. N'hésitez pas à nous contacter pour toute question.",

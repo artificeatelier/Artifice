@@ -9,6 +9,9 @@ import LogoDesign from "../features/Services/LogoDesign"
 import WebDesign from "../features/Services/WebDesign"
 import Logos from "../features/Work/Logos"
 import BCard from "../features/Work/BCard"
+import Flyers from "../features/Work/Flyers"
+import REAL_ESTATE_RODEO from "../features/Work/REAL_ESTATE_RODEO"
+import Chatnoir from "../features/Work/Chatnoir"
 
 const router = createHashRouter([
     {
@@ -60,6 +63,18 @@ const router = createHashRouter([
             {
                 path: "/BCard",
                 element: <BCard />,
+            },
+            {
+                path: "/Flyers",
+                element: <Flyers />,
+            },
+            {
+                path: "/Real_Estate-Rodeo",
+                element: <REAL_ESTATE_RODEO />,
+            },
+            {
+                path: "/Chatnoir",
+                element: <Chatnoir/>,
             },
         ]
     }

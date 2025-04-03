@@ -1,53 +1,58 @@
 import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import about from '../../Assets/About.jpg'
+import Logo from '../../Assets/About.jpg'
+import Social_Media from '../../Assets/aboutus.jpg'
 import B_Card from '../../Assets/B_Card.jpg'
+import Flyer from '../../Assets/Flyer/Racing.jpg'
+import REAL_ESTATE_RODEO from '../../Assets/REAL-ESTATE-RODEO/Logo.jpg'
+import Chatnoir from '../../Assets/Chatnoir/Logo.jpg'
 
 export const Work = ({ images, className }) => {
   const { t, i18n } = useTranslation()
   const portfolioItems = [
   {
     id: 1,
-    title: "Logo Design",
-    category: "Logos",
-    image: about,
+    title: "Logos",
+    category: "Logo Design",
+    image: Logo,
     link: "#/Logos",
   },
   {
     id: 2,
+    title: "Social Media",
+    category: "Design",
+    image: Social_Media,
+    link: "#",
+  },
+  {
+    id: 3,
     title: "Business Card",
-    category: "Branding",
+    category: "Branding and Design",
     image: B_Card,
     link: "#/BCard",
   },
   {
-    id: 3,
-    title: "Logos",
-    category: "Logo Design",
-    image: "/placeholder.svg",
-    link: "/portfolio/logos",
-  },
-  {
     id: 4,
-    title: "Sloopy Noodles",
-    category: "Flyer",
-    image: "/placeholder.svg",
-    link: "/portfolio/sloopy-noodles",
+    title: "Flyer Design",
+    category: "Design",
+    image: Flyer,
+    link: "#/Flyers",
   },
   {
     id: 5,
-    title: "WHO AM I",
-    category: "Social Media Design",
-    image: "/placeholder.svg",
-    link: "/portfolio/who-am-i",
+    title: "REAL-ESTATE-RODEO",
+    category: "Branding",
+    image: REAL_ESTATE_RODEO,
+    link: "#/Real_Estate-Rodeo",
   },
   {
     id: 6,
-    title: "Corporate Brochure",
-    category: "Print Design",
-    image: "/placeholder.svg",
-    link: "/portfolio/corporate-brochure",
+    title: "Chatnoir",
+    category: "Branding",
+    image: Chatnoir,
+    link: "#/Chatnoir",
   },
+  
 ];
   
   return (

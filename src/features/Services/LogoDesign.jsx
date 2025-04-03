@@ -26,30 +26,16 @@ const LogoDesign = () => {
   const { t, i18n } = useTranslation();
   const faqs = [
     {
-      question: "What creative services does Artifice Studio offer?",
-      answer:
-        "Artifice Studio offers a comprehensive range of creative services including brand identity design, UI/UX design, motion graphics, 3D visualization, digital illustration, and custom artwork creation. We specialize in crafting unique visual experiences that help brands stand out in the digital landscape.",
+      question: t("Logo_Q1"),
+      answer:t("Logo_A1"),
     },
     {
-      question: "How does your design process work?",
-      answer:
-        "Our design process begins with an in-depth consultation to understand your vision and objectives. We then move through research, conceptualization, design development, and refinement phases. We maintain open communication throughout the process, ensuring your feedback is incorporated at every stage to deliver results that exceed expectations.",
+      question: t("Logo_Q2"),
+      answer: t("Logo_A2"),
     },
     {
-      question:
-        "What makes Artifice Studio different from other design studios?",
-      answer:
-        "Artifice Studio combines technical expertise with artistic innovation. We don't just create designs; we craft experiences that tell stories and evoke emotions. Our team's diverse skill set allows us to approach each project from multiple creative angles, ensuring unique and impactful solutions for every client.",
-    },
-    {
-      question: "How long does a typical project take to complete?",
-      answer:
-        "Project timelines vary depending on scope and complexity. A basic brand identity might take 2-3 weeks, while a comprehensive design system could take 6-8 weeks. We provide detailed timelines during our initial consultation and keep you updated on progress throughout the project.",
-    },
-    {
-      question: "Do you offer ongoing design support after project completion?",
-      answer:
-        "Yes, we provide continued support and maintenance packages for our clients. This includes design updates, asset creation, and technical support to ensure your visual content remains fresh and effective. We believe in building long-term partnerships with our clients.",
+      question: t("Logo_Q3"),
+      answer: t("Logo_A3"),
     },
   ];
 
