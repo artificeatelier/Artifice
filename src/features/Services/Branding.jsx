@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 import FAQ from '../../Assets/FAQs.jpg'
 import { useTranslation } from "react-i18next";
+import Img_1 from '../../Assets/ottico brand/1.jpg'
+import Img_2 from '../../Assets/ottico brand/2.jpg'
+import Img_3 from '../../Assets/ottico brand/3.jpg'
+import Img_4 from '../../Assets/ottico brand/4.jpg'
+import Img_5 from '../../Assets/ottico brand/5.jpg'
+import Img_6 from '../../Assets/ottico brand/6.jpg'
+
 
 const Branding = () => {
 
@@ -47,6 +54,34 @@ const Branding = () => {
     }
   ]
 
+  const portfolioItems = [
+  {
+    id: 1,
+    image: Img_1,
+  },
+  {
+    id: 2,
+    image: Img_2,
+  },
+  {
+    id: 3,
+    image: Img_3,
+  },
+  {
+    id: 4,
+    image: Img_4,
+  },
+  {
+    id: 5,
+    image: Img_5,
+  },
+  {
+    id: 6,
+    image: Img_6,
+  },
+  
+];
+
  const [openIndex, setOpenIndex] = useState(null)
 
   const toggleFAQ = (index) => {
@@ -72,30 +107,6 @@ const Branding = () => {
       </section>
 
 
-    {/* Bottom Content Section */}
-      {/* <section className="container mx-auto px-4 py-20">
-        <h2 className="text-4xl font-bold mb-12">
-          Showcasing the expertise and transformative power of the Akshar Concept.
-        </h2>
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <img 
-              src="https://www.aksharconcept.com/assets/imgs/thumb/dev-01.jpg" 
-              alt="Collaboration" 
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="space-y-8">
-            <p className="text-gray-300">
-              Elevate your brand with a holistic design approach encompassing logo creation, brand identity, graphic design, brochure creation, digital profile shaping, packaging innovation, event branding, and brand activation. Craft timeless logos with transformative impact, nurture consistent brand identities and master the art of visual communication.
-            </p>
-            <p className="text-gray-300">
-              Design impactful brochures, shape a strong online profile, and create packaging that sells. Unleash unforgettable event experiences through strategic branding, and ignite brands with effective brand activation strategies. Learn, apply, and measure success for a well-rounded design journey.
-            </p>
-          </div>
-        </div>
-      </section> */}
-
     {/* ------Service Section----- */}
       <section className="bg-black  flex items-center justify-center px-4 sm:px-6 py-1 sm:py-16">
       <div className="max-w-7xl mx-auto">
@@ -120,6 +131,27 @@ const Branding = () => {
               <p className="text-white/80 text-sm leading-relaxed">
                 {service.description}
               </p>
+            </div>
+          ))}
+        </div>
+      </div>
+      </section>
+
+
+      <section>
+        <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+          {portfolioItems.map((item) => (
+            <div key={item.id} className="relative overflow-hidden group">
+              <a href={item.link} className="block">
+                <div className="relative h-full overflow-hidden">
+                  <img
+                    src={item.image || "/placeholder.svg"}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>  
+              </a>
             </div>
           ))}
         </div>

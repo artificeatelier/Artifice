@@ -330,21 +330,28 @@ export function Header() {
             </div>
 
             {/* Mobile Navigation Links */}
-            <div className="flex flex-col items-stretch justify-start min-h-screen pb-16 pt-4">
-              {renderNavLinks(true)}
+           <div className="flex flex-col items-stretch justify-start min-h-screen pb-16 pt-4">
+  {renderNavLinks(true)}
 
-              <div className="flex justify-center space-x-6 mt-8">
-                <ActionIcon size="lg" color="gray" variant="subtle">
-                  <IconBrandGmail style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
-                </ActionIcon>
-                <ActionIcon size="lg" color="gray" variant="subtle">
-                  <IconBrandInstagram style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
-                </ActionIcon>
-                <ActionIcon size="lg" color="gray" variant="subtle">
-                  <IconPhone style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
-                </ActionIcon>
-              </div>
-            </div>
+  <div className="flex justify-center space-x-6 mt-8">
+    <a href="mailto:graphicartifice@gmail.com" target="_blank" rel="noopener noreferrer">
+      <ActionIcon size="lg" color="gray" variant="subtle">
+        <IconBrandGmail style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
+      </ActionIcon>
+    </a>
+    <a href="https://www.instagram.com/artificestudio_?igsh=MWtiMmlyNTV4b2h4dw==" target="_blank" rel="noopener noreferrer">
+      <ActionIcon size="lg" color="gray" variant="subtle">
+        <IconBrandInstagram style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
+      </ActionIcon>
+    </a>
+    <a href="tel:+33668672365">
+      <ActionIcon size="lg" color="gray" variant="subtle">
+        <IconPhone style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
+      </ActionIcon>
+    </a>
+  </div>
+</div>
+
           </div>
         )}
       </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import Flyer_1 from '../../Assets/Flyer/Racing.jpg'
 import Flyer_2 from '../../Assets/Flyer/Dance.jpg'
-import Flyer_3 from '../../Assets/Flyer/Jet_Ski.jpg'
+import Flyer_3 from '../../Assets/Flyer/Sports.jpg'
 
 const images = [
-{ src: Flyer_1, alt: "Image 1" },
-    { src: Flyer_2, alt: "Image 2" },
-    { src: Flyer_3, alt: "Image 3" },
+  Flyer_1,
+  Flyer_2,
+  Flyer_3,
 ];
 
 const Flyers = () => {
@@ -15,18 +15,18 @@ const Flyers = () => {
     <div className="bg-black min-h-screen pt-28 text-white">
     
     <section>
-        <div className="container mx-auto p-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 items-center">
-            {images.map((image, index) => (
-              <img
-                key={index}
-                src={image.src}
-                alt={image.alt || `Image ${index + 1}`}
-                className={`w-full h-auto object-cover ${index % 3 === 0 ? "sm:col-span-2 md:col-span-2 lg:col-span-2" : "sm:col-span-1 md:col-span-1 lg:col-span-1"}`}
-              />
-            ))}
+        <div className="bg-black min-h-screen flex items-center justify-center p-4">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+        {images.map((src, index) => (
+          <div
+            key={index}
+            className="flex items-center justify-center rounded-lg shadow-lg"
+          >
+            <img src={src} alt={`Logo ${index + 1}`} className="w-full h-fit object-contain" />
           </div>
-        </div>
+        ))}
+      </div>
+    </div>
       </section>
 
     </div>

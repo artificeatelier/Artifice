@@ -102,16 +102,16 @@ export function Footer () {
                 href={`tel:${t("phone")}`}
                 className=" text-gray-400 hover:text-white transition duration-300 flex items-center"
               >
-                <FaPhoneAlt className="text-sm mr-3" />
+                <FaPhoneAlt className="text-xl mr-3" />
                 {t("phone")}
               </a>
               <a
-                href="https://goo.gl/maps/yourAddress"
+                href="https://maps.app.goo.gl/6wE2n1YL7TubHcq87"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-gray-400 hover:text-white transition duration-300 flex items-start"
+                className=" text-gray-400 hover:text-white transition duration-300 flex items-center"
               >
-                <IoLocationOutline className="text-3xl mr-3 mt-1" />
+                <IoLocationOutline className="text-2xl mr-3 mt-1" />
                 <span>{t("address")}</span>
               </a>
             </nav>
@@ -122,31 +122,39 @@ export function Footer () {
           <div className="flex flex-col md:flex-row justify-between items-center">
             
       <Container>
-        <Group
-          gap={10}
-          justify="flex-end"
-          wrap="nowrap"
-        >
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandGmail
-              style={{ width: rem(25), height: rem(25) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram
-              style={{ width: rem(25), height: rem(25) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconPhone
-              style={{ width: rem(25), height: rem(25) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-        </Group>
-      </Container>
+  <Group gap={10} justify="flex-end" wrap="nowrap">
+    <ActionIcon
+      component="a"
+      href="mailto:graphicartifice@gmail.com"
+      target="_blank"
+      size="lg"
+      color="gray"
+      variant="subtle"
+    >
+      <IconBrandGmail style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
+    </ActionIcon>
+    <ActionIcon
+      component="a"
+      href="https://www.instagram.com/artificestudio_?igsh=MWtiMmlyNTV4b2h4dw=="
+      target="_blank"
+      size="lg"
+      color="gray"
+      variant="subtle"
+    >
+      <IconBrandInstagram style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
+    </ActionIcon>
+    <ActionIcon
+      component="a"
+      href="tel:+33668672365"
+      size="lg"
+      color="gray"
+      variant="subtle"
+    >
+      <IconPhone style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
+    </ActionIcon>
+  </Group>
+</Container>
+
           </div>
         </div>
       </div>

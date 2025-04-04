@@ -13,13 +13,11 @@ export default function AboutUS() {
       description: t("BrandnDesign"),
       items: [
         "Logo Design",
-        "Brand Identity & Strategy",
+        "Brand Identity",
         "Graphic Design",
         "Brochure Design",
-        "Digital Profile Design",
         "Packaging Design",
-        "Event Branding",
-        "Brand Activation",
+        "Letterhead Design",
         "UI/Ux"
       ]
     },
@@ -64,7 +62,7 @@ export default function AboutUS() {
     <div className='pt-28 sm:pt-24 md:pt-28 lg:pt-28 xl:pt-28 top-1 '>
 
   {/* -----Heading----- */}
-    <div className="bg-black py-20 px-6">
+    <div className="bg-black py-12 px-6">
       <div className="max-w-7xl">
         <div className="flex items-center justify-start relative">
           <div className="w-32 h-[1px] bg-white mr-4"></div>
@@ -77,12 +75,12 @@ export default function AboutUS() {
 
     <section className="bg-black text-white py-8">
   <div className="max-w-screen-lg mx-auto px-6">
-    <div className="max-w-3xl">
+    <div className="">
       <p className="text-lg">
         {t("AboutUsPOne")}
       </p>
       <br/>
-      <p className="max-w-3xl text-lg">
+      <p className="text-lg">
         {t("AboutUsPTwo")}
       </p>
     </div>
@@ -103,8 +101,8 @@ export default function AboutUS() {
       </div>
 
       {/* Content Overlay */}
-      <div className="relative z-10 md:h-[calc(100vh)] flex items-start">
-        <div className="w-full  lg:w-1/3 md:ml-auto lg:ml-32 p-8 md:p-16 bg-black  md:bg-black md:bg-opacity-70 text-white min-h-[80vh] md:min-h-full flex flex-col justify-center">
+      <div className="relative z-10 md:h-[calc(100vh)] flex items-start overflow-hidden">
+        <div className="w-full  lg:w-1/3 md:ml-auto lg:ml-32 p-8 md:p-16 bg-black  md:bg-black md:bg-opacity-70 text-white min-h-[80vh] md:min-h-full flex flex-col justify-center overflow-hidden">
           <h1 className="text-4xl md:text-5xl mb-6 font-light">
             Hello, we are,
             <br />
@@ -121,18 +119,18 @@ export default function AboutUS() {
 
   {/*-----Service Section----- */}
     <div className="bg-black text-white min-h-screen">
-    <h1 className="text-2xl md:text-5xl font-bold text-center mb-1 pt-10" > {t("WhatWeProvide")} </h1>
+    <h1 className="text-2xl md:text-5xl font-bold text-center mb-1 pt-8" > {t("WhatWeProvide")} </h1>
   {services.map((service, index) => (
-    <section key={index} className="py-20 px-6 md:px-12 lg:px-24 relative border-b border-gray-600">
+    <section key={index} className="py-12 px-6 md:px-12 lg:px-24 relative border-b border-gray-600">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-[1fr,2fr] gap-12 items-start">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold mb-1 leading-tight">
               {service.title}
             </h2>
           </div>
           <div>
-            <p className="text-xl md:text-2xl mb-12 leading-relaxed">
+            <p className="text-xl md:text-2xl mb-8 leading-relaxed">
               {service.description}
             </p>
             <div className="space-y-4">

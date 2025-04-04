@@ -1,5 +1,4 @@
 import React from "react";
-import Img_1 from '../../Assets/REAL-ESTATE-RODEO/Logo.jpg'
 import Img_2 from '../../Assets/REAL-ESTATE-RODEO/1.jpg'
 import Img_3 from '../../Assets/REAL-ESTATE-RODEO/2.jpg'
 import Img_4 from '../../Assets/REAL-ESTATE-RODEO/3.jpg'
@@ -7,7 +6,6 @@ import Img_5 from '../../Assets/REAL-ESTATE-RODEO/4.jpg'
 import Img_6 from '../../Assets/REAL-ESTATE-RODEO/5.jpg'
 
 const images = [
-    Img_1,
     Img_2,
     Img_3,
     Img_4,

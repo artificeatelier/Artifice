@@ -3,9 +3,9 @@ import { useTranslation } from "react-i18next";
 import Logo from '../../Assets/About.jpg'
 import Social_Media from '../../Assets/aboutus.jpg'
 import B_Card from '../../Assets/B_Card.jpg'
-import Flyer from '../../Assets/Flyer/Racing.jpg'
+import Flyer from '../../Assets/Flyer/Racing_Mockup.jpg'
 import REAL_ESTATE_RODEO from '../../Assets/REAL-ESTATE-RODEO/Logo.jpg'
-import Chatnoir from '../../Assets/Chatnoir/Logo.jpg'
+import Packging from '../../Assets/Packging/Packging.jpg'
 
 export const Work = ({ images, className }) => {
   const { t, i18n } = useTranslation()
@@ -22,7 +22,7 @@ export const Work = ({ images, className }) => {
     title: "Social Media",
     category: "Design",
     image: Social_Media,
-    link: "#",
+    link: "#/Social_Media",
   },
   {
     id: 3,
@@ -43,14 +43,14 @@ export const Work = ({ images, className }) => {
     title: "REAL-ESTATE-RODEO",
     category: "Branding",
     image: REAL_ESTATE_RODEO,
-    link: "#/Real_Estate-Rodeo",
+    link: "#/Real_Estate_Rodeo",
   },
   {
     id: 6,
-    title: "Chatnoir",
-    category: "Branding",
-    image: Chatnoir,
-    link: "#/Chatnoir",
+    title: "Packging Desing",
+    category: "Branding and Desing",
+    image: Packging,
+    link: "#/Packging",
   },
   
 ];
@@ -82,7 +82,7 @@ export const Work = ({ images, className }) => {
                   <img
                     src={item.image || "/placeholder.svg"}
                     alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
                   />
 
                   {/* Overlay that appears on hover */}

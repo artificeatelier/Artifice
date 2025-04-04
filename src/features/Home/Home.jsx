@@ -100,33 +100,38 @@ const services = [
   {
     icon: <FaPenFancy />,
     title: t("Branding"),
-    description: t("BrandingDetail")
+    description: t("BrandingDetail"),
+    link: "/Real_Estate_Rodeo"
   },
   {
     icon: <FaFacebookF />,
     title: t("SocialMediaDesign"),
-    description: t("SocialMediaDetail")
+    description: t("SocialMediaDetail"),
+    link: "/Social_Media"
   },
   {
     icon: <FaClipboard />,
     title: t("PrintingDesign"),
     description: t("PrintingDetail"),
+    link: "/Flyers"
   },
   {
     icon: <FaLaptopCode />,
     title: t("WebDesign"),
     description: t("webDetail"),
+    link: "#"
   },
   {
-  
-    icon: <DiIllustrator/>,
+    icon: <DiIllustrator />,
     title: t("LogoDesign"),
-    description: t("LogoDesignDetail")
+    description: t("LogoDesignDetail"),
+    link: "/Logos"
   },
   {
     icon: <FaBoxOpen />,
     title: t("PackagingDesign"),
-    description: t("PackagingDesignDetail")
+    description: t("PackagingDesignDetail"),
+    link: "/Packging"
   }
 ];
 
@@ -285,26 +290,23 @@ const services = [
 
     {/* -----Service Section----- */}
     <section className="py-10 bg-black text-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h1 className="text-2xl md:text-5xl font-bold text-center mb-5" > {t("WhatWeProvide")} </h1>
-    <div className="text-center mb-8">
-      <p className="max-w-4xl mx-auto">
-        {t("WhatWeProvideDetail")}
-      </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-      {services.map((service, index) => (
-        <div
-          key={index}
-          className="bg-white/5 rounded-lg p-6 transition-transform transform  text-white shadow-lg"
-        >
-          <div className="text-5xl mb-4 text-center">{service.icon}</div>
-          <h3 className="text-2xl font-semibold text-center">{service.title}</h3>
-          <p className="text-whie py-3 text-center transition-colors duration-300 ">{service.description}</p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-2xl md:text-5xl font-bold text-center mb-5">{t("WhatWeProvide")}</h1>
+        <div className="text-center mb-8">
+          <p className="max-w-4xl mx-auto">{t("WhatWeProvideDetail")}</p>
         </div>
-      ))}
-    </div>
-  </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {services.map((service, index) => (
+            <Link key={index} to={service.link} >
+              <div className="bg-white/5 rounded-lg p-6 transition-transform transform hover:scale-105 cursor-pointer text-white shadow-lg flex flex-col h-full">
+                <div className="text-5xl mb-4 text-center">{service.icon}</div>
+                <h3 className="text-2xl font-semibold text-center">{service.title}</h3>
+                <p className="text-white py-3 text-center transition-colors duration-300 flex-grow">{service.description}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </section>
 
 
