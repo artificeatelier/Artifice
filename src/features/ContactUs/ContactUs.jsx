@@ -65,13 +65,13 @@ return (
           <div className="space-y-4">
             <p className="flex items-center transition-transform ">
               <span className="mr-2">📞</span>
-              <a href="tel:+919537663308" className="hover:text-gray-300">
-                +91 95376 63308
+              <a href="tel:+33668672365" className="hover:text-gray-300">
+                +33-668672365
               </a>
             </p>
             <p className="flex items-center transition-transform ">
               <span className="mr-2">✉️</span>
-              <a href="mailto:info@artificestudio.com" className="hover:text-gray-300">
+              <a href="mailto:graphicartifice@gmail.com" className="hover:text-gray-300">
                 graphicartifice@gmail.com
               </a>
             </p>
@@ -80,7 +80,7 @@ return (
           <div>
             <p className="font-bold mb-2">Address :</p>
             <p className="text-gray-300">
-              515, STC, Nr. One World West,S P Ring Road, Ambali 'T' Junction,Ahmedabad, Gujarat 380058
+              Paris, France
             </p>
           </div>
 
