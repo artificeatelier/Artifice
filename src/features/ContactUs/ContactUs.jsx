@@ -51,7 +51,7 @@ return (
 
 
     <section>
-        <div className="min-h-screen bg-black text-white p-8 md:p-12">
+        <div className=" bg-black text-white p-8 md:p-12">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
         {/* Left Column */}
         <div className="space-y-8">
@@ -72,7 +72,7 @@ return (
             <p className="flex items-center transition-transform ">
               <span className="mr-2">✉️</span>
               <a href="mailto:info@artificestudio.com" className="hover:text-gray-300">
-                info@artificestudio.com
+                graphicartifice@gmail.com
               </a>
             </p>
           </div>
