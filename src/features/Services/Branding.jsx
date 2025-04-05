@@ -45,8 +45,8 @@ const Branding = () => {
       description: t("graphic design is more than aesthetics – it's a language that speaks to the hearts and minds of the audience.")
     },
     {
-      title: t("Digital Profile Design"),
-      description: t("you can shape a digital presence that authentically reflects your identity, resonates with your audience, and propels you toward your personal and professional goals.")
+      title: t("PrintingDesign"),
+      description: t("PrintingDetail")
     },
     {
       title: t("Packaging Design"),

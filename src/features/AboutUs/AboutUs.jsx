@@ -12,12 +12,12 @@ export default function AboutUS() {
       title: t("BRANDINGDESIGN"),
       description: t("BrandnDesign"),
       items: [
-        "Logo Design",
-        "Brand Identity",
-        "Graphic Design",
-        "Brochure Design",
-        "Packaging Design",
-        "Letterhead Design",
+        t("LogoDesign"),
+        t("BrandIdentity"),
+        t("Graphic Design"),
+        t("Brochure Design"),
+        t("PackagingDesign"),
+        t("Letterhead Design"),
         "UI/Ux"
       ]
     },
@@ -25,9 +25,9 @@ export default function AboutUS() {
       title: t("WEBDESING"),
       description: t("WebSite"),
       items: [
-        "Static Website",
-        "Custom Website Devlopment",
-        "E-Commerce Website",
+        t("Static Website"),
+        t("Custom Website Devlopment"),
+        t("E-Commerce Website"),
       ]
     }
   ]
