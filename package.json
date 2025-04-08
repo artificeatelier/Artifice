@@ -27,7 +27,7 @@
     "tailwindcss": "^3.4.12",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "www.artificeatelier.com",
+  "homepage": "https://www.artificeatelier.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
