@@ -194,6 +194,28 @@ const services = [
     </section>
 
 
+    {/* -----Service Section----- */}
+    <section className="py-10 bg-black text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-2xl md:text-5xl font-bold text-center mb-5">{t("WhatWeProvide")}</h1>
+        <div className="text-center mb-8">
+          <p className="max-w-4xl mx-auto">{t("WhatWeProvideDetail")}</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {services.map((service, index) => (
+            <Link key={index} to={service.link} >
+              <div className="bg-white/5 rounded-lg p-6 transition-transform transform hover:scale-105 cursor-pointer text-white shadow-lg flex flex-col h-full">
+                <div className="text-5xl mb-4 text-center">{service.icon}</div>
+                <h3 className="text-2xl font-semibold text-center">{service.title}</h3>
+                <p className="text-white py-3 text-center transition-colors duration-300 flex-grow">{service.description}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
     {/* -----Counter----- */}
     <section className="bg-black py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -285,28 +307,6 @@ const services = [
       </div>
     </div>
   </div>
-    </section>
-
-
-    {/* -----Service Section----- */}
-    <section className="py-10 bg-black text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-2xl md:text-5xl font-bold text-center mb-5">{t("WhatWeProvide")}</h1>
-        <div className="text-center mb-8">
-          <p className="max-w-4xl mx-auto">{t("WhatWeProvideDetail")}</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-          {services.map((service, index) => (
-            <Link key={index} to={service.link} >
-              <div className="bg-white/5 rounded-lg p-6 transition-transform transform hover:scale-105 cursor-pointer text-white shadow-lg flex flex-col h-full">
-                <div className="text-5xl mb-4 text-center">{service.icon}</div>
-                <h3 className="text-2xl font-semibold text-center">{service.title}</h3>
-                <p className="text-white py-3 text-center transition-colors duration-300 flex-grow">{service.description}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
     </section>
 
 
