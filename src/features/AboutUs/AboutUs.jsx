@@ -219,7 +219,7 @@ export default function AboutUS() {
       </h2>
       <p className="text-xl text-white mb-6">{t("From logos to full brand identities, we craft designs that make you stand out")}</p>
       <a 
-        href="#contact" 
+        href="/contact" 
         className="group relative inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/20 text-white hover:border-white transition-colors duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] rounded-md"
       >
         <span className="text-sm mr-2">{t("Explore Our Services")}</span>

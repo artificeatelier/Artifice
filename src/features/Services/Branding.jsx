@@ -222,7 +222,7 @@ const Branding = () => {
         <span className="block">{t("about your project")}</span>
       </h2>
       <a 
-        href="#contact" 
+        href="/contact" 
         className="group relative inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/20 text-white hover:border-white transition-colors duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] rounded-md"
       >
         <span className="text-sm mr-2">{t("LetTalk")}</span>
