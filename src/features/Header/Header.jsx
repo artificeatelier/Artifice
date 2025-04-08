@@ -334,12 +334,12 @@ export function Header() {
   {renderNavLinks(true)}
 
   <div className="flex justify-center space-x-6 mt-8">
-    <a href="mailto:graphicartifice@gmail.com" target="_blank" rel="noopener noreferrer">
+    <a href="mailto:Contact@artificeatelier.com" target="_blank" rel="noopener noreferrer">
       <ActionIcon size="lg" color="gray" variant="subtle">
         <IconBrandGmail style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
       </ActionIcon>
     </a>
-    <a href="https://www.instagram.com/artificestudio_?igsh=MWtiMmlyNTV4b2h4dw==" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/artifice_atelier?igsh=MWtiMmlyNTV4b2h4dw==" target="_blank" rel="noopener noreferrer">
       <ActionIcon size="lg" color="gray" variant="subtle">
         <IconBrandInstagram style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
       </ActionIcon>
