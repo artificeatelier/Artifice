@@ -125,7 +125,7 @@ export function Footer () {
   <Group gap={10} justify="flex-end" wrap="nowrap">
     <ActionIcon
       component="a"
-      href="mailto:graphicartifice@gmail.com"
+      href="mailto:Contact@artificeatelier.com"
       target="_blank"
       size="lg"
       color="gray"
@@ -135,7 +135,7 @@ export function Footer () {
     </ActionIcon>
     <ActionIcon
       component="a"
-      href="https://www.instagram.com/artificestudio_?igsh=MWtiMmlyNTV4b2h4dw=="
+      href="https://www.instagram.com/artifice_atelier?igsh=MWtiMmlyNTV4b2h4dw=="
       target="_blank"
       size="lg"
       color="gray"

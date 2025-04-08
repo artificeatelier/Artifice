@@ -1,4 +1,4 @@
-import {  createHashRouter, RouterProvider } from "react-router-dom"
+import {  createBrowserRouter, RouterProvider } from "react-router-dom"
 import Layout from "../Layout"
 import Home from "../features/Home/Home"
 import AboutUs from '../features/AboutUs/AboutUs'
@@ -14,7 +14,7 @@ import REAL_ESTATE_RODEO from "../features/Work/REAL_ESTATE_RODEO"
 import Packging from "../features/Work/Packging"
 import Social_Media from "../features/Work/Social_Media"
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
         path: "",
         element: <Layout />,
