@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useTranslation } from "react-i18next";
 import aboutus from '../../Assets/aboutus.jpg';
 import FAQ from '../../Assets/FAQs.jpg'
+import { Link } from 'react-router-dom';
 
 export default function AboutUS() {
 
@@ -209,6 +210,7 @@ export default function AboutUS() {
       </div>
     </section>
 
+
   {/* -----let's Talk----- */}
     <section className=" bg-black flex flex-col items-center justify-center px-4 py-20">
       <div className="inline-block px-6 py-2 border border-white rounded-full mb-8 transition-colors duration-300">
@@ -218,7 +220,7 @@ export default function AboutUS() {
         {t("Elevate Your Brand with Expert Design")}
       </h2>
       <p className="text-xl text-white mb-6">{t("From logos to full brand identities, we craft designs that make you stand out")}</p>
-      <link 
+      <Link 
         to="/contact" 
         className="group relative inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/20 text-white hover:border-white transition-colors duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] rounded-md"
       >
@@ -235,7 +237,7 @@ export default function AboutUS() {
           <line x1="5" y1="12" x2="19" y2="12" />
           <polyline points="12 5 19 12 12 19" />
         </svg>
-      </link>
+      </Link>
     </section>
    
 
