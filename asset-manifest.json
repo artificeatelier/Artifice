@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.5971c3bc.css",
-    "main.js": "/static/js/main.1d9b9a58.js",
+    "main.css": "/static/css/main.eab5cbfd.css",
+    "main.js": "/static/js/main.da81f099.js",
     "static/js/453.4bd10e20.chunk.js": "/static/js/453.4bd10e20.chunk.js",
-    "static/media/About.jpg": "/static/media/About.f45933e719ce72bbac2f.jpg",
     "static/media/Packging.jpg": "/static/media/Packging.e6361e49ec58b20d4b5a.jpg",
     "static/media/5.jpg": "/static/media/5.bf9cbdebb43e5c72fa15.jpg",
     "static/media/Testimonial2.jpg": "/static/media/Testimonial2.8a95697a319e9616ef86.jpg",
     "static/media/6.jpg": "/static/media/6.80edf6aba2faa08bf3c0.jpg",
-    "static/media/Sports.jpg": "/static/media/Sports.2151743788141672f5d3.jpg",
     "static/media/web.jpg": "/static/media/web.a2292678c1f436777dfd.jpg",
     "static/media/2.jpg": "/static/media/2.8feb5c7201aae636a614.jpg",
     "static/media/1.jpg": "/static/media/1.c0954cf9eebbc03b04f6.jpg",
-    "static/media/Racing.jpg": "/static/media/Racing.9a365528f790214f0d58.jpg",
-    "static/media/Dance.jpg": "/static/media/Dance.8559389e66366591a05d.jpg",
     "static/media/4.jpg": "/static/media/4.4a67ba42bca0fcf2382d.jpg",
     "static/media/FAQs.jpg": "/static/media/FAQs.418711c4f9c8509e2a86.jpg",
     "static/media/Testimonial3.jpg": "/static/media/Testimonial3.11acc2d4d98c0c04f715.jpg",
     "static/media/3.jpg": "/static/media/3.fd8b2fbcd86da4149808.jpg",
+    "static/media/About.jpg": "/static/media/About.d3401394d50a141331e0.jpg",
     "static/media/Testimonial4.jpg": "/static/media/Testimonial4.a603037cf1f6d2bf9eca.jpg",
     "static/media/B_Card.jpg": "/static/media/B_Card.b79943e01bbc9b2b8881.jpg",
     "static/media/Testimonial1.jpg": "/static/media/Testimonial1.8707e0e93cfcb82c4f5f.jpg",
+    "static/media/Racing.jpg": "/static/media/Racing.30f00c9b7a9a2614968a.jpg",
     "static/media/Logo.jpg": "/static/media/Logo.1d10032cbd1dfd32bdd6.jpg",
+    "static/media/Sports.jpg": "/static/media/Sports.0d25bc95627e977b459a.jpg",
+    "static/media/Dance.jpg": "/static/media/Dance.09ea9471c00e25238465.jpg",
     "static/media/Logo4.jpg": "/static/media/Logo4.2f781d4031f4070071e4.jpg",
     "static/media/7.jpg": "/static/media/7.6f9923653bd2a7c1c7f4.jpg",
     "static/media/Social_Media_Page.jpg": "/static/media/Social_Media_Page.8f6eceda3c84b823aafb.jpg",
@@ -66,12 +66,12 @@
     "static/media/2.png": "/static/media/2.ae9cb24afe086d36784a.png",
     "static/media/5.png": "/static/media/5.65889f45200e90a827d0.png",
     "index.html": "/index.html",
-    "main.5971c3bc.css.map": "/static/css/main.5971c3bc.css.map",
-    "main.1d9b9a58.js.map": "/static/js/main.1d9b9a58.js.map",
+    "main.eab5cbfd.css.map": "/static/css/main.eab5cbfd.css.map",
+    "main.da81f099.js.map": "/static/js/main.da81f099.js.map",
     "453.4bd10e20.chunk.js.map": "/static/js/453.4bd10e20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5971c3bc.css",
-    "static/js/main.1d9b9a58.js"
+    "static/css/main.eab5cbfd.css",
+    "static/js/main.da81f099.js"
   ]
 }
