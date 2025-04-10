@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FAQ from '../../Assets/FAQs.jpg'
 import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom';
 import Img_1 from '../../Assets/ottico brand/1.jpg'
 import Img_2 from '../../Assets/ottico brand/2.jpg'
 import Img_3 from '../../Assets/ottico brand/3.jpg'
@@ -221,8 +222,8 @@ const Branding = () => {
         {t("We would love to hear more")} 
         <span className="block">{t("about your project")}</span>
       </h2>
-      <a 
-        href="/contact" 
+      <Link 
+        to="/contact" 
         className="group relative inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/20 text-white hover:border-white transition-colors duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] rounded-md"
       >
         <span className="text-sm mr-2">{t("LetTalk")}</span>
@@ -238,7 +239,7 @@ const Branding = () => {
           <line x1="5" y1="12" x2="19" y2="12" />
           <polyline points="12 5 19 12 12 19" />
         </svg>
-      </a>
+      </Link>
       </section>
 
 
