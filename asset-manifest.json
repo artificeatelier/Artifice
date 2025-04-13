@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.eab5cbfd.css",
-    "main.js": "/static/js/main.9d519231.js",
+    "main.css": "/static/css/main.a5f48d78.css",
+    "main.js": "/static/js/main.f2faedfd.js",
     "static/js/453.4bd10e20.chunk.js": "/static/js/453.4bd10e20.chunk.js",
+    "static/media/1.jpg": "/static/media/1.c0954cf9eebbc03b04f6.jpg",
+    "static/media/3.jpg": "/static/media/3.fd8b2fbcd86da4149808.jpg",
+    "static/media/4.jpg": "/static/media/4.4a67ba42bca0fcf2382d.jpg",
     "static/media/About.jpg": "/static/media/About.d3401394d50a141331e0.jpg",
     "static/media/Packging.jpg": "/static/media/Packging.328de416899bf504d329.jpg",
-    "static/media/4.jpg": "/static/media/4.4a67ba42bca0fcf2382d.jpg",
-    "static/media/Testimonial4.jpg": "/static/media/Testimonial4.bcf025cf8cbbb415aad5.jpg",
-    "static/media/3.jpg": "/static/media/3.fd8b2fbcd86da4149808.jpg",
-    "static/media/B_Card.jpg": "/static/media/B_Card.b79943e01bbc9b2b8881.jpg",
-    "static/media/Testimonial2.jpg": "/static/media/Testimonial2.01d4da77a4063ca07809.jpg",
-    "static/media/1.jpg": "/static/media/1.c0954cf9eebbc03b04f6.jpg",
     "static/media/2.jpg": "/static/media/2.8feb5c7201aae636a614.jpg",
-    "static/media/Testimonial1.jpg": "/static/media/Testimonial1.8707e0e93cfcb82c4f5f.jpg",
+    "static/media/B_Card.jpg": "/static/media/B_Card.b79943e01bbc9b2b8881.jpg",
     "static/media/5.jpg": "/static/media/5.bf9cbdebb43e5c72fa15.jpg",
     "static/media/6.jpg": "/static/media/6.80edf6aba2faa08bf3c0.jpg",
     "static/media/web.jpg": "/static/media/web.ccb88843eab701d7720e.jpg",
@@ -22,12 +19,10 @@
     "static/media/Dance.jpg": "/static/media/Dance.09ea9471c00e25238465.jpg",
     "static/media/Logo4.jpg": "/static/media/Logo4.2f781d4031f4070071e4.jpg",
     "static/media/Social_Media_Page.jpg": "/static/media/Social_Media_Page.8f6eceda3c84b823aafb.jpg",
-    "static/media/hero.png": "/static/media/hero.0777ae4dfdc0ab3ed84c.png",
     "static/media/4_1.jpg": "/static/media/4_1.78d990e4c9dde6cb593a.jpg",
     "static/media/Logo11.jpg": "/static/media/Logo11.5e969110c146bbb17e9c.jpg",
     "static/media/Racing_Mockup.jpg": "/static/media/Racing_Mockup.28dd176ff136e81e9b17.jpg",
     "static/media/FAQs.jpg": "/static/media/FAQs.abaf4763196c82f37eb3.jpg",
-    "static/media/Testimonial3.jpg": "/static/media/Testimonial3.9651cb8722618dad7d2b.jpg",
     "static/media/Logo17.jpg": "/static/media/Logo17.e4ceefe89824e2761128.jpg",
     "static/media/Logo6.jpg": "/static/media/Logo6.e35388f4fc7e2536664d.jpg",
     "static/media/Logo10.jpg": "/static/media/Logo10.34050dac52d96584616a.jpg",
@@ -45,6 +40,7 @@
     "static/media/Logo23.jpg": "/static/media/Logo23.cdb3815de9cc65f9e7d7.jpg",
     "static/media/Logo16.jpg": "/static/media/Logo16.d16743dd7f8adb6c32f5.jpg",
     "static/media/aboutus.jpg": "/static/media/aboutus.cf0dca54f83c551e9357.jpg",
+    "static/media/hero.png": "/static/media/hero.7c664256bfda3d83a9ae.png",
     "static/media/Logo5.jpg": "/static/media/Logo5.00e5a8b7b199228f459d.jpg",
     "static/media/2_1.jpg": "/static/media/2_1.4131e7568daf8b276fc6.jpg",
     "static/media/Logo13.jpg": "/static/media/Logo13.edf59dac30c9dfb6ea49.jpg",
@@ -66,12 +62,12 @@
     "static/media/2.png": "/static/media/2.ae9cb24afe086d36784a.png",
     "static/media/5.png": "/static/media/5.65889f45200e90a827d0.png",
     "index.html": "/index.html",
-    "main.eab5cbfd.css.map": "/static/css/main.eab5cbfd.css.map",
-    "main.9d519231.js.map": "/static/js/main.9d519231.js.map",
+    "main.a5f48d78.css.map": "/static/css/main.a5f48d78.css.map",
+    "main.f2faedfd.js.map": "/static/js/main.f2faedfd.js.map",
     "453.4bd10e20.chunk.js.map": "/static/js/453.4bd10e20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eab5cbfd.css",
-    "static/js/main.9d519231.js"
+    "static/css/main.a5f48d78.css",
+    "static/js/main.f2faedfd.js"
   ]
 }
