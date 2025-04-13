@@ -21,9 +21,6 @@ export function Footer () {
                 alt="Artifice Atelier"
                 className="w-24 h-auto shadow-lg"
               />
-              <h2 className="font-bold text-2xl text-white">
-                Artifice Ateiler
-              </h2>
             </div>
             <p className="text-gray-400">{t("description")}</p>
           </div>
