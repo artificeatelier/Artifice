@@ -18,11 +18,11 @@ export function Footer () {
             <div className="flex items-center space-x-4">
               <img
                 src={logo}
-                alt="Artifice Graphics"
+                alt="Artifice Atelier"
                 className="w-24 h-auto shadow-lg"
               />
               <h2 className="font-bold text-2xl text-white">
-                {t("Artifice Studio")}
+                Artifice Ateiler
               </h2>
             </div>
             <p className="text-gray-400">{t("description")}</p>

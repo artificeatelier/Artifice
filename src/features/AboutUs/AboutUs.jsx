@@ -63,7 +63,7 @@ export default function AboutUS() {
     <div className='pt-28 sm:pt-24 md:pt-28 lg:pt-28 xl:pt-28 top-1 '>
 
   {/* -----Heading----- */}
-    <div className="bg-black py-12 px-6">
+    <div className="bg-black py-12 px-6 lg:min-h-screen">
       <div className="max-w-7xl">
         <div className="flex items-center justify-start relative">
           <div className="w-32 h-[1px] bg-white mr-4"></div>
@@ -71,10 +71,7 @@ export default function AboutUS() {
         </div>
         <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white md:mx-36 mt-6">{t("À propos de nous")}</h1>
       </div>
-    </div>
-
-
-    <section className="bg-black text-white py-8">
+      <div className="bg-black text-white py-8">
   <div className="max-w-screen-lg mx-auto px-6">
     <div className="">
       <p className="text-lg">
@@ -82,11 +79,16 @@ export default function AboutUS() {
       </p>
       <br/>
       <p className="text-lg">
-        {t("AboutUsPTwo")}
+        {t("AboutUsPTwo")}  
+      </p>
+      <br />
+      <p className="text-lg">
+        {t("AboutUsPThree")}  
       </p>
     </div>
   </div>
-    </section>
+    </div>
+    </div>
 
 
   {/* -----Transperent Section---- */}
@@ -105,12 +107,10 @@ export default function AboutUS() {
       <div className="relative z-10 md:h-[calc(100vh)] flex items-start overflow-hidden">
         <div className="w-full  lg:w-1/3 md:ml-auto lg:ml-32 p-8 md:p-16 bg-black  md:bg-black md:bg-opacity-70 text-white min-h-[80vh] md:min-h-full flex flex-col justify-center overflow-hidden">
           <h1 className="text-4xl md:text-5xl mb-6 font-light">
-            Hello, we are,
-            <br />
-            ARTIFICE 
+            {t("HelloWeAre")}
           </h1>
           <p className="text-lg md:text-xl leading-relaxed opacity-90">
-           {t("AboutUsPThree")}
+           {t("AboutUsPFour")}
           </p>
         </div>
       </div>

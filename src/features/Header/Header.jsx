@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
@@ -11,6 +13,43 @@ export function Header() {
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false)
   const { t, i18n } = useTranslation()
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language)
+
+  const headerRef = useRef(null)
+  const [headerHeight, setHeaderHeight] = useState(0)
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  useEffect(() => {
+    if (headerRef.current) {
+      setHeaderHeight(headerRef.current.offsetHeight)
+    }
+  }, [])
+
+  // Handle scroll behavior
+  useEffect(() => {
+    const controlHeader = () => {
+      const currentScrollY = window.scrollY
+
+      // Determine scroll direction and distance
+      if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
+        // Scrolling down & past header height
+        setIsVisible(false)
+      } else {
+        // Scrolling up or at the top
+        setIsVisible(true)
+      }
+
+      setLastScrollY(currentScrollY)
+    }
+
+    // Add scroll event listener
+    window.addEventListener("scroll", controlHeader)
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", controlHeader)
+    }
+  }, [lastScrollY, headerHeight])
 
   // Create refs for the dropdown containers
   const dropdownRefs = useRef([])
@@ -228,7 +267,6 @@ export function Header() {
                   >
                     Français
                   </button>
-                  
                 </div>
               </div>
             )}
@@ -239,8 +277,12 @@ export function Header() {
   }
 
   return (
-    <div className="fixed w-full z-50 top-0">
-      <div className="bg-black shadow-lg">
+    <div
+      className={`fixed w-full z-50 transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
+      <div className="bg-black shadow-lg" ref={headerRef}>
         <div className="flex flex-row justify-between items-center p-4 md:px-8 lg:px-16 xl:px-32 transition-all duration-300">
           {/* Logo */}
           <Link to="/">
@@ -281,7 +323,6 @@ export function Header() {
                   >
                     Français
                   </button>
-                  
                 </div>
               </div>
             )}
@@ -330,32 +371,34 @@ export function Header() {
             </div>
 
             {/* Mobile Navigation Links */}
-           <div className="flex flex-col items-stretch justify-start min-h-screen pb-16 pt-4">
-  {renderNavLinks(true)}
+            <div className="flex flex-col items-stretch justify-start min-h-screen pb-16 pt-4">
+              {renderNavLinks(true)}
 
-  <div className="flex justify-center space-x-6 mt-8">
-    <a href="mailto:Contact@artificeatelier.com" target="_blank" rel="noopener noreferrer">
-      <ActionIcon size="lg" color="gray" variant="subtle">
-        <IconBrandGmail style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
-      </ActionIcon>
-    </a>
-    <a href="https://www.instagram.com/artifice_atelier?igsh=MWtiMmlyNTV4b2h4dw==" target="_blank" rel="noopener noreferrer">
-      <ActionIcon size="lg" color="gray" variant="subtle">
-        <IconBrandInstagram style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
-      </ActionIcon>
-    </a>
-    <a href="tel:+33668672365">
-      <ActionIcon size="lg" color="gray" variant="subtle">
-        <IconPhone style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
-      </ActionIcon>
-    </a>
-  </div>
-</div>
-
+              <div className="flex justify-center space-x-6 mt-8">
+                <a href="mailto:Contact@artificeatelier.com" target="_blank" rel="noopener noreferrer">
+                  <ActionIcon size="lg" color="gray" variant="subtle">
+                    <IconBrandGmail style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
+                  </ActionIcon>
+                </a>
+                <a
+                  href="https://www.instagram.com/artifice_atelier?igsh=MWtiMmlyNTV4b2h4dw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ActionIcon size="lg" color="gray" variant="subtle">
+                    <IconBrandInstagram style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
+                  </ActionIcon>
+                </a>
+                <a href="tel:+33668672365">
+                  <ActionIcon size="lg" color="gray" variant="subtle">
+                    <IconPhone style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
+                  </ActionIcon>
+                </a>
+              </div>
+            </div>
           </div>
         )}
       </div>
     </div>
   )
 }
-

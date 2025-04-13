@@ -6,12 +6,11 @@ import { Link } from 'react-router-dom';
 
 import about from '../../Assets/About.jpg';
 import hero from '../../Assets/hero.png'
-import Testimonial1 from '../../Assets/Testimonial1.jpg'
-import Testimonial2 from '../../Assets/Testimonial2.jpg'
-import Testimonial3 from '../../Assets/Testimonial3.jpg'
-import Testimonial4 from '../../Assets/Testimonial4.jpg'
-import { FaGlobe } from "react-icons/fa6";
 import { DiIllustrator } from "react-icons/di";
+import Img_One from '../../Assets/Slider/1.jpg'
+import Img_Two from '../../Assets/Slider/2.jpg'
+import Img_Three from '../../Assets/Slider/3.jpg'
+import Img_Four from '../../Assets/Slider/4.jpg'
 
 
 const Home = () => {
@@ -159,6 +158,27 @@ const services = [
 
     return () => clearInterval(interval)
   }, [])
+
+
+
+  const images = [
+  Img_One,
+  Img_Two,
+  Img_Three,
+  Img_Four,
+];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   
 
     
@@ -166,32 +186,63 @@ const services = [
     <div className="pt-28 sm:pt-24 md:pt-28 lg:pt-28 xl:pt-28 top-1 ">
     <div className="landing-page">
 
+
     {/* -----Hero Section----- */}
     <section className="py-12 bg-black sm:pb-16 lg:pb-20 xl:pb-24">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-            <div className="relative">
-                <div className="lg:w-2/3">
-                    <p className="text-lg font-normal tracking-widest text-gray-300 uppercase">{t("FirstLine")}</p>
-                    <h1 className="mt-6 text-5xl  text-white sm:mt-10 sm:text-5xl lg:text-7xl xl:text-8xl font-bold ">ARTIFICE <br/> ATELIER</h1>
-                    <p className="max-w-lg mt-4 text-xl font-normal text-white sm:mt-8">{t("description")}</p>
-                    <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
-                        <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-tl from-black to-white group-hover:shadow-lg group-hover:shadow-white/50"></div>
-                        <Link
-                          to="/contact" 
-                          title="Start Exploring Inspiration"
-                          className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full"
-                        >
-                          {t("Contactez-nous")}
-                        </Link>
-                    </div>
-                </div>
+  <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      {/* Left content */}
+      <div>
+        <p className="text-lg font-normal tracking-widest text-gray-300 uppercase">{t("FirstLine")}</p>
+        <h1 className="mt-6 text-5xl text-white sm:mt-10 sm:text-5xl lg:text-8xl xl:text-9xl font-bold">
+          ARTIFICE <br /> ATELIER
+        </h1>
+        <p className="max-w-lg mt-4 text-xl font-normal text-white sm:mt-8">
+          {t("description")}
+        </p>
 
-                <div className="mt-4 md:absolute md:mt-0 md:top-32 lg:top-0 md:right-0">
-                    <img className="w-full max-w-xs mx-auto lg:max-w-lg xl:max-w-xl" src={hero} alt="" />
-                </div>
-            </div>
+        <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
+          <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-tl from-black to-white group-hover:shadow-lg group-hover:shadow-white/50"></div>
+          <Link
+            to="/contact"
+            title="Start Exploring Inspiration"
+            className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full"
+          >
+            {t("Contactez-nous")}
+          </Link>
         </div>
+      </div>
+
+      {/* Right image */}
+      <div className="flex justify-center lg:justify-end">
+        <img
+          className="w-full max-w-xl mx-auto"
+          src={hero}
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
     </section>
+
+    <section className="bg-black">
+      <div className="relative w-full h-full overflow-hidden">
+        <div
+          className="flex transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {images.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-full flex-shrink-0 object-cover md:min-h-screen"
+            />
+          ))}
+        </div> 
+      </div>
+    </section>
+
 
 
     {/* -----Service Section----- */}
@@ -312,14 +363,8 @@ const services = [
 
     {/* -----Testimonial Section----- */}
     <section>
-        <div className="bg-black text-white min-h-screen flex items-center justify-center relative">
-      {/* Images - Hidden on mobile/tablet */}
-      <img src={ Testimonial1 } alt="Top Left" className="h-48 w-auto  absolute top-20 left-24 hidden lg:block" style={{ margin: '20px' }} />
-      <img src={ Testimonial2 } alt="Bottom Left" className="h-32 w-auto  absolute bottom-32 left-1 hidden lg:block" style={{ margin: '20px' }} />
-      <img src={ Testimonial3 } alt="Right Middle" className="h-auto w-52  absolute top-24 right-28 transform -translate-y-1/2 hidden lg:block" style={{ margin: '20px' }} />
-      <img src={ Testimonial4 } alt="Right Middle" className="h-auto w-52  absolute top-1/3 right-2 transform -translate-y-1/2 hidden lg:block" style={{ margin: '20px' }} />
-
-
+        <div className="bg-black text-white py-5 lg:min-h-screen flex items-center justify-center relative">
+     
       <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-5xl font-extrabold text-center mb-8 sm:mb-12">{t("WhatOurClientsSay")}</h2>
         <div className="relative">

@@ -8,11 +8,11 @@
   "WhoWeAre": "Who We Are",
   "DecribeWhoWeAre": "We are a dynamic graphic studio dedicated to elevating your brand through the power of design. Specializing in branding, graphic design, web development. We transform ideas into compelling visuals that engage your target audience. From unique logo creation to impactful advertising campaigns, we craft user-centered solutions that resonate and inspire, helping your business thrive in the digital landscape",
   "OurMission": "Our Mission",
-  "OurMissionText": "At Artifice Studio, we bring creative ideas to life through innovative designs that empower brands. Our goal is to create visually compelling solutions, from logos to brand identities, that resonate with audiences and drive success.",
+  "OurMissionText": "At Artifice Atelier, we bring creative ideas to life through innovative designs that empower brands. Our goal is to create visually compelling solutions, from logos to brand identities, that resonate with audiences and drive success.",
   "OurVision": "Our Vision",
   "OurVisionText": "Our vision is to be a leading design studio that inspires creativity and redefines visual storytelling. We aim to transform business communication through impactful design that elevates brands and fosters deeper connections with audiences, making design a key driver of success.",
   "OurValue": "Our Values",
-  "OurValueText": "At Artifice Studio, creativity, quality, and collaboration drive everything we do. We partner with clients to deliver exceptional designs with integrity and transparency, embracing innovation to stay ahead of trends and create lasting impact.",
+  "OurValueText": "At Artifice Atelier, creativity, quality, and collaboration drive everything we do. We partner with clients to deliver exceptional designs with integrity and transparency, embracing innovation to stay ahead of trends and create lasting impact.",
   "OurApproach": "Our Appraoch",
   "OurApproachText": "At Artifice, we prioritize collaboration and client insight to create designs that align with your vision. Combining creativity with strategy, we deliver impactful, tailored solutions that exceed expectations and drive results.",
 
@@ -39,9 +39,11 @@
   "Custom Website Devlopment" : "Custom Website Devlopment",
   "E-Commerce Website" : "E-Commerce Website",
 
-  "AboutUsPOne": "Artifice Studio is a design studio that specializes in creating innovative branding solutions with a focus on building impactful, memorable brand experiences. We combine strategic thinking with creative design to help brands connect meaningfully with their audience. From brand strategy to visual identity development, we work closely with businesses to craft unique designs that reflect their values and make a lasting impression in the market.",
+  "AboutUsPOne": "Artifice Atelier is a design studio that specializes in creating innovative branding solutions with a focus on building impactful, memorable brand experiences. We combine strategic thinking with creative design to help brands connect meaningfully with their audience. From brand strategy to visual identity development, we work closely with businesses to craft unique designs that reflect their values and make a lasting impression in the market.",
   "AboutUsPTwo": "We are a dedicated team of professionals, committed to delivering top-quality services. Our mission is to provide innovative and reliable solutions that help our clients achieve their goals.",
-  "AboutUsPThree": "Founded in 2018, Artifice Studio has earned a reputation for crafting exceptional brand identities that resonate with audiences. We focus on creating visually striking, highly functional designs that leave a lasting impression. Our goal is to help your brand rise above the competition, blending creativity with purpose to ensure your success.",
+  "AboutUsPThree" : "Driven by a passion for design and a deep understanding of branding, we continuously explore fresh ideas and new approaches to elevate our clients’ presence. Our focus remains on creating thoughtful, effective solutions that not only meet immediate needs but also support long-term growth and brand recognition.",
+  "HelloWeAre" : "Hello, We Are Artifice",
+  "AboutUsPFour": "Founded in 2018, Artifice Atelier has earned a reputation for crafting exceptional brand identities that resonate with audiences. We focus on creating visually striking, highly functional designs that leave a lasting impression. Our goal is to help your brand rise above the competition, blending creativity with purpose to ensure your success.",
 
   "WEBDESING": "WEB DESING",
   "BRANDINGDESIGN": "BRANDING & DESIGN",
@@ -54,10 +56,10 @@
 
   "WhatOurClientsSay": "What Our Clients Say",
   "Testimonial1": "Their design exceeded expectations and gave our brand a professional, modern look that resonates with our target audience.",
-  "Testimonial2": "Artifice Studio has been instrumental in helping our business develop a unique and impactful identity. I highly recommend their services for their creativity, responsiveness, and ability to perfectly capture and implement our vision.",
-  "Testimonial3": "Artifice Studio transformed our brand identity with creativity and precision. Highly recommended for anyone looking to elevate their brand.",
+  "Testimonial2": "Artifice Atelier has been instrumental in helping our business develop a unique and impactful identity. I highly recommend their services for their creativity, responsiveness, and ability to perfectly capture and implement our vision.",
+  "Testimonial3": "Artifice Atelier transformed our brand identity with creativity and precision. Highly recommended for anyone looking to elevate their brand.",
 
-  "description": "Artifice Studio Is A Creative Firm That Offer Diverse Services including Logo Design, Poster Design, Custom Web Design, Branding & UI/UX.",
+  "description": "Artifice Atelier Is A Creative Firm That Offer Diverse Services including Logo Design, Poster Design, Custom Web Design, Branding & UI/UX.",
   "FirstLine": "A Hub For Designing, Branding, Web Design and UI/UX",
 
   "CounterHead": "WHY CHOOSE US",
@@ -67,12 +69,12 @@
   "TeamMembers": "Team Members",
 
   "FAQ": "Frequently Asked Questions",
-  "About_Q1": "What creative services does Artifice Studio offer?",
-  "About_A1": "Artifice Studio offers a comprehensive range of creative services including brand identity design, digital illustration, and custom artwork creation. We specialize in crafting unique visual experiences that help brands stand out in the digital landscape.",
+  "About_Q1": "What creative services does Artifice Atelier offer?",
+  "About_A1": "Artifice Atelier offers a comprehensive range of creative services including brand identity design, digital illustration, and custom artwork creation. We specialize in crafting unique visual experiences that help brands stand out in the digital landscape.",
   "About_Q2": "How does your design process work?",
   "About_A2": "Our design process begins with a consultation, followed by research, conceptualization, development, and refinement, ensuring continuous feedback for optimal results.",
-  "About_Q3": "What makes Artifice Studio different from other design studios?",
-  "About_A3": "Artifice Studio blends technical expertise with artistic innovation to craft designs that tell stories and evoke emotions. Our diverse skills ensure unique, impactful solutions for every client.",
+  "About_Q3": "What makes Artifice Atelier different from other design studios?",
+  "About_A3": "Artifice Atelier blends technical expertise with artistic innovation to craft designs that tell stories and evoke emotions. Our diverse skills ensure unique, impactful solutions for every client.",
   "About_Q4": "How long does a typical project take to complete?",
   "About_A4": "Project timelines depend on scope and complexity of Project.",
 
@@ -105,7 +107,7 @@
   "Business Card" : "Business Card",
   "Flyer Design" : "Flyer Design",
 
-  "ServiceText" : "Welcome to Artifice Studio, where imagination fuels innovation! In the ever-evolving digital landscape, compelling content defines a website’s true essence. At Artifice Studio, we seamlessly blend creativity with purpose, crafting designs that stand out in a competitive world. Step into a space where artistry meets functionality, transforming ideas into masterpieces.",
+  "ServiceText" : "Welcome to Artifice Atelier, where imagination fuels innovation! In the ever-evolving digital landscape, compelling content defines a website’s true essence. At Artifice Atelier, we seamlessly blend creativity with purpose, crafting designs that stand out in a competitive world. Step into a space where artistry meets functionality, transforming ideas into masterpieces.",
   "We would love to hear more" : "We would love to hear more ",
   "about your project" : "about your project",
 
