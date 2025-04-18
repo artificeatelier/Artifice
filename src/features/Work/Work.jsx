@@ -12,43 +12,37 @@ export const Work = ({ images, className }) => {
   const portfolioItems = [
   {
     id: 1,
-    title: "Logos",
-    category: t("Logo Design"),
+    title: t("Logo Design"),
     image: Logo,
     link: "/Logos",
   },
   {
     id: 2,
-    title: t("Social Media"),
-    category: t("Design"),
+    title: t("SocialMediaDesign"),
     image: Social_Media,
     link: "/Social_Media",
   },
   {
     id: 3,
     title: t("Business Card"),
-    category: t("Branding & Design"),
     image: B_Card,
     link: "/BCard",
   },
   {
     id: 4,
-    title: t("Flyer Design"),
-    category: t("Design"),
+    title: t("PrintingDesign"),
     image: Flyer,
     link: "/Flyers",
   },
   {
     id: 5,
-    title: "REAL-ESTATE-RODEO",
-    category: t("Branding"),
+    title: t("BrandIdentity"),
     image: REAL_ESTATE_RODEO,
     link: "/Real_Estate_Rodeo",
   },
   {
     id: 6,
     title: t("PackagingDesign"),
-    category: t("Branding & Desing"),
     image: Packging,
     link: "/Packging",
   },
@@ -90,9 +84,6 @@ export const Work = ({ images, className }) => {
                     <h3 className="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-gray-300 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-                      {item.category}
-                    </p>
                     <div className="mt-4 w-10 h-10 rounded-full border border-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
                       <span className="text-white">+</span>
                     </div>

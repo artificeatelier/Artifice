@@ -99,7 +99,7 @@ export function Footer () {
                 href={`tel:${t("phone")}`}
                 className=" text-gray-400 hover:text-white transition duration-300 flex items-center"
               >
-                <FaPhoneAlt className="text-xl mr-3" />
+                <FaPhoneAlt className="text-md mr-3" />
                 {t("phone")}
               </a>
               <a
@@ -108,7 +108,7 @@ export function Footer () {
                 rel="noopener noreferrer"
                 className=" text-gray-400 hover:text-white transition duration-300 flex items-center"
               >
-                <IoLocationOutline className="text-2xl mr-3 mt-1" />
+                <IoLocationOutline className="text-xl mr-3 mt-1" />
                 <span>{t("address")}</span>
               </a>
             </nav>

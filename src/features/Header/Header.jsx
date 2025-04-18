@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
@@ -10,81 +8,10 @@ import { IconBrandInstagram, IconBrandGmail, IconPhone } from "@tabler/icons-rea
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState(null)
-  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false)
   const { t, i18n } = useTranslation()
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language)
-
-  const headerRef = useRef(null)
-  const [headerHeight, setHeaderHeight] = useState(0)
-  const [isVisible, setIsVisible] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
-
-  useEffect(() => {
-    if (headerRef.current) {
-      setHeaderHeight(headerRef.current.offsetHeight)
-    }
-  }, [])
-
-  // Handle scroll behavior
-  useEffect(() => {
-    const controlHeader = () => {
-      const currentScrollY = window.scrollY
-
-      // Determine scroll direction and distance
-      if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
-        // Scrolling down & past header height
-        setIsVisible(false)
-      } else {
-        // Scrolling up or at the top
-        setIsVisible(true)
-      }
-
-      setLastScrollY(currentScrollY)
-    }
-
-    // Add scroll event listener
-    window.addEventListener("scroll", controlHeader)
-
-    // Cleanup
-    return () => {
-      window.removeEventListener("scroll", controlHeader)
-    }
-  }, [lastScrollY, headerHeight])
-
-  // Create refs for the dropdown containers
   const dropdownRefs = useRef([])
-  const languageDropdownRef = useRef(null)
 
-  // Effect to handle clicks outside of dropdowns
-  useEffect(() => {
-    function handleClickOutside(event) {
-      // Check if services dropdown is open and clicked outside
-      if (activeDropdown !== null && dropdownRefs.current[activeDropdown]) {
-        const isClickInside = dropdownRefs.current[activeDropdown].contains(event.target)
-        if (!isClickInside) {
-          setActiveDropdown(null)
-        }
-      }
-
-      // Check if language dropdown is open and clicked outside
-      // if (isLanguageDropdownOpen && languageDropdownRef.current) {
-      //   const isClickInsideLanguage = languageDropdownRef.current.contains(event.target)
-      //   if (!isClickInsideLanguage) {
-      //     setIsLanguageDropdownOpen(false)
-      //   }
-      // }
-    }
-
-    // Add event listener
-    document.addEventListener("mousedown", handleClickOutside)
-
-    // Clean up
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [activeDropdown, isLanguageDropdownOpen])
-
-  // Effect to update currentLanguage when i18n.language changes
   useEffect(() => {
     setCurrentLanguage(i18n.language)
   }, [i18n.language])
@@ -106,14 +33,6 @@ export function Header() {
 
   const navItems = getNavItems()
 
-  // Effect to update refs and nav items when language changes
-  useEffect(() => {
-    setCurrentLanguage(i18n.language)
-    // Force re-render of nav items when language changes
-    setActiveDropdown(null)
-  }, [i18n.language])
-
-  // Initialize refs for each dropdown item
   useEffect(() => {
     dropdownRefs.current = dropdownRefs.current.slice(0, navItems.length)
   }, [navItems.length])
@@ -121,48 +40,24 @@ export function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   const toggleDropdown = (index) => {
-    // Close language dropdown if open
-    if (isLanguageDropdownOpen) {
-      setIsLanguageDropdownOpen(false)
-    }
-    // Toggle the services dropdown
     setActiveDropdown(activeDropdown === index ? null : index)
   }
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
     setCurrentLanguage(lng)
-    setIsLanguageDropdownOpen(false)
   }
 
-  const toggleLanguageDropdown = () => {
-    setIsLanguageDropdownOpen(!isLanguageDropdownOpen)
-  }
-
-  const getLanguageDisplay = () => {
-    return i18n.language === "fr" ? "Français" : "English"
-  }
-
-  const renderNavLinks = (isMobile = false) => {
+  const renderNavLinks = () => {
     const currentNavItems = getNavItems()
     return (
       <>
         {currentNavItems.map(({ to, text, dropdown }, index) => (
-          <div
-            key={to || text}
-            className={`relative ${isMobile ? "w-full border-b border-gray-700 last:border-b-0" : ""}`}
-          >
+          <div key={to || text} className="w-full border-b border-gray-700 last:border-b-0">
             {dropdown ? (
-              <div
-                className={`${isMobile ? "group w-full flex flex-col justify-center items-center" : "group w-full inline-block"}`}
-                ref={(el) => (dropdownRefs.current[index] = el)}
-              >
+              <div className="group w-full flex flex-col justify-center items-center" ref={(el) => (dropdownRefs.current[index] = el)}>
                 <button
-                  className={`${
-                    isMobile
-                      ? "w-full flex items-center justify-between px-4 py-3 text-left text-base font-medium text-white transition-colors"
-                      : "text-white hover:text-gray-400 transition-colors py-2 px-4 rounded-md inline-flex items-center"
-                  }`}
+                  className="w-full flex items-center justify-between px-4 py-3 text-left text-base font-medium text-white transition-colors"
                   onClick={() => toggleDropdown(index)}
                 >
                   <span>{text}</span>
@@ -180,31 +75,18 @@ export function Header() {
                     />
                   </svg>
                 </button>
-                {((isMobile && activeDropdown === index) || (!isMobile && activeDropdown === index)) && (
-                  <div
-                    className={`${
-                      isMobile
-                        ? "w-full bg-black"
-                        : "absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                    }`}
-                    role="menu"
-                    aria-orientation="vertical"
-                    aria-labelledby="menu-button"
-                  >
-                    <div className={`${isMobile ? "py-2" : "py-1"}`} role="none">
+                {activeDropdown === index && (
+                  <div className="w-full bg-black" role="menu">
+                    <div className="py-2" role="none">
                       {dropdown.map(({ to, text }) => (
                         <Link
                           key={to}
                           to={to}
-                          className={`${
-                            isMobile
-                              ? "block w-full px-4 py-2 text-sm text-gray-300 hover:bg-black hover:text-white transition-colors"
-                              : "text-gray-700 block px-4 py-2 text-sm hover:bg-black hover:text-white transition-colors"
-                          }`}
+                          className="block w-full px-4 py-2 text-sm text-gray-300 hover:bg-black hover:text-white transition-colors"
                           role="menuitem"
                           onClick={() => {
-                            if (isMobile) toggleMenu()
-                            setActiveDropdown(null) // Close the dropdown after navigation
+                            toggleMenu()
+                            setActiveDropdown(null)
                           }}
                         >
                           {text}
@@ -217,119 +99,64 @@ export function Header() {
             ) : (
               <Link
                 to={to}
-                className={`${
-                  isMobile
-                    ? "block w-full px-4 py-3 text-base font-medium text-white hover:bg-black transition-colors"
-                    : "text-white hover:text-gray-400 transition-colors py-2 px-4 rounded-md"
-                }`}
-                onClick={isMobile ? toggleMenu : null}
+                className="block w-full px-4 py-3 text-base font-medium text-white hover:bg-black transition-colors"
+                onClick={toggleMenu}
               >
                 {text}
               </Link>
             )}
           </div>
         ))}
-
-        {/* Language Selector Dropdown for Desktop */}
-        {!isMobile && (
-          <div className="relative" ref={languageDropdownRef}>
-            <button
-              onClick={toggleLanguageDropdown}
-              className="text-white hover:text-gray-400 transition-colors py-2 px-4 rounded-md inline-flex items-center"
-            >
-              <span>{getLanguageDisplay()}</span>
-              <svg
-                className={`h-5 w-5 transition-transform ${isLanguageDropdownOpen ? "rotate-180" : ""}`}
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
-            {isLanguageDropdownOpen && (
-              <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                <div className="py-1">
-                  <button
-                    onClick={() => changeLanguage("en")}
-                    className={`text-gray-700 block w-full px-4 py-2 text-left text-sm hover:bg-gray-100 hover:text-gray-900 transition-colors ${currentLanguage === "en" ? "font-bold" : ""}`}
-                  >
-                    English
-                  </button>
-                  <button
-                    onClick={() => changeLanguage("fr")}
-                    className={`text-gray-700 block w-full px-4 py-2 text-left text-sm hover:bg-gray-100 hover:text-gray-900 transition-colors ${currentLanguage === "fr" ? "font-bold" : ""}`}
-                  >
-                    Français
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-        )}
       </>
     )
   }
 
   return (
-    <div
-      className={`fixed w-full z-50 transition-transform duration-300 ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
-      <div className="bg-black shadow-lg" ref={headerRef}>
-        <div className="flex flex-row justify-between items-center p-4 md:px-8 lg:px-16 xl:px-32 transition-all duration-300">
+    <div className="fixed w-full z-50 top-0">
+      <div className="bg-transparent shadow-lg">
+        <div className="flex justify-between items-center p-4 px-6 transition-all duration-300">
           {/* Logo */}
           <Link to="/">
-            <div className="flex flex-row items-center cursor-pointer space-x-3">
-              <img
-                src={logo || "/placeholder.svg"}
-                alt="Artifice Graphic"
-                className="w-20 h-20 md:w-20 md:h-20 object-contain"
-              />
+            <div className="flex items-center space-x-3">
+              <img src={logo || "/placeholder.svg"} alt="Artifice Graphic" className="w-24 h-24 object-contain" />
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex flex-row items-center text-base lg:text-lg font-medium space-x-6 lg:space-x-8">
-            {renderNavLinks()}
-          </nav>
+          {/* Right Side: Flags + Burger */}
+          <div className="flex items-center space-x-4">
+            {/* Language Switcher */}
+            <div className="flex space-x-2">
+              <button
+                onClick={() => changeLanguage("en")}
+                className={`${
+                  currentLanguage === "en"
+                    ? "p-1 rounded-full border-2 border-white"
+                    : "p-1 rounded-full hover:border-gray-400 transition-all"
+                }`}
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/250px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png"
+                  alt="English"
+                  className="w-8 h-8 rounded-full"
+                />
+              </button>
+              <button
+                onClick={() => changeLanguage("fr")}
+                className={`${
+                  currentLanguage === "fr"
+                    ? "p-1 rounded-full border-2 border-white"
+                    : "p-1 rounded-full hover:border-gray-400 transition-all"
+                }`}
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/250px-Flag_of_France.svg.png"
+                  alt="Français"
+                  className="w-8 h-8 rounded-full"
+                />
+              </button>
+            </div>
 
-          {/* Language Selector for Mobile */}
-          <div className="md:hidden absolute right-14 items-center" ref={languageDropdownRef}>
-            <button
-              onClick={toggleLanguageDropdown}
-              className="text-white hover:text-gray-400 transition-colors py-2 px-3 rounded-md inline-flex items-center"
-            >
-              <span>{getLanguageDisplay()}</span>
-            </button>
-            {isLanguageDropdownOpen && (
-              <div className="absolute mt-2 w-24 items-center origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                <div className="py-1">
-                  <button
-                    onClick={() => changeLanguage("en")}
-                    className={`block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 ${currentLanguage === "en" ? "font-bold" : ""}`}
-                  >
-                    English
-                  </button>
-                  <button
-                    onClick={() => changeLanguage("fr")}
-                    className={`block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 ${currentLanguage === "fr" ? "font-bold" : ""}`}
-                  >
-                    Français
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
+            {/* Burger Icon */}
             <button
               className="text-white hover:text-gray-400 transition-colors focus:outline-none"
               onClick={toggleMenu}
@@ -348,10 +175,9 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile Navigation Menu - Overlay */}
+        {/* Fullscreen Toggle Menu */}
         {isMenuOpen && (
-          <div className="md:hidden fixed inset-0 bg-black z-50 overflow-y-auto">
-            {/* Close Button */}
+          <div className="fixed inset-0 bg-black z-50 overflow-y-auto">
             <div className="flex justify-end p-4">
               <button
                 className="text-white hover:text-gray-400 transition-colors focus:outline-none"
@@ -369,22 +195,15 @@ export function Header() {
                 </svg>
               </button>
             </div>
-
-            {/* Mobile Navigation Links */}
             <div className="flex flex-col items-stretch justify-start min-h-screen pb-16 pt-4">
-              {renderNavLinks(true)}
-
+              {renderNavLinks()}
               <div className="flex justify-center space-x-6 mt-8">
                 <a href="mailto:Contact@artificeatelier.com" target="_blank" rel="noopener noreferrer">
                   <ActionIcon size="lg" color="gray" variant="subtle">
                     <IconBrandGmail style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
                   </ActionIcon>
                 </a>
-                <a
-                  href="https://www.instagram.com/artifice_atelier?igsh=MWtiMmlyNTV4b2h4dw=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.instagram.com/artifice_atelier?igsh=MWtiMmlyNTV4b2h4dw==" target="_blank" rel="noopener noreferrer">
                   <ActionIcon size="lg" color="gray" variant="subtle">
                     <IconBrandInstagram style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
                   </ActionIcon>
