@@ -183,7 +183,7 @@ const services = [
 
     
   return (
-    <div className="pt-28 sm:pt-24 md:pt-28 lg:pt-28 xl:pt-28 top-1 ">
+    <div className="top-1">
     <div className="landing-page">
 
 
@@ -224,8 +224,9 @@ const services = [
     </div>
   </div>
     </section>
-
-    <section className="bg-black">
+    
+    {/*-----Slider Section------ */}
+    {/* <section className="bg-black">
       <div className="relative w-full h-full overflow-hidden">
         <div
           className="flex transition-transform duration-700 ease-in-out"
@@ -241,8 +242,7 @@ const services = [
           ))}
         </div> 
       </div>
-    </section>
-
+    </section> */}
 
 
     {/* -----Service Section----- */}
@@ -289,7 +289,7 @@ const services = [
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex flex-col lg:flex-row gap-12">
       {/* Static Image Side */}
-      <div className="w-full h-96 lg:w-1/2 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)]">
+      <div className="w-fit h-fit lg:w-1/2 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)]">
         <div className="relative h-full  overflow-hidden">
           <img
             src={about}

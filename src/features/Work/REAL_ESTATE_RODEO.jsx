@@ -16,7 +16,7 @@ const images = [
 const REAL_ESTATE_RODEO = () => {
   return (
     
-    <div className="bg-black min-h-screen pt-28 text-white">
+    <div className="bg-black min-h-screen text-white">
     
     <div className="bg-black min-h-screen flex items-center justify-center p-4">
       <div className="grid grid-cols-1 gap-6">

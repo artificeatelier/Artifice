@@ -60,7 +60,7 @@ const images = [
 const Logos = () => {
   return (
     
-    <div className="bg-black min-h-screen pt-28 text-white">
+    <div className="bg-black min-h-screen text-white">
     
     <div className="bg-black min-h-screen flex items-center justify-center p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -19,10 +19,10 @@ export default function ContactUS() {
 
 
 return (
-    <div className='pt-28 sm:pt-24 md:pt-28 lg:pt-28 xl:pt-28 top-1 '>
+    <div className='top-1 '>
 
     {/* -----Heading----- */}
-    <div className="bg-black py-20 px-6">
+    <div className="bg-black py-12 px-6">
       <div className="max-w-7xl">
         <div className="flex items-center justify-start relative">
           <div className="w-32 h-[1px] bg-white mr-4"></div>

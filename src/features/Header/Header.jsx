@@ -141,33 +141,33 @@ export function Header() {
 
         {/* Language Selector with Flag Buttons for Desktop */}
         {!isMobile && (
-          <div className="flex space-x-3">
+          <div className="flex space-x-2">
               <button
                 onClick={() => changeLanguage("en")}
                 className={`${
                   currentLanguage === "en"
-                  ? "p-1 rounded-full border-2 border-white"
-                  : "p-1 rounded-full hover:border-gray-400 transition-all"
+                  ? "p-1  border-2 border-white"
+                  : "p-1  hover:border-gray-400 transition-all"
                 }`}
               >
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/250px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png"
                 alt="English"
-                className="w-10 h-10 rounded-full"
+                className="w-10 h-7 "
               />
             </button>
             <button
               onClick={() => changeLanguage("fr")}
               className={`${
                 currentLanguage === "fr"
-                ? "p-1 rounded-full border-2 border-white"
-                : "p-1 rounded-full hover:border-gray-400 transition-all"
+                ? "p-1  border-2 border-white"
+                : "p-1  hover:border-gray-400 transition-all"
               }`}
             >
             <img
               src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/250px-Flag_of_France.svg.png"
               alt="Français"
-              className="w-10 h-10 rounded-full"
+              className="w-10 h-7"
             />
             </button>
           </div>
@@ -177,16 +177,16 @@ export function Header() {
   };
 
   return (
-    <div className="fixed w-full z-50 top-0">
+    <div className="w-full z-50 top-0 ">
       <div className="bg-black shadow-lg">
-        <div className="flex flex-row justify-between items-center p-4 md:px-8 lg:px-16 xl:px-32 transition-all duration-300">
+        <div className="flex flex-row justify-between items-center pt-4 px-4 md:px-16 lg:px-16 transition-all duration-300">
           {/* Logo */}
           <Link to="/">
             <div className="flex flex-row items-center cursor-pointer space-x-3">
               <img
                 src={logo || "/placeholder.svg"}
                 alt="Artifice Graphic"
-                className="w-24 h-24 md:w-24 md:h-24 object-contain"
+                className="w-24 h-24 md:w-20 md:h-20 object-contain"
               />
             </div>
           </Link>
@@ -204,28 +204,28 @@ export function Header() {
                 onClick={() => changeLanguage("en")}
                 className={`${
                   currentLanguage === "en"
-                  ? "p-1 rounded-full border-2 border-white"
-                  : "p-1 rounded-full hover:border-gray-400 transition-all"
+                  ? "p-1  border-2 border-white"
+                  : "p-1 hover:border-gray-400 transition-all"
                 }`}
               >
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/250px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png"
                   alt="English"
-                  className="w-10 h-10 rounded-full"
+                  className="w-7 h-5"
                 />
               </button>
               <button
                 onClick={() => changeLanguage("fr")}
                 className={`${
                   currentLanguage === "fr"
-                  ? "p-1 rounded-full border-2 border-white"
-                  : "p-1 rounded-full hover:border-gray-400 transition-all"
+                  ? "p-1  border-2 border-white"
+                  : "p-1 hover:border-gray-400 transition-all"
                 }`}
               >
                 <img
                   src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/250px-Flag_of_France.svg.png"
                   alt="Français"
-                  className="w-10 h-10 rounded-full"
+                  className="w-7 h-5"
                 />
               </button>
             </div>

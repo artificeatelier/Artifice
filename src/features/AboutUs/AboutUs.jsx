@@ -60,7 +60,7 @@ export default function AboutUS() {
   }
 
   return (
-    <div className='pt-28 sm:pt-24 md:pt-28 lg:pt-28 xl:pt-28 top-1 '>
+    <div className='top-1 '>
 
   {/* -----Heading----- */}
     <div className="bg-black py-12 px-6 lg:min-h-screen">

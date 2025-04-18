@@ -90,7 +90,7 @@ const Branding = () => {
   }
  
   return (
-    <div className='pt-28 sm:pt-24 md:pt-28 lg:pt-28 xl:pt-28 top-1 '>
+    <div className='top-1 '>
 
     <div className="min-h-screen bg-black text-white">
 

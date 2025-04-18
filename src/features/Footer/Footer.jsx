@@ -3,9 +3,9 @@ import logo from "../../Assets/Artifice Studio.jpeg";
 import { Link } from "react-router-dom";
 import { Container, ActionIcon, Group, rem } from '@mantine/core';
 import { IconBrandInstagram, IconBrandGmail, IconPhone } from '@tabler/icons-react';
-import { MdOutlineMailOutline } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaPhoneAlt } from "react-icons/fa";
+import { LuMail } from "react-icons/lu";
+import { HiOutlinePhoneArrowUpRight } from "react-icons/hi2";
+import { RiMapPinLine } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 
 export function Footer () {
@@ -84,35 +84,35 @@ export function Footer () {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-6">
-              {t("contacte")}
-            </h2>
-            <nav className="space-y-4">
-              <a
-                href={`mailto:${t("email")}`}
-                className=" text-gray-400 hover:text-white transition duration-300 flex items-center"
-              >
-                <MdOutlineMailOutline className="text-xl mr-3" />
-                {t("email")}
-              </a>
-              <a
-                href={`tel:${t("phone")}`}
-                className=" text-gray-400 hover:text-white transition duration-300 flex items-center"
-              >
-                <FaPhoneAlt className="text-md mr-3" />
-                {t("phone")}
-              </a>
-              <a
-                href="https://maps.app.goo.gl/6wE2n1YL7TubHcq87"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" text-gray-400 hover:text-white transition duration-300 flex items-center"
-              >
-                <IoLocationOutline className="text-xl mr-3 mt-1" />
-                <span>{t("address")}</span>
-              </a>
-            </nav>
-          </div>
+  <h2 className="text-2xl font-bold text-white mb-6">
+    {t("contacte")}
+  </h2>
+  <nav className="space-y-4">
+    <a
+      href={`mailto:${t("email")}`}
+      className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+    >
+      <LuMail className="text-xl mr-3" />
+      {t("email")}
+    </a>
+    <a
+      href={`tel:${t("phone")}`}
+      className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+    >
+      <HiOutlinePhoneArrowUpRight className="text-xl mr-3" />
+      {t("phone")}
+    </a>
+    <a
+      href="https://maps.app.goo.gl/6wE2n1YL7TubHcq87"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+    >
+      <RiMapPinLine className="text-xl mr-3" />
+      <span>{t("address")}</span>
+    </a>
+  </nav>
+</div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-700">

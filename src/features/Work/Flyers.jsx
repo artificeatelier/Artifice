@@ -12,7 +12,7 @@ const images = [
 const Flyers = () => {
   return (
     
-    <div className="bg-black min-h-screen pt-28 text-white">
+    <div className="bg-black min-h-screen text-white">
     
     <section>
         <div className="bg-black min-h-screen flex items-center justify-center p-4">

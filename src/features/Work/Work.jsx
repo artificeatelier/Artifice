@@ -51,10 +51,10 @@ export const Work = ({ images, className }) => {
   
   return (
 
-    <div className="bg-black min-h-screen pt-28 text-white">
+    <div className="bg-black min-h-screen text-white">
 
       {/* -----Heading----- */}
-      <div className="bg-black py-20 px-6">
+      <div className="bg-black py-12 px-6">
       <div className="max-w-7xl">
         <div className="flex items-center justify-start relative">
           <div className="w-32 h-[1px] bg-white mr-4"></div>
