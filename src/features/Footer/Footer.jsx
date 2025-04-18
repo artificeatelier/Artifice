@@ -122,7 +122,7 @@ export function Footer () {
   <Group gap={10} justify="flex-end" wrap="nowrap">
     <ActionIcon
       component="a"
-      href="mailto:Contact@artificeatelier.com"
+      href="mailto:contact@artificeatelier.com"
       target="_blank"
       size="lg"
       color="gray"

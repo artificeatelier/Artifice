@@ -276,7 +276,7 @@ export function Header() {
               {renderNavLinks(true)}
 
               <div className="flex justify-center space-x-6 mt-8">
-                <a href="mailto:Contact@artificeatelier.com" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:contact@artificeatelier.com" target="_blank" rel="noopener noreferrer">
                   <ActionIcon size="lg" color="gray" variant="subtle">
                     <IconBrandGmail style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
                   </ActionIcon>

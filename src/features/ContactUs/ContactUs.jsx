@@ -72,7 +72,7 @@ return (
             <p className="flex items-center transition-transform ">
               <span className="mr-2">✉️</span>
               <a href="mailto:graphicartifice@gmail.com" className="hover:text-gray-300">
-                Contact@artificeatelier.com
+                contact@artificeatelier.com
               </a>
             </p>
           </div>
