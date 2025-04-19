@@ -7,10 +7,12 @@ import { Link } from 'react-router-dom';
 import about from '../../Assets/About.jpg';
 import hero from '../../Assets/hero.png'
 import { DiIllustrator } from "react-icons/di";
-import Img_One from '../../Assets/Slider/1.jpg'
-import Img_Two from '../../Assets/Slider/2.jpg'
-import Img_Three from '../../Assets/Slider/3.jpg'
-import Img_Four from '../../Assets/Slider/4.jpg'
+import Img_One from '../../Assets/Portfolio_Logo/1.png'
+import Img_Two from '../../Assets/Portfolio_Logo/2.png'
+import Img_Three from '../../Assets/Portfolio_Logo/3.png'
+import Img_Four from '../../Assets/Portfolio_Logo/4.png'
+import Img_Five from '../../Assets/Portfolio_Logo/5.png'
+import Img_Six from '../../Assets/Portfolio_Logo/6.png'
 
 
 const Home = () => {
@@ -166,18 +168,18 @@ const services = [
   Img_Two,
   Img_Three,
   Img_Four,
+  Img_Five,
+  Img_Six,
 ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [current, setCurrent] = useState(0);
 
-  // Auto slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
-
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   
 
@@ -188,7 +190,7 @@ const services = [
 
 
     {/* -----Hero Section----- */}
-    <section className="py-12 bg-black sm:pb-16 lg:pb-20 xl:pb-24">
+    <section className="py-12 bg-black ">
   <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
       {/* Left content */}
@@ -226,23 +228,20 @@ const services = [
     </section>
     
     {/*-----Slider Section------ */}
-    {/* <section className="bg-black">
-      <div className="relative w-full h-full overflow-hidden">
-        <div
-          className="flex transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-full flex-shrink-0 object-cover md:min-h-screen"
-            />
-          ))}
-        </div> 
+    <section className="bg-black">
+      <div className="relative w-full overflow-hidden">
+      <div className="flex w-max animate-slide gap-0">
+        {[...images, ...images].map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt={`slide-${index}`}
+            className="h-96 w-auto object-cover"
+          />
+        ))}
       </div>
-    </section> */}
+    </div>
+    </section>
 
 
     {/* -----Service Section----- */}
@@ -285,7 +284,7 @@ const services = [
 
 
     {/* -----About Us Section----- */}
-    <section className="min-h-screen bg-black py-16">
+    <section className=" bg-black py-16">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex flex-col lg:flex-row gap-12">
       {/* Static Image Side */}
@@ -303,11 +302,11 @@ const services = [
       <div className="w-full lg:w-1/2">
         <div className="space-y-16 text-white">
           <div>
-            <h2 className="text-4xl font-bold mb-6">{t("WhoWeAre")}</h2>
+            <h2 className="text-4xl  font-bold mb-6">{t("WhoWeAre")}</h2>
             <p className="text-lg text-gray-300 mb-8">{t("DecribeWhoWeAre")}</p>
           </div>
 
-          <div className="space-y-16">
+          <div className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="space-y-6 p-4 rounded-xl bg-white/5 dark:bg-white/5 border border-gray-100 dark:border-gray-900">
                 <span className="rounded-full bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 w-max p-3 flex">
@@ -363,7 +362,7 @@ const services = [
 
     {/* -----Testimonial Section----- */}
     <section>
-        <div className="bg-black text-white py-5 lg:min-h-screen flex items-center justify-center relative">
+        <div className="bg-black text-white py-5 flex items-center justify-center relative">
      
       <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-5xl font-extrabold text-center mb-8 sm:mb-12">{t("WhatOurClientsSay")}</h2>

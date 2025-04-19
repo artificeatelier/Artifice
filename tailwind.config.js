@@ -12,3 +12,20 @@ export default {
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };
+module.exports = {
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        slide: "slide 26s linear infinite",
+      },
+    },
+  },
+  plugins: [],
+};
