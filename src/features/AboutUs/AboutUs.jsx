@@ -4,8 +4,12 @@ import aboutus from '../../Assets/aboutus.jpg';
 import FAQ from '../../Assets/FAQs.jpg'
 import { Link } from 'react-router-dom';
 
-import Img1 from '../../Assets/size/1.jpg'
-import Img2 from '../../Assets/size/2.jpg'
+import Img_One from '../../Assets/Portfolio_Logo/1.png'
+import Img_Two from '../../Assets/Portfolio_Logo/2.png'
+import Img_Three from '../../Assets/Portfolio_Logo/3.png'
+import Img_Four from '../../Assets/Portfolio_Logo/4.png'
+import Img_Five from '../../Assets/Portfolio_Logo/5.png'
+import Img_Six from '../../Assets/Portfolio_Logo/6.png'
 
 export default function AboutUS() {
 
@@ -63,31 +67,28 @@ export default function AboutUS() {
   }
 
   const images = [
-    Img1,
-    Img2,
+  Img_One,
+  Img_Two,
+  Img_Three,
+  Img_Four,
+  Img_Five,
+  Img_Six,
 ];
-const [current, setCurrent] = useState(0);
 
-  const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + images.length) % images.length);
-  };
+  const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
-    }, 5000); // Change every 5s
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <div className='top-1 '>
 
   {/* -----Heading----- */}
-    <div className="bg-black py-12 px-6 lg:min-h-screen">
+    <div className="bg-black py-12 px-6">
       <div className="max-w-7xl">
         <div className="flex items-center justify-start relative">
           <div className="w-32 h-[1px] bg-white mr-4"></div>
@@ -114,29 +115,20 @@ const [current, setCurrent] = useState(0);
     </div>
     </div>
 
-    <section className='pb-10'>
-       <div
-  className="relative w-screen overflow-hidden lg:h-dvh"
->
-  <div
-    className="flex transition-transform duration-700 ease-in-out w-full h-full"
-    style={{ transform: `translateX(-${current * 100}%)` }}
-  >
-    {images.map((src, index) => (
-      <div
-        key={index}
-        className="w-screen h-full flex justify-center items-center flex-shrink-0"
-      >
-        <img
-          src={src}
-          alt={`Slide ${index + 1}`}
-          className="lg:max-w-full lg:max-h-full h-full w-full object-contain"
-        />
+     {/*-----Infinite Slider Section------ */}
+    <section className="bg-black">
+      <div className="relative w-full overflow-hidden">
+      <div className="flex w-max animate-slide gap-0">
+        {[...images, ...images].map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt={`slide-${index}`}
+            className="h-96 w-auto object-cover"
+          />
+        ))}
       </div>
-    ))}
-  </div>
-</div>
-
+    </div>
     </section>
 
 

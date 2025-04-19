@@ -7,12 +7,10 @@ import { Link } from 'react-router-dom';
 import about from '../../Assets/About.jpg';
 import hero from '../../Assets/hero.png'
 import { DiIllustrator } from "react-icons/di";
-import Img_One from '../../Assets/Portfolio_Logo/1.png'
-import Img_Two from '../../Assets/Portfolio_Logo/2.png'
-import Img_Three from '../../Assets/Portfolio_Logo/3.png'
-import Img_Four from '../../Assets/Portfolio_Logo/4.png'
-import Img_Five from '../../Assets/Portfolio_Logo/5.png'
-import Img_Six from '../../Assets/Portfolio_Logo/6.png'
+import Img_One from '../../Assets/Slider/1.jpg'
+import Img_Two from '../../Assets/Slider/2.jpg'
+import Img_Three from '../../Assets/Slider/3.jpg'
+import Img_Four from '../../Assets/Slider/4.jpg'
 
 
 const Home = () => {
@@ -161,26 +159,23 @@ const services = [
     return () => clearInterval(interval)
   }, [])
 
-
-
-  const images = [
-  Img_One,
-  Img_Two,
-  Img_Three,
-  Img_Four,
-  Img_Five,
-  Img_Six,
-];
-
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [images.length]);
-
+   const images = [
+   Img_One,
+   Img_Two,
+   Img_Three,
+   Img_Four,
+ ];
+ 
+   const [currentIndex, setCurrentIndex] = useState(0);
+ 
+   // Auto slide every 3 seconds
+   useEffect(() => {
+     const interval = setInterval(() => {
+       setCurrentIndex((prev) => (prev + 1) % images.length);
+     }, 3000);
+ 
+     return () => clearInterval(interval);
+   }, []);
   
 
     
@@ -226,22 +221,26 @@ const services = [
     </div>
   </div>
     </section>
-    
-    {/*-----Slider Section------ */}
+
+
+    {/*-----Slider-----*/}
     <section className="bg-black">
-      <div className="relative w-full overflow-hidden">
-      <div className="flex w-max animate-slide gap-0">
-        {[...images, ...images].map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`slide-${index}`}
-            className="h-96 w-auto object-cover"
-          />
-        ))}
-      </div>
-    </div>
-    </section>
+       <div className="relative w-full h-full overflow-hidden">
+         <div
+           className="flex transition-transform duration-700 ease-in-out"
+           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+         >
+           {images.map((src, index) => (
+             <img
+               key={index}
+               src={src}
+               alt={`Slide ${index + 1}`}
+               className="w-full h-full flex-shrink-0 object-cover lg:min-h-screen"
+             />
+           ))}
+         </div> 
+       </div>
+     </section>
 
 
     {/* -----Service Section----- */}
