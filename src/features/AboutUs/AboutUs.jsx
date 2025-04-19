@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState } from 'react'
 import { useTranslation } from "react-i18next";
 import aboutus from '../../Assets/aboutus.jpg';
 import FAQ from '../../Assets/FAQs.jpg'
 import { Link } from 'react-router-dom';
+
+import Img1 from '../../Assets/size/1.jpg'
+import Img2 from '../../Assets/size/2.jpg'
 
 export default function AboutUS() {
 
@@ -59,6 +62,27 @@ export default function AboutUS() {
     setOpenIndex(openIndex === index ? null : index)
   }
 
+  const images = [
+    Img1,
+    Img2,
+];
+const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Change every 5s
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className='top-1 '>
 
@@ -89,6 +113,31 @@ export default function AboutUS() {
   </div>
     </div>
     </div>
+
+    <section className='pb-10'>
+       <div
+  className="relative w-screen overflow-hidden lg:h-dvh"
+>
+  <div
+    className="flex transition-transform duration-700 ease-in-out w-full h-full"
+    style={{ transform: `translateX(-${current * 100}%)` }}
+  >
+    {images.map((src, index) => (
+      <div
+        key={index}
+        className="w-screen h-full flex justify-center items-center flex-shrink-0"
+      >
+        <img
+          src={src}
+          alt={`Slide ${index + 1}`}
+          className="lg:max-w-full lg:max-h-full h-full w-full object-contain"
+        />
+      </div>
+    ))}
+  </div>
+</div>
+
+    </section>
 
 
   {/* -----Transperent Section---- */}

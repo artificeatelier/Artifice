@@ -10,11 +10,8 @@ export function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const { t, i18n } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
-
-  // Create refs for the dropdown containers
   const dropdownRefs = useRef([]);
 
-  // Effect to update currentLanguage when i18n.language changes
   useEffect(() => {
     setCurrentLanguage(i18n.language);
   }, [i18n.language]);
@@ -36,7 +33,6 @@ export function Header() {
 
   const navItems = getNavItems();
 
-  // Initialize refs for each dropdown item
   useEffect(() => {
     dropdownRefs.current = dropdownRefs.current.slice(0, navItems.length);
   }, [navItems.length]);
@@ -113,7 +109,7 @@ export function Header() {
                           role="menuitem"
                           onClick={() => {
                             if (isMobile) toggleMenu();
-                            setActiveDropdown(null); // Close the dropdown after navigation
+                            setActiveDropdown(null);
                           }}
                         >
                           {text}
@@ -142,33 +138,33 @@ export function Header() {
         {/* Language Selector with Flag Buttons for Desktop */}
         {!isMobile && (
           <div className="flex space-x-2">
-              <button
-                onClick={() => changeLanguage("en")}
-                className={`${
-                  currentLanguage === "en"
-                  ? "p-1  border-2 border-white"
-                  : "p-1  hover:border-gray-400 transition-all"
-                }`}
-              >
+            <button
+              onClick={() => changeLanguage("en")}
+              className={`${
+                currentLanguage === "en"
+                  ? "p-1 border-2 border-white"
+                  : "p-1 hover:border-gray-400 transition-all"
+              }`}
+            >
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/250px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png"
                 alt="English"
-                className="w-10 h-7 "
+                className="w-10 h-7"
               />
             </button>
             <button
               onClick={() => changeLanguage("fr")}
               className={`${
                 currentLanguage === "fr"
-                ? "p-1  border-2 border-white"
-                : "p-1  hover:border-gray-400 transition-all"
+                  ? "p-1 border-2 border-white"
+                  : "p-1 hover:border-gray-400 transition-all"
               }`}
             >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/250px-Flag_of_France.svg.png"
-              alt="Français"
-              className="w-10 h-7"
-            />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/250px-Flag_of_France.svg.png"
+                alt="Français"
+                className="w-10 h-7"
+              />
             </button>
           </div>
         )}
@@ -177,7 +173,7 @@ export function Header() {
   };
 
   return (
-    <div className="w-full z-50 top-0 ">
+    <div className="w-full z-50 top-0">
       <div className="bg-black shadow-lg">
         <div className="flex flex-row justify-between items-center pt-4 px-4 md:px-16 lg:px-16 transition-all duration-300">
           {/* Logo */}
@@ -198,14 +194,13 @@ export function Header() {
 
           {/* Mobile & Tablet Menu Button */}
           <div className="lg:hidden flex items-center space-x-3">
-            {/* Language Selector for Mobile */}
             <div className="flex space-x-1">
               <button
                 onClick={() => changeLanguage("en")}
                 className={`${
                   currentLanguage === "en"
-                  ? "p-1  border-2 border-white"
-                  : "p-1 hover:border-gray-400 transition-all"
+                    ? "p-1 border-2 border-white"
+                    : "p-1 hover:border-gray-400 transition-all"
                 }`}
               >
                 <img
@@ -218,8 +213,8 @@ export function Header() {
                 onClick={() => changeLanguage("fr")}
                 className={`${
                   currentLanguage === "fr"
-                  ? "p-1  border-2 border-white"
-                  : "p-1 hover:border-gray-400 transition-all"
+                    ? "p-1 border-2 border-white"
+                    : "p-1 hover:border-gray-400 transition-all"
                 }`}
               >
                 <img
@@ -249,10 +244,9 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile Navigation Menu - Overlay */}
+        {/* Mobile & Tablet Navigation Menu - Overlay */}
         {isMenuOpen && (
-          <div className="md:hidden fixed inset-0 bg-black z-50 overflow-y-auto">
-            {/* Close Button */}
+          <div className="lg:hidden fixed inset-0 bg-black z-50 overflow-y-auto">
             <div className="flex justify-end p-4">
               <button
                 className="text-white hover:text-gray-400 transition-colors focus:outline-none"
@@ -271,7 +265,6 @@ export function Header() {
               </button>
             </div>
 
-            {/* Mobile Navigation Links */}
             <div className="flex flex-col items-stretch justify-start min-h-screen pb-16 pt-4">
               {renderNavLinks(true)}
 
