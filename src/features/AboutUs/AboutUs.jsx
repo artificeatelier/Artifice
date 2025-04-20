@@ -115,7 +115,7 @@ export default function AboutUS() {
     </div>
     </div>
 
-     {/*-----Infinite Slider Section------ */}
+  {/*-----Infinite Slider Section------ */}
     <section className="bg-black">
       <div className="relative w-full overflow-hidden">
       <div className="flex w-max animate-slide gap-0">
@@ -160,7 +160,7 @@ export default function AboutUS() {
 
 
   {/*-----Service Section----- */}
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-black text-white">
     <h1 className="text-2xl md:text-5xl font-bold text-center mb-1 pt-8" > {t("WhatWeProvide")} </h1>
   {services.map((service, index) => (
     <section key={index} className="py-12 px-6 md:px-12 lg:px-24 relative border-b border-gray-600">
@@ -200,7 +200,7 @@ export default function AboutUS() {
     </div>
 
   {/* -----FAQ----- */}
-    <section className="bg-black text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-black text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="relative">
