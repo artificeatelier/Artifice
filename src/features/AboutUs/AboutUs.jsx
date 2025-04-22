@@ -1,6 +1,5 @@
 import React, {useEffect, useState } from 'react'
 import { useTranslation } from "react-i18next";
-import aboutus from '../../Assets/aboutus.jpg';
 import FAQ from '../../Assets/FAQs.jpg'
 import { Link } from 'react-router-dom';
 

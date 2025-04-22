@@ -26,6 +26,7 @@ import Logo24 from '../../Assets/Portfolio_Logo/Logo24.jpg'
 import Logo25 from '../../Assets/Portfolio_Logo/Logo25.jpg'
 import Logo26 from '../../Assets/Portfolio_Logo/Logo26.jpg'
 import Logo27 from '../../Assets/Portfolio_Logo/Logo27.jpg'
+import Logo28 from '../../Assets/Portfolio_Logo/Logo28.jpg'
 
 const images = [
   Logo1,
@@ -55,6 +56,7 @@ const images = [
   Logo25,
   Logo26,
   Logo27,
+  Logo28,
 ];
 
 const Logos = () => {

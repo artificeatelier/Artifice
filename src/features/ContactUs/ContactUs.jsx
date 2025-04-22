@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useTranslation } from "react-i18next";
-import  customercare  from '../../Assets/Customer.jpeg'
 
 export default function ContactUS() {
     const { t } = useTranslation();
