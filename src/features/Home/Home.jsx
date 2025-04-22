@@ -185,7 +185,7 @@ const services = [
 
 
     {/* -----Hero Section----- */}
-    <section className="py-12 bg-black ">
+    <section className="py-12 bg-black min-h-screen">
   <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
       {/* Left content */}

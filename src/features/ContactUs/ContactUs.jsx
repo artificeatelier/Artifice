@@ -169,13 +169,13 @@ return (
     </section>
 
 
-    <div className="w-full mb-1">
+    {/* <div className="w-full mb-1">
         <img
           src={customercare}
           alt="Contact Us"
           className="w-full h-auto object-cover"
         />
-    </div>
+    </div> */}
 
 
     </div>

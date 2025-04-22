@@ -26,7 +26,7 @@ export default function AboutUS() {
         t("Brochure Design"),
         t("PackagingDesign"),
         t("Letterhead Design"),
-        "UI/Ux"
+        "UI/UX"
       ]
     },
     {
@@ -88,7 +88,7 @@ export default function AboutUS() {
     <div className='top-1 '>
 
   {/* -----Heading----- */}
-    <div className="bg-black py-12 px-6">
+    <div className="bg-black pt-12 px-6">
       <div className="max-w-7xl">
         <div className="flex items-center justify-start relative">
           <div className="w-32 h-[1px] bg-white mr-4"></div>
@@ -133,9 +133,9 @@ export default function AboutUS() {
 
 
   {/* -----Transperent Section---- */}
-    <section>
+    {/* <section>
     <div className="min-h-screen flex flex-col relative">
-      {/* Background Image */}
+
       <div className="relative md:absolute md:inset-0">
         <img
           src={aboutus}
@@ -144,7 +144,6 @@ export default function AboutUS() {
         />
       </div>
 
-      {/* Content Overlay */}
       <div className="relative z-10 md:h-[calc(100vh)] flex items-start overflow-hidden">
         <div className="w-full  lg:w-1/3 md:ml-auto lg:ml-32 p-8 md:p-16 bg-black  md:bg-black md:bg-opacity-70 text-white min-h-[80vh] md:min-h-full flex flex-col justify-center overflow-hidden">
           <h1 className="text-4xl md:text-5xl mb-6 font-light">
@@ -156,7 +155,7 @@ export default function AboutUS() {
         </div>
       </div>
     </div>
-    </section>
+    </section> */}
 
 
   {/*-----Service Section----- */}
