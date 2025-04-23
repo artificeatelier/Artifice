@@ -168,7 +168,6 @@ const services = [
  
    const [currentIndex, setCurrentIndex] = useState(0);
  
-   // Auto slide every 3 seconds
    useEffect(() => {
      const interval = setInterval(() => {
        setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -224,23 +223,18 @@ const services = [
 
 
     {/*-----Slider-----*/}
-    <section className="bg-black">
-       <div className="relative w-full h-full overflow-hidden">
-         <div
-           className="flex transition-transform duration-700 ease-in-out"
-           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-         >
-           {images.map((src, index) => (
-             <img
-               key={index}
-               src={src}
-               alt={`Slide ${index + 1}`}
-               className="w-full h-full flex-shrink-0 object-cover lg:min-h-screen"
-             />
-           ))}
-         </div> 
-       </div>
-     </section>
+    <section className="relative w-full h-[50vh] md:h-[70vh] lg:h-screen bg-black overflow-hidden">
+      {images.map((src, index) => (
+        <img
+          key={index}
+          src={src}
+          alt={`slide-${index}`}
+          className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out ${
+            index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+        />
+      ))}
+    </section>
 
 
     {/* -----Service Section----- */}
@@ -266,7 +260,7 @@ const services = [
 
 
     {/* -----Counter----- */}
-    <section className="bg-black py-10 px-4 sm:px-6 lg:px-8">
+    <section className="bg-black py-10 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl md:text-4xl font-bold text-center text-white mb-12">{t("CounterHead")}</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -278,7 +272,7 @@ const services = [
             </div>
           ))}
         </div>
-      </div>
+      </div>  
     </section>
 
 
@@ -287,7 +281,7 @@ const services = [
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex flex-col lg:flex-row gap-12">
       {/* Static Image Side */}
-      <div className="w-fit h-fit lg:w-1/2 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)]">
+      <div className="w-full h-full lg:w-1/2 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)]">
         <div className="relative h-full  overflow-hidden">
           <img
             src={about}
@@ -301,8 +295,10 @@ const services = [
       <div className="w-full lg:w-1/2">
         <div className="space-y-16 text-white">
           <div>
-            <h2 className="text-4xl  font-bold mb-6">{t("WhoWeAre")}</h2>
-            <p className="text-lg text-gray-300 mb-8">{t("DecribeWhoWeAre")}</p>
+            <div>
+              <h2 className="text-4xl font-bold mb-6 text-center lg:text-left">{t("WhoWeAre")}</h2>
+              <p className="text-lg text-gray-300 mb-8 text-center lg:text-left">{t("DecribeWhoWeAre")}</p>
+            </div>
           </div>
 
           <div className="space-y-6">

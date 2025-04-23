@@ -2,11 +2,13 @@ import React from "react";
 import Flyer_1 from '../../Assets/Flyer/Racing.jpg'
 import Flyer_2 from '../../Assets/Flyer/Dance.jpg'
 import Flyer_3 from '../../Assets/Flyer/Sports.jpg'
+import Flyer_4 from '../../Assets/Flyer/FCV.jpg'
 
 const images = [
   Flyer_1,
   Flyer_2,
   Flyer_3,
+  Flyer_4
 ];
 
 const Flyers = () => {

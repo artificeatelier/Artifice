@@ -11,8 +11,9 @@ import Logos from "../features/Work/Logos"
 import BCard from "../features/Work/BCard"
 import Flyers from "../features/Work/Flyers"
 import REAL_ESTATE_RODEO from "../features/Work/REAL_ESTATE_RODEO"
-import Packging from "../features/Work/Packging"
 import Social_Media from "../features/Work/Social_Media"
+import UI_UX from "../features/Work/UI_UX"
+import Packaging from "../features/Work/PackagingDesign"
 
 const router = createBrowserRouter([
     {
@@ -74,12 +75,16 @@ const router = createBrowserRouter([
                 element: <REAL_ESTATE_RODEO />,
             },
             {
-                path: "/Packging",
-                element: <Packging/>,
+                path: "/Packaging",
+                element: <Packaging />,
             },
             {
                 path: "/Social_Media",
                 element: <Social_Media/>,
+            },
+            {
+                path: "/UI_UX",
+                element: <UI_UX/>,
             },
         ]
     }

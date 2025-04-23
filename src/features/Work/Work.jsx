@@ -1,11 +1,12 @@
 import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import Logo from '../../Assets/About.jpg'
+import Logo from '../../Assets/Logo_Design.jpg'
 import Social_Media from '../../Assets/Social_Media_Page.jpg'
 import B_Card from '../../Assets/B_Card.jpg'
 import Flyer from '../../Assets/Flyer/Racing_Mockup.jpg'
 import REAL_ESTATE_RODEO from '../../Assets/REAL-ESTATE-RODEO/Logo.jpg'
 import Packging from '../../Assets/Packging/Packging.jpg'
+import UI_UX from '../../Assets/UI_UX/UI_UX_Logo.jpg'
 
 export const Work = ({ images, className }) => {
   const { t, i18n } = useTranslation()
@@ -44,7 +45,13 @@ export const Work = ({ images, className }) => {
     id: 6,
     title: t("PackagingDesign"),
     image: Packging,
-    link: "/Packging",
+    link: "/Packaging",
+  },
+  {
+    id: 7,
+    title: "UI/UX",
+    image: UI_UX,
+    link: "/UI_UX",
   },
   
 ];

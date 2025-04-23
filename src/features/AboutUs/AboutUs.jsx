@@ -99,7 +99,7 @@ export default function AboutUS() {
   <div className="max-w-screen-lg mx-auto px-6">
     <div className="">
       <p className="text-lg">
-        {t("AboutUsPOne")}
+        {t("AboutUsPFour")}
       </p>
       <br/>
       <p className="text-lg">
