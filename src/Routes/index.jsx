@@ -12,8 +12,8 @@ import BCard from "../features/Work/BCard"
 import Flyers from "../features/Work/Flyers"
 import REAL_ESTATE_RODEO from "../features/Work/REAL_ESTATE_RODEO"
 import Social_Media from "../features/Work/Social_Media"
-import UI_UX from "../features/Work/UI_UX"
 import Packaging from "../features/Work/PackagingDesign"
+import Web_UIUX_Design from "../features/Work/Web_UIUX_Design"
 
 const router = createBrowserRouter([
     {
@@ -83,8 +83,8 @@ const router = createBrowserRouter([
                 element: <Social_Media/>,
             },
             {
-                path: "/UI_UX",
-                element: <UI_UX/>,
+                path: "/Web_UIUX_Design",
+                element: <Web_UIUX_Design/>,
             },
         ]
     }

@@ -42,7 +42,7 @@ const images = [
     Img_20,
 ];
 
-const UI_UX  = () => {
+const Web_UIUX_Design = () => {
   return (
     <div className="bg-black min-h-screen text-white">
       <div className="bg-black min-h-screen flex items-center justify-center p-4">
@@ -65,4 +65,4 @@ const UI_UX  = () => {
   );
 };
 
-export default UI_UX;
+export default Web_UIUX_Design;

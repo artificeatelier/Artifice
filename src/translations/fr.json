@@ -25,7 +25,7 @@
   "PrintingDesign": "Conception d'impression",
   "PrintingDetail": "Nos services de conception d'impression comprennent des dépliants, des affiches, des brochures, des cartes de visite et d'autres supports imprimés qui communiquent efficacement votre marque.",
   "WebDesign": "Conception de sites Web",
-  "webDetail": "Nous concevons et développons des sites Web modernes et réactifs qui offrent une expérience utilisateur exceptionnelle tout en reflétant l'identité de votre marque.",
+  "webDetail": "Nous créons des designs web et UI/UX visuellement attrayants et centrés sur l'utilisateur qui non seulement élèvent l'identité de votre marque, mais garantissent également des expériences intuitives et transparentes sur tous les appareils.",
   "LogoDesign": "Création de logo",
   "LogoDesignDetail": "Nous nous spécialisons dans la création de logos personnalisés qui reflètent l’identité de votre marque, garantissant une présence visuelle forte et mémorable qui résonne auprès de votre public.",
   "PackagingDesign": "Conception d'emballage",
@@ -38,6 +38,7 @@
   "Static Website" : "Site internet statique",
   "Custom Website Devlopment" : "Développement de sites Internet personnalisés",
   "E-Commerce Website" : "Site web de commerce électronique",
+  "Web_UIUX_Design" : "Conception Web et UI/UX",
 
   "AboutUsPOne": "Artifice Atelier est un studio de design spécialisé dans la création de solutions de branding innovantes, axées sur la création d'expériences de marque marquantes et mémorables. Nous combinons réflexion stratégique et design créatif pour aider les marques à établir un lien significatif avec leur public. De la stratégie de marque au développement de l'identité visuelle, nous travaillons en étroite collaboration avec les entreprises pour créer des designs uniques qui reflètent leurs valeurs et font une impression durable sur le marché.",
   "AboutUsPTwo": "Nous sommes une équipe de professionnels dévoués, engagés à fournir des services de qualité supérieure. Notre mission est de fournir des solutions innovantes et fiables qui aident nos clients à atteindre leurs objectifs.",

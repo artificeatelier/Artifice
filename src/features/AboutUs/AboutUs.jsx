@@ -25,7 +25,6 @@ export default function AboutUS() {
         t("Brochure Design"),
         t("PackagingDesign"),
         t("Letterhead Design"),
-        "UI/UX"
       ]
     },
     {
@@ -35,6 +34,7 @@ export default function AboutUS() {
         t("Static Website"),
         t("Custom Website Devlopment"),
         t("E-Commerce Website"),
+        "UI/UX",
       ]
     }
   ]

@@ -116,9 +116,9 @@ const services = [
   },
   {
     icon: <FaLaptopCode />,
-    title: t("WebDesign"),
+    title: t("Web_UIUX_Design"),
     description: t("webDetail"),
-    link: "#"
+    link: "/Web_UIUX_Design"
   },
   {
     icon: <DiIllustrator />,
@@ -130,7 +130,7 @@ const services = [
     icon: <FaBoxOpen />,
     title: t("PackagingDesign"),
     description: t("PackagingDesignDetail"),
-    link: "/Packging"
+    link: "/Packaging"
   }
 ];
 

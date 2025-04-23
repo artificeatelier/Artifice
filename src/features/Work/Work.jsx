@@ -49,9 +49,9 @@ export const Work = ({ images, className }) => {
   },
   {
     id: 7,
-    title: "UI/UX",
+    title: t("Web_UIUX_Design"),
     image: UI_UX,
-    link: "/UI_UX",
+    link: "/Web_UIUX_Design",
   },
   
 ];
