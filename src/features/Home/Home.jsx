@@ -11,6 +11,13 @@ import Img_One from '../../Assets/Slider/1.jpg'
 import Img_Two from '../../Assets/Slider/2.jpg'
 import Img_Three from '../../Assets/Slider/3.jpg'
 import Img_Four from '../../Assets/Slider/4.jpg'
+import Img_Five from '../../Assets/Slider/5.jpg'
+import Img_Six from '../../Assets/Slider/6.jpg'
+import Img_Seven from '../../Assets/Slider/7.jpg'
+import Img_Eight from '../../Assets/Slider/8.jpg'
+import Img_Nine from '../../Assets/Slider/9.jpg'
+import Img_Ten from '../../Assets/Slider/10.jpg'
+import Img_Eleven from '../../Assets/Slider/11.jpg'
 
 
 const Home = () => {
@@ -164,6 +171,13 @@ const services = [
    Img_Two,
    Img_Three,
    Img_Four,
+   Img_Five,
+   Img_Six,
+   Img_Seven,
+   Img_Eight,
+   Img_Nine,
+   Img_Ten,
+   Img_Eleven,
  ];
  
    const [currentIndex, setCurrentIndex] = useState(0);
@@ -247,7 +261,7 @@ const services = [
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {services.map((service, index) => (
             <Link key={index} to={service.link} >
-              <div className="bg-white/5 rounded-lg p-6 transition-transform transform hover:scale-105 cursor-pointer text-white shadow-lg flex flex-col h-full">
+              <div className="bg-white/5 rounded-lg p-6 transition-transform transform hover:scale-105 cursor-pointer text-white shadow-[0_0_60px_-15px_rgba(255,255,255,0.7)] border border-white/10 flex flex-col h-full ">
                 <div className="text-5xl mb-4 text-center">{service.icon}</div>
                 <h3 className="text-2xl font-semibold text-center">{service.title}</h3>
                 <p className="text-white py-3 text-center transition-colors duration-300 flex-grow">{service.description}</p>
@@ -419,7 +433,7 @@ const services = [
       </div>
     </div>
   </div>
-</section>
+    </section>
 
 
     </div>
