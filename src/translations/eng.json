@@ -4,6 +4,7 @@
   "À propos de nous": "About Us",
   "Prestations": "Services",
   "Contactez-nous": "Contact Us",
+  "contact" : "Contact Us",
 
   "WhoWeAre": "Who We Are",
   "DecribeWhoWeAre": "We are a dynamic graphic studio dedicated to elevating your brand through the power of design. Specializing in branding, graphic design, web development. We transform ideas into compelling visuals that engage your target audience. From unique logo creation to impactful advertising campaigns, we craft user-centered solutions that resonate and inspire, helping your business thrive in the digital landscape",
@@ -113,8 +114,10 @@
   "We would love to hear more" : "We would love to hear more ",
   "about your project" : "about your project",
 
-  "Web_Content" : "At Artifice, we specialize in designing modern, responsive, and visually appealing websites that help businesses establish a strong online presence. Our team focuses on creating user-friendly and engaging designs that work seamlessly across all devices. Whether you need a professional business website, an e-commerce store, or a custom web solution, we ensure that your site reflects your brand identity while delivering a great user experience.",
-  "Web_Content_Two" : "We blend creativity with functionality, ensuring your website is not only attractive but also easy to navigate and highly interactive. Our goal is to bring your vision to life with a unique and engaging design that sets you apart. Let’s create something amazing together—get in touch today!",
+  "Web_Content" : "At Artifice, we combine the art of web design with the science of UI/UX to build powerful digital experiences. Our team specializes in creating modern, responsive, and visually captivating websites that are not just beautiful — they are intuitive, user-friendly, and built for performance.",
+  "Web_Content_Two" : "We design websites that work seamlessly across all devices, ensuring your users enjoy a smooth, engaging experience whether they're on a desktop, tablet, or smartphone. Through thoughtful UI/UX strategies, we focus on user behavior, interaction patterns, and journey flows, delivering designs that keep visitors engaged and encourage action.",
+  "Web_Content_Three" : "Whether you need a corporate website, a dynamic e-commerce platform, or a custom web application, we craft each project with your brand’s identity and your audience’s needs in mind. From wireframes to full designs, we bring creativity, functionality, and human-centered design together to create something extraordinary.",
+  "Web_Content_Four" : "Let’s turn your ideas into a visually stunning and highly interactive digital presence. Connect with us today — and let’s build experiences that truly make an impact.",
 
   "contactUs": "Contact Us",
   "LetTalk": "LET'S TALK",

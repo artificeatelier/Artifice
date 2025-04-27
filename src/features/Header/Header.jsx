@@ -19,16 +19,16 @@ export function Header() {
   const getNavItems = () => [
     { to: "/", text: t("Accueil") },
     { to: "/about", text: t("À propos de nous") },
-    { to: "/Work", text: t("Portefeuille de travail") },
+    { to: "/Work", text: t("Portfolio") },
     {
       text: t("Prestations"),
       dropdown: [
         { to: "/branding", text: t("Branding & Design") },
         { to: "/LogoDesign", text: t("LogoDesign") },
-        { to: "/WebDesign", text: t("WebDesign") },
+        { to: "/Web_UI_UX_Design_Service", text: t("Web_UIUX_Design") },
       ],
     },
-    { to: "/contact", text: t("Contactez-nous") },
+    { to: "/contact", text: t("contact") },
   ];
 
   const navItems = getNavItems();

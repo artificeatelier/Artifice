@@ -125,7 +125,7 @@ const services = [
     icon: <FaLaptopCode />,
     title: t("Web_UIUX_Design"),
     description: t("webDetail"),
-    link: "/Web_UIUX_Design"
+    link: "/Web_UI_UX_Design"
   },
   {
     icon: <DiIllustrator />,

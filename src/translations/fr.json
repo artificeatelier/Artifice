@@ -1,9 +1,10 @@
 {
   "Accueil": "Accueil",
   "Cours de cuisine": "Cours de cuisine",
-  "Portefeuille de travail": "Portefeuille de travail",
+  "Portefeuille de travail": "Portfolio",
   "Prestations": "Prestations",
   "Contactez-nous": "Contactez-nous",
+  "contact" : "contact",
 
   "WhoWeAre": "QUI NOUS SOMMES",
   "DecribeWhoWeAre": "Nous sommes un studio graphique dynamique qui se consacre à la mise en valeur de votre marque grâce à la puissance du design. Spécialisés dans l'image de marque, la conception graphique, le développement web. nous transformons les idées en visuels convaincants qui attirent votre public cible. De la création de logos uniques aux campagnes publicitaires percutantes, nous concevons des solutions centrées sur l'utilisateur qui résonnent et inspirent, aidant votre entreprise à prospérer dans le paysage numérique.",
@@ -102,7 +103,7 @@
 
   "OUR WORK" : "NOTRE TRAVAIL",
   "PORTFOLIO" : "PORTEFEUILLE",
-  "Portfolio" : "Portefeuille",
+  "Portfolio" : "Portfolio",
   "Logo Design" : "Conception de logo",
   "Social Media" : "Médias sociaux",
   "Business Card" : "Carte d'affaires",
@@ -112,8 +113,10 @@
   "We would love to hear more" : "Nous aimerions en savoir plus",
   "about your project" : "à propos de votre projet",
 
-  "Web_Content" : "Chez Artifice, nous sommes spécialisés dans la conception de sites web modernes, réactifs et visuellement attrayants qui aident les entreprises à établir une forte présence en ligne. Notre équipe se concentre sur la création de designs conviviaux et attrayants qui fonctionnent de manière transparente sur tous les appareils. Que vous ayez besoin d'un site professionnel, d'une boutique en ligne ou d'une solution web personnalisée, nous veillons à ce que votre site reflète l'identité de votre marque tout en offrant une excellente expérience utilisateur.",
-  "Web_Content_Two" : "Nous allions la créativité à la fonctionnalité, en veillant à ce que votre site web soit non seulement attrayant, mais aussi facile à naviguer et hautement interactif. Notre objectif est de donner vie à votre vision en vous proposant un design unique et attrayant qui vous démarque. Créons ensemble quelque chose d'extraordinaire - contactez-nous dès aujourd'hui !",
+  "Web_Content" : "Chez Artifice, nous combinons l'art du web design avec la science de l'UI/UX pour construire des expériences numériques puissantes. Notre équipe est spécialisée dans la création de sites web modernes, réactifs et visuellement captivants qui ne sont pas seulement beaux - ils sont intuitifs, conviviaux et construits pour la performance.",
+  "Web_Content_Two" : "Nous concevons des sites web qui fonctionnent de manière transparente sur tous les appareils, garantissant à vos utilisateurs une expérience fluide et attrayante, qu'ils soient sur un ordinateur de bureau, une tablette ou un smartphone. Grâce à des stratégies UI/UX réfléchies, nous nous concentrons sur le comportement de l'utilisateur, les modèles d'interaction et les flux de voyage, en livrant des conceptions qui maintiennent les visiteurs engagés et encouragent l'action.",
+  "Web_Content_Three" : "Que vous ayez besoin d'un site web d'entreprise, d'une plateforme de commerce électronique dynamique ou d'une application web personnalisée, nous concevons chaque projet en gardant à l'esprit l'identité de votre marque et les besoins de votre public. Des wireframes aux conceptions complètes, nous associons créativité, fonctionnalité et conception centrée sur l'humain pour créer quelque chose d'extraordinaire.",
+  "Web_Content_Four" : "Transformons vos idées en une présence numérique visuellement étonnante et hautement interactive. Prenez contact avec nous dès aujourd'hui - et construisons des expériences qui auront un véritable impact.",
 
   "contactUSLine1" : "Que vous ayez une question, besoin d'aide ou souhaitiez discuter d'un projet, nous sommes là pour vous aider. Remplissez le formulaire ci-dessous ou contactez-nous aux coordonnées indiquées.",
   "contactUSLine2" : "Super ! Nous sommes ravis de vous rencontrer et avons hâte de créer quelque chose d'unique ensemble. N'hésitez pas à nous contacter pour toute question.",
@@ -127,8 +130,8 @@
   "subscribe": "S'abonner",
   "navigation": "Navigation",
   "home": "Accueil",
-  "aboutUs": "À propos de nous",
-  "À propos de nous" : "À propos de nous",
+  "aboutUs": "À propos",
+  "À propos de nous" : "À propos",
   "menu": "Notre Menu",
   "ourservices": "Nos Prestations",
   "generalMenu": "Menu Général",

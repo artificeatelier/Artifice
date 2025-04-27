@@ -6,7 +6,7 @@ import B_Card from '../../Assets/B_Card.jpg'
 import Flyer from '../../Assets/Flyer/Racing_Mockup.jpg'
 import REAL_ESTATE_RODEO from '../../Assets/REAL-ESTATE-RODEO/Logo.jpg'
 import Packging from '../../Assets/Packging/Packging.jpg'
-import UI_UX from '../../Assets/UI_UX/UI_UX_Logo.jpg'
+import UI_UX from '../../Assets/UI_UX/19.jpg'
 
 export const Work = ({ images, className }) => {
   const { t, i18n } = useTranslation()
@@ -51,7 +51,7 @@ export const Work = ({ images, className }) => {
     id: 7,
     title: t("Web_UIUX_Design"),
     image: UI_UX,
-    link: "/Web_UIUX_Design",
+    link: "/Web_UI_UX_Design",
   },
   
 ];

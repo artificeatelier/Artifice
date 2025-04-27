@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import Web from '../../Assets/web.jpg'
 
-const WebDesign = () => {
+const Web_UI_UX_Design_Service = () => {
   const { t, i18n } = useTranslation();
   const faqs = [
     {
@@ -35,28 +35,6 @@ const WebDesign = () => {
     },
   ];
 
-  const services = [
-    {
-      title: "Brand Identity & Strategy",
-      description:
-        "As the business landscape evolves, the ongoing importance of brand identity and strategy remains a beacon for businesses striving to leave a lasting imprint in the hearts and minds of their audience.",
-    },
-    {
-      title: "Graphic Design",
-      description:
-        "graphic design is more than aesthetics – it's a language that speaks to the hearts and minds of the audience.",
-    },
-    {
-      title: "Digital Profile Design",
-      description:
-        "you can shape a digital presence that authentically reflects your identity, resonates with your audience, and propels you toward your personal and professional goals.",
-    },
-    {
-      title: "Packaging Design",
-      description:
-        "packaging design remains a linchpin in the competitive market, where first impressions matter.",
-    },
-  ];
 
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -67,11 +45,12 @@ const WebDesign = () => {
   return (
     <div className="top-1 ">
       <div className="min-h-screen bg-black text-white">
+
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <h1 className="text-6xl pl-2 md:pl-20 font-bold  animate-fade-in">
-              {t("WebDesign")}
+              {t("Web_UIUX_Design")}
             </h1>
             <p className="text-gray-300 pr-2 md:pr-28 leading-relaxed">
               {t("ServiceText")}
@@ -86,7 +65,7 @@ const WebDesign = () => {
             <img 
               src= {Web}
               alt="Collaboration" 
-              className="w-fit rounded-lg"
+              className="w-fit rounded-xl"
             />
           </div>
           <div className="space-y-8 content-center">
@@ -95,6 +74,12 @@ const WebDesign = () => {
             </p>
             <p className="text-gray-300">
              {t("Web_Content_Two")}
+            </p>
+            <p className="text-gray-300">
+             {t("Web_Content_Three")}
+            </p>
+            <p className="text-gray-300">
+             {t("Web_Content_Four")}
             </p>
           </div>
         </div>
@@ -185,4 +170,4 @@ const WebDesign = () => {
   );
 };
 
-export default WebDesign;
+export default Web_UI_UX_Design_Service;

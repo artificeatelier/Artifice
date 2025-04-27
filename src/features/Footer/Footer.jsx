@@ -52,7 +52,7 @@ export function Footer () {
                 to="/contact"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
-                {t("contactUs")}
+                {t("contact")}
               </Link>
             </nav>
           </div>
@@ -75,10 +75,10 @@ export function Footer () {
                 {t("LogoDesign")}
               </Link>
               <Link
-                to="/WebDesign"
+                to="/Web_UI_UX_Design_Service"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
-                {t("WebDesign")}
+                {t("Web_UIUX_Design")}
               </Link>
             </nav>
           </div>
