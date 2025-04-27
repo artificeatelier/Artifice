@@ -68,9 +68,6 @@ export const Work = ({ images, className }) => {
           <h2 className="text-sm tracking-widest text-white uppercase">{t("OUR WORK")}</h2>
         </div>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white md:mx-36 mt-6">{t("PORTFOLIO")}</h1>
-        <p className="text-white md:mx-36 max-w-2xl mt-6">
-          Explore our creative portfolio showcasing a diverse range of design projects across various categories.
-        </p>
       </div>
       </div>
 
