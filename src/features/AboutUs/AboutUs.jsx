@@ -176,7 +176,7 @@ export default function AboutUS() {
             <div className="space-y-4">
               {service.items.map((item, itemIndex) => (
                 <div key={itemIndex} className="flex items-center gap-2 text-lg">
-                  <span className="text-xl">+</span>
+                  <span className="text-xl">•</span>
                   <span>{item}</span>
                 </div>
               ))}
