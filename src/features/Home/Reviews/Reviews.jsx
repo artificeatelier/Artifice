@@ -82,10 +82,12 @@ const Reviews = () => {
       </section>
 
       {/* Section 2 — plain dark card, no existing site pattern to match
-          for a form (the site has no prior submit-form section). */}
+          for a form (the site has no prior submit-form section). Wide
+          container so the form lays out as a full-width split (name +
+          rating side by side, textarea full width below). */}
       <section className="py-16 bg-black text-white">
-        <div className="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">{t("ShareYourExperience")}</h2>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">{t("ShareYourExperience")}</h2>
           <ReviewForm onSubmitted={handleSubmitted} />
         </div>
       </section>
