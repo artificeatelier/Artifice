@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaPenFancy, FaFacebookF,FaBoxOpen, FaLaptopCode, FaClipboard } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Reviews from './Reviews/Reviews';
 
 
 import about from '../../Assets/About.jpg';
@@ -434,6 +435,10 @@ const services = [
     </div>
   </div>
     </section>
+
+
+    {/* -----Client Reviews Section----- */}
+    <Reviews />
 
 
     </div>
