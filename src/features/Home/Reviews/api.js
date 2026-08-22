@@ -1,6 +1,12 @@
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5216';
 
-export async function fetchReviews({ skip = 0, limit = 6 } = {}) {
+if (process.env.NODE_ENV === 'production' && !process.env.REACT_APP_API_BASE_URL) {
+  console.error('REACT_APP_API_BASE_URL is not set — the reviews API will not work in production.');
+}
+
+export const DEFAULT_PAGE_SIZE = 6;
+
+export async function fetchReviews({ skip = 0, limit = DEFAULT_PAGE_SIZE } = {}) {
   const res = await fetch(`${API_BASE_URL}/api/reviews?skip=${skip}&limit=${limit}`);
   if (!res.ok) {
     throw new Error('Could not load reviews.');

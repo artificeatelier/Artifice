@@ -1,13 +1,16 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import ReviewCard from './ReviewCard';
 
-const ReviewsList = ({ reviews, hasMore, onLoadMore, loading }) => {
+const ReviewsList = ({ reviews, hasMore, onLoadMore, loading, loadingMore }) => {
+  const { t } = useTranslation();
+
   if (loading) {
-    return <p className="text-center text-gray-400">Loading reviews...</p>;
+    return <p className="text-center text-gray-400">{t("LoadingReviews")}</p>;
   }
 
   if (reviews.length === 0) {
-    return <p className="text-center text-gray-400">No reviews yet. Be the first!</p>;
+    return <p className="text-center text-gray-400">{t("NoReviewsYet")}</p>;
   }
 
   return (
@@ -21,9 +24,10 @@ const ReviewsList = ({ reviews, hasMore, onLoadMore, loading }) => {
         <div className="text-center mt-6">
           <button
             onClick={onLoadMore}
-            className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors"
+            disabled={loadingMore}
+            className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors disabled:opacity-50"
           >
-            Load More Reviews
+            {t("LoadMoreReviews")}
           </button>
         </div>
       )}
