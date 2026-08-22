@@ -17,7 +17,14 @@ const ReviewsList = ({ reviews, hasMore, onLoadMore, loading, loadingMore }) => 
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-6">
         {reviews.map((r) => (
-          <ReviewCard key={r.id} name={r.name} rating={r.rating} text={r.text} />
+          <ReviewCard
+            key={r.id}
+            name={r.name}
+            rating={r.rating}
+            text={r.text}
+            translatedText={r.translatedText}
+            sourceLang={r.sourceLang}
+          />
         ))}
       </div>
       {hasMore && (
