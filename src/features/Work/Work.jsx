@@ -1,4 +1,3 @@
-import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Logo from '../../Assets/Logo_Design.jpg'
 import Social_Media from '../../Assets/Social_Media_Page.jpg'
@@ -9,7 +8,7 @@ import Packging from '../../Assets/Packging/Packging.jpg'
 import UI_UX from '../../Assets/UI_UX/19.jpg'
 
 export const Work = ({ images, className }) => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const portfolioItems = [
   {
     id: 1,

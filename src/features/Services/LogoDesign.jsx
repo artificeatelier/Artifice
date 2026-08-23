@@ -24,7 +24,7 @@ const LogoDesign = () => {
   ];
 
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const faqs = [
     {
       question: t("Logo_Q1"),

@@ -1,46 +1,10 @@
-import React, { useState } from 'react'
-import FAQ from '../../Assets/FAQs.jpg'
+import React from 'react'
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import Web from '../../Assets/web.jpg'
 
 const Web_UI_UX_Design_Service = () => {
-  const { t, i18n } = useTranslation();
-  const faqs = [
-    {
-      question: "What creative services does Artifice Studio offer?",
-      answer:
-        "Artifice Studio offers a comprehensive range of creative services including brand identity design, UI/UX design, motion graphics, 3D visualization, digital illustration, and custom artwork creation. We specialize in crafting unique visual experiences that help brands stand out in the digital landscape.",
-    },
-    {
-      question: "How does your design process work?",
-      answer:
-        "Our design process begins with an in-depth consultation to understand your vision and objectives. We then move through research, conceptualization, design development, and refinement phases. We maintain open communication throughout the process, ensuring your feedback is incorporated at every stage to deliver results that exceed expectations.",
-    },
-    {
-      question:
-        "What makes Artifice Studio different from other design studios?",
-      answer:
-        "Artifice Studio combines technical expertise with artistic innovation. We don't just create designs; we craft experiences that tell stories and evoke emotions. Our team's diverse skill set allows us to approach each project from multiple creative angles, ensuring unique and impactful solutions for every client.",
-    },
-    {
-      question: "How long does a typical project take to complete?",
-      answer:
-        "Project timelines vary depending on scope and complexity. A basic brand identity might take 2-3 weeks, while a comprehensive design system could take 6-8 weeks. We provide detailed timelines during our initial consultation and keep you updated on progress throughout the project.",
-    },
-    {
-      question: "Do you offer ongoing design support after project completion?",
-      answer:
-        "Yes, we provide continued support and maintenance packages for our clients. This includes design updates, asset creation, and technical support to ensure your visual content remains fresh and effective. We believe in building long-term partnerships with our clients.",
-    },
-  ];
-
-
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  const { t } = useTranslation();
 
   return (
     <div className="top-1 ">
@@ -85,55 +49,6 @@ const Web_UI_UX_Design_Service = () => {
         </div>
       </section>
 
-
-        {/* -----FAQ----- */}
-        {/* <section className="bg-black text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-start">
-              <div className="relative">
-                <img
-                  src={FAQ}
-                  alt="FAQ Concept with Books and Question Marks"
-                  className="rounded-lg w-full h-full object-cover"
-                />
-              </div>
-
-              <div>
-                <h2 className="text-4xl font-bold mb-12">
-                 {t("FAQ")}
-                </h2>
-
-                <div className="space-y-6">
-                  {faqs.map((faq, index) => (
-                    <div key={index} className="border-b border-gray-700 pb-6">
-                      <button
-                        onClick={() => toggleFAQ(index)}
-                        className="w-full text-left flex justify-between items-center group"
-                      >
-                        <h3 className="text-xl font-medium group-hover:text-gray-300 transition-colors duration-300">
-                          {faq.question}
-                        </h3>
-                        <span className="text-2xl ml-4 transform transition-transform duration-300">
-                          {openIndex === index ? "−" : "+"}
-                        </span>
-                      </button>
-
-                      <div
-                        className={`mt-4 text-gray-400 transition-all duration-300 overflow-hidden ${
-                          openIndex === index
-                            ? "max-h-96 opacity-100"
-                            : "max-h-0 opacity-0"
-                        }`}
-                      >
-                        <p className="leading-relaxed">{faq.answer}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
 
         {/* -----let's Talk----- */}
         <section className=" bg-black flex flex-col items-center justify-center px-4 py-20">

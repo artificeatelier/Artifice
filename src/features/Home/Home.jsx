@@ -24,9 +24,9 @@ import Img_Eleven from '../../Assets/Slider/11.jpg'
 const Home = () => {
     const { t } = useTranslation(); 
     const canvasRef = useRef(null);
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
-    const [showText, setShowText] = useState(false);
-    const [showImages, setShowImages] = useState(false);
+    const [, setIsMobile] = useState(window.innerWidth < 640);
+    const [, setShowText] = useState(false);
+    const [, setShowImages] = useState(false);
 
 
   useEffect(() => {
@@ -92,6 +92,7 @@ const [currentSlide, setCurrentSlide] = useState(0);
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const nextSlide = () => {
@@ -165,6 +166,7 @@ const services = [
     }, 50)
 
     return () => clearInterval(interval)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
    const images = [
@@ -189,6 +191,7 @@ const services = [
      }, 3000);
  
      return () => clearInterval(interval);
+     // eslint-disable-next-line react-hooks/exhaustive-deps
    }, []);
   
 
