@@ -33,7 +33,7 @@ return (
           <div className="w-32 h-[1px] bg-white mr-4"></div>
           <h2 className="text-sm tracking-widest text-white uppercase">{t("LetTalk")}</h2>
         </div>
-        <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white md:mx-36 mt-6">{t("contactUs")}</h1>
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white md:mx-36 mt-6">{t("contactUs")}</h1>
       </div>
     </div>
 

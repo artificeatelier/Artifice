@@ -55,7 +55,7 @@ const LogoDesign = () => {
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <h1 className="text-6xl pl-2 md:pl-20 font-bold  animate-fade-in">
+            <h1 className="text-4xl sm:text-6xl pl-2 md:pl-20 font-bold  animate-fade-in">
               {t("LogoDesign")}
               
             </h1>

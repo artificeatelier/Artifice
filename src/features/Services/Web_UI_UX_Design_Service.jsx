@@ -13,7 +13,7 @@ const Web_UI_UX_Design_Service = () => {
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <h1 className="text-6xl pl-2 md:pl-20 font-bold  animate-fade-in">
+            <h1 className="text-4xl sm:text-6xl pl-2 md:pl-20 font-bold  animate-fade-in">
               {t("Web_UIUX_Design")}
             </h1>
             <p className="text-gray-300 pr-2 md:pr-28 leading-relaxed">
