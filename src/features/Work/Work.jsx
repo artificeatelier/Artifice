@@ -75,7 +75,7 @@ export const Work = ({ images, className }) => {
           {portfolioItems.map((item) => (
             <div key={item.id} className="relative overflow-hidden group">
               <a href={item.link} className="block">
-                <div className="relative h-[400px] overflow-hidden">
+                <div className="relative h-[250px] sm:h-[400px] overflow-hidden">
                   <img
                     src={item.image || "/placeholder.svg"}
                     alt={item.title}

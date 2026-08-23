@@ -93,7 +93,7 @@ export default function AboutUS() {
           <div className="w-32 h-[1px] bg-white mr-4"></div>
           <h2 className="text-sm tracking-widest text-white uppercase">{t("WhoWeAre")}</h2>
         </div>
-        <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white md:mx-36 mt-6">{t("À propos de nous")}</h1>
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white md:mx-36 mt-6">{t("À propos de nous")}</h1>
       </div>
       <div className="bg-black text-white py-8">
   <div className="max-w-screen-lg mx-auto px-6">
