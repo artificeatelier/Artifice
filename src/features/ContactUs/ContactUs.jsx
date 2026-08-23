@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import { useTranslation } from "react-i18next";
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5216';
+
+if (process.env.NODE_ENV === 'production' && !process.env.REACT_APP_API_BASE_URL) {
+  console.error('REACT_APP_API_BASE_URL is not set — the contact form will not work in production.');
+}
+
 export default function ContactUS() {
     const { t } = useTranslation();
     const [formData, setFormData] = useState({
@@ -90,10 +96,9 @@ return (
 
         {/* Right Column - Form */}
         <form className="space-y-6" onSubmit={(e)=>{
-          debugger
           e.preventDefault();
           console.log("Form Submitting")
-          fetch("/api/ContactUS",{
+          fetch(`${API_BASE_URL}/api/ContactUS`,{
             method : "POST",
             body : JSON.stringify(formData) ,
              headers: {
