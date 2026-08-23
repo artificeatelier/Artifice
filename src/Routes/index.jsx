@@ -10,10 +10,10 @@ import Logos from "../features/Work/Logos"
 import BCard from "../features/Work/BCard"
 import Flyers from "../features/Work/Flyers"
 import REAL_ESTATE_RODEO from "../features/Work/REAL_ESTATE_RODEO"
-import Social_Media from "../features/Work/Social_Media"
+import SocialMedia from "../features/Work/Social_Media"
 import Packaging from "../features/Work/PackagingDesign"
-import Web_UI_UX_Design from '../features/Work/Web_UIUX_Design'
-import Web_UI_UX_Design_Service from '../features/Services/Web_UI_UX_Design_Service'
+import WebUIUXDesign from '../features/Work/Web_UIUX_Design'
+import WebUIUXDesignService from '../features/Services/Web_UI_UX_Design_Service'
 
 const router = createBrowserRouter([
     {
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/Web_UI_UX_Design",
-                element: <Web_UI_UX_Design/>,
+                element: <WebUIUXDesign/>,
             },
             {
                 path: "/Logos",
@@ -80,11 +80,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/Social_Media",
-                element: <Social_Media/>,
+                element: <SocialMedia/>,
             },
             {
                 path: "/Web_UI_UX_Design_Service",
-                element: <Web_UI_UX_Design_Service/>,
+                element: <WebUIUXDesignService/>,
             },
             
         ]

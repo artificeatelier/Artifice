@@ -74,7 +74,7 @@ export default function AboutUS() {
   Img_Six,
 ];
 
-  const [current, setCurrent] = useState(0);
+  const [, setCurrent] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
