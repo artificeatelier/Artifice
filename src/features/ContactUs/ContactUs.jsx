@@ -179,7 +179,7 @@ return (
 
 
     {/* <div className="w-full mb-1">
-        <img loading="lazy" decoding="async"
+        <Img
           src={customercare}
           alt="Contacter Artifice Atelier"
           className="w-full h-auto object-cover"

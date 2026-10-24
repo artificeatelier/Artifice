@@ -7,6 +7,7 @@ import { LuMail } from "react-icons/lu";
 import { HiOutlinePhoneArrowUpRight } from "react-icons/hi2";
 import { RiMapPinLine } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
+import Img from "../../Layout/Img";
 
 export function Footer () {
  const {t} = useTranslation();
@@ -16,7 +17,7 @@ export function Footer () {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="">
             <div className="flex items-center space-x-4">
-              <img loading="lazy" decoding="async"
+              <Img
                 src={logo}
                 alt="Artifice Atelier"
                 className="w-24 h-auto shadow-lg"

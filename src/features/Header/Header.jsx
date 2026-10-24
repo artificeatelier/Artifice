@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import logo from "../../Assets/Artifice Studio.jpeg";
 import { ActionIcon, rem } from "@mantine/core";
 import { IconBrandInstagram, IconBrandGmail, IconPhone } from "@tabler/icons-react";
+import Img from "../../Layout/Img";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -193,7 +194,8 @@ const LanguageToggle = () => (
         <div className="flex flex-row justify-between items-center pt-4 px-4 md:px-16 lg:px-16 transition-all duration-300">
           <Link to="/">
             <div className="flex flex-row items-center cursor-pointer space-x-3">
-              <img
+              <Img
+                loading="eager"
                 src={logo || "/placeholder.svg"}
                 alt="Artifice Atelier logo"
                 className="w-24 h-24 md:w-20 md:h-20 xl:h-28 xl:w-28 object-contain"

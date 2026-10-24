@@ -6,6 +6,7 @@ import Logo3 from '../../Assets/BCard/3.jpg'
 import Logo4_1 from '../../Assets/BCard/4_1.jpg'
 import Logo4_2 from '../../Assets/BCard/4_2.jpg'
 import Logo5 from '../../Assets/BCard/5.jpg'
+import Img from "../../Layout/Img";
 
 const BCard = () => {
   const images = [
@@ -25,7 +26,7 @@ const BCard = () => {
         <div className="container mx-auto p-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
             {images.map((image, index) => (
-              <img loading="lazy" decoding="async"
+              <Img
                 key={index}
                 src={image.src}
                 alt={image.alt || `Carte de visite par Artifice Atelier ${index + 1}`}

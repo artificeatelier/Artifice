@@ -4,6 +4,7 @@ import Img_3 from '../../Assets/REAL-ESTATE-RODEO/2.jpg'
 import Img_4 from '../../Assets/REAL-ESTATE-RODEO/3.jpg'
 import Img_5 from '../../Assets/REAL-ESTATE-RODEO/4.jpg'
 import Img_6 from '../../Assets/REAL-ESTATE-RODEO/5.jpg'
+import Img from "../../Layout/Img";
 
 const images = [
     Img_2,
@@ -25,7 +26,7 @@ const REAL_ESTATE_RODEO = () => {
             key={index}
             className="flex items-center justify-center rounded-lg shadow-lg"
           >
-            <img loading="lazy" decoding="async" src={src} alt={`Real Estate Rodeo, identité de marque ${index + 1}`} className="w-full h-fit object-contain" />
+            <Img src={src} alt={`Real Estate Rodeo, identité de marque ${index + 1}`} className="w-full h-fit object-contain" />
           </div>
         ))}
       </div>

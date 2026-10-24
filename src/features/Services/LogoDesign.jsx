@@ -8,6 +8,7 @@ import Three from "../../Assets/Portfolio_Logo/3.png"
 import Four from "../../Assets/Portfolio_Logo/4.png"
 import Five from "../../Assets/Portfolio_Logo/5.png"
 import Six from "../../Assets/Portfolio_Logo/6.png"
+import Img from "../../Layout/Img";
 
 const LogoDesign = () => {
 
@@ -89,7 +90,7 @@ const LogoDesign = () => {
             >
 
               <div className="relative z-10 flex items-center justify-center">
-                <img loading="lazy" decoding="async"
+                <Img
                   src={logo.image}
                   alt={logo.name}
                   className="max-w-full max-h-full object-contain"
@@ -113,7 +114,7 @@ const LogoDesign = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="relative">
-                <img loading="lazy" decoding="async"
+                <Img
                   src={FAQ}
                   alt="Questions fréquentes"
                   className="rounded-lg w-full h-full object-cover"

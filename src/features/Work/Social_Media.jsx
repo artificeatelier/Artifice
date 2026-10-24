@@ -6,6 +6,7 @@ import Img_4 from '../../Assets/Social_Media_Design/4.jpg'
 import Img_5 from '../../Assets/Social_Media_Design/5.jpg'
 import Img_6 from '../../Assets/Social_Media_Design/6.jpg'
 import Img_7 from '../../Assets/Social_Media_Design/7.jpg'
+import Img from "../../Layout/Img";
 
 const images = [
     Img_1,
@@ -27,7 +28,7 @@ const Social_Media = () => {
               key={index}
               className="flex items-center justify-center rounded-lg shadow-lg"
             >
-              <img loading="lazy" decoding="async"
+              <Img
                 src={src}
                 alt={`Visuel réseaux sociaux par Artifice Atelier ${index + 1}`}
                 className="w-full h-fit object-contain"

@@ -7,6 +7,7 @@ import Img_3 from '../../Assets/ottico brand/3.jpg'
 import Img_4 from '../../Assets/ottico brand/4.jpg'
 import Img_5 from '../../Assets/ottico brand/5.jpg'
 import Img_6 from '../../Assets/ottico brand/6.jpg'
+import Img from "../../Layout/Img";
 
 
 const Branding = () => {
@@ -117,7 +118,7 @@ const Branding = () => {
             <div key={item.id} className="relative overflow-hidden group">
               <a href={item.link} className="block">
                 <div className="relative h-full overflow-hidden">
-                  <img loading="lazy" decoding="async"
+                  <Img
                     src={item.image || "/placeholder.svg"}
                     alt={`Identité visuelle Ottico, projet de branding ${item.id}`}
                     className="w-full h-full object-cover"

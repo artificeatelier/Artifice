@@ -10,6 +10,7 @@ import Img_Three from '../../Assets/Portfolio_Logo/3.png'
 import Img_Four from '../../Assets/Portfolio_Logo/4.png'
 import Img_Five from '../../Assets/Portfolio_Logo/5.png'
 import Img_Six from '../../Assets/Portfolio_Logo/6.png'
+import Img from "../../Layout/Img";
 
 export default function AboutUS() {
 
@@ -124,7 +125,7 @@ export default function AboutUS() {
       <div className="relative w-full overflow-hidden">
       <div className="flex w-max animate-slide gap-0">
         {[...images, ...images].map((src, index) => (
-          <img loading="lazy" decoding="async"
+          <Img
             key={index}
             src={src}
             alt={`Artifice Atelier, réalisation ${index + 1}`}
@@ -141,7 +142,7 @@ export default function AboutUS() {
     <div className="min-h-screen flex flex-col relative">
 
       <div className="relative md:absolute md:inset-0">
-        <img loading="lazy" decoding="async"
+        <Img
           src={aboutus}
           alt="Atelier Artifice Atelier à Paris"
           className="w-full h-full object-cover"
@@ -207,7 +208,7 @@ export default function AboutUS() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <Reveal className="relative">
-            <img loading="lazy" decoding="async"
+            <Img
               src={FAQ}
               alt="Questions fréquentes"
               className="rounded-lg w-full h-full object-cover"

@@ -3,6 +3,7 @@ import Flyer_1 from '../../Assets/Flyer/Racing.jpg'
 import Flyer_2 from '../../Assets/Flyer/Dance.jpg'
 import Flyer_3 from '../../Assets/Flyer/Sports.jpg'
 import Flyer_4 from '../../Assets/Flyer/FCV.jpg'
+import Img from "../../Layout/Img";
 
 const images = [
   Flyer_1,
@@ -24,7 +25,7 @@ const Flyers = () => {
             key={index}
             className="flex items-center justify-center rounded-lg shadow-lg"
           >
-            <img loading="lazy" decoding="async" src={src} alt={`Flyer conçu par Artifice Atelier ${index + 1}`} className="w-full h-fit object-contain" />
+            <Img src={src} alt={`Flyer conçu par Artifice Atelier ${index + 1}`} className="w-full h-fit object-contain" />
           </div>
         ))}
       </div>

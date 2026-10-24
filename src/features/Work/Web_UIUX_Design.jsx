@@ -18,6 +18,7 @@ import Img_17 from '../../Assets/UI_UX/17.jpg'
 import Img_18 from '../../Assets/UI_UX/18.jpg'
 import Img_19 from '../../Assets/UI_UX/19.jpg'
 import Img_20 from '../../Assets/UI_UX/20.jpg'
+import Img from "../../Layout/Img";
 
 
 const images = [
@@ -52,7 +53,7 @@ const Web_UIUX_Design = () => {
               key={index}
               className="flex items-center justify-center rounded-lg shadow-lg"
             >
-              <img loading="lazy" decoding="async"
+              <Img
                 src={src}
                 alt={`Maquette web UI/UX par Artifice Atelier ${index + 1}`}
                 className="w-full h-full object-contain"

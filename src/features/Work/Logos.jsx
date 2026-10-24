@@ -27,6 +27,7 @@ import Logo25 from '../../Assets/Portfolio_Logo/Logo25.jpg'
 import Logo26 from '../../Assets/Portfolio_Logo/Logo26.jpg'
 import Logo27 from '../../Assets/Portfolio_Logo/Logo27.jpg'
 import Logo28 from '../../Assets/Portfolio_Logo/Logo28.jpg'
+import Img from "../../Layout/Img";
 
 const images = [
   Logo1,
@@ -71,7 +72,7 @@ const Logos = () => {
             key={index}
             className="flex items-center justify-center rounded-lg shadow-lg"
           >
-            <img loading="lazy" decoding="async" src={src} alt={`Logo créé par Artifice Atelier, ${index + 1}`} className="w-72 h-72 object-contain" />
+            <Img src={src} alt={`Logo créé par Artifice Atelier, ${index + 1}`} className="w-72 h-72 object-contain" />
           </div>
         ))}
       </div>
