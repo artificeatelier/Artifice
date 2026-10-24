@@ -74,9 +74,9 @@ const LogoDesign = () => {
           <div className="flex items-center justify-center mb-6">
             <span className="text-lg tracking-widest">CREATIVE LOGOS</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             WHAT IS YOUR VISUAL IDENTITY?
-          </h1>
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 w-full max-w-7xl mx-auto">
@@ -115,7 +115,7 @@ const LogoDesign = () => {
               <div className="relative">
                 <img
                   src={FAQ}
-                  alt="FAQ Concept with Books and Question Marks"
+                  alt="Questions fréquentes"
                   className="rounded-lg w-full h-full object-cover"
                 />
               </div>

@@ -28,7 +28,7 @@ const Web_UI_UX_Design_Service = () => {
           <div className="space-y-6">
             <img 
               src= {Web}
-              alt="Collaboration" 
+              alt="Collaboration avec un client sur un projet web" 
               className="w-fit rounded-xl"
             />
           </div>

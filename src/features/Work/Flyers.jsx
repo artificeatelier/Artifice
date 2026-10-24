@@ -24,7 +24,7 @@ const Flyers = () => {
             key={index}
             className="flex items-center justify-center rounded-lg shadow-lg"
           >
-            <img src={src} alt={`Logo ${index + 1}`} className="w-full h-fit object-contain" />
+            <img src={src} alt={`Flyer conçu par Artifice Atelier ${index + 1}`} className="w-full h-fit object-contain" />
           </div>
         ))}
       </div>

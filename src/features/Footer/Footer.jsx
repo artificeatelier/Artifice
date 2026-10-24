@@ -43,7 +43,7 @@ export function Footer () {
                 {t("aboutUs")}
               </Link>
               <Link
-                to="/Work"
+                to="/work"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
                 {t("Portfolio")}
@@ -69,13 +69,13 @@ export function Footer () {
                 {t("Branding & Design")}
               </Link>
               <Link
-                to="/LogoDesign"
+                to="/logo-design"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
                 {t("LogoDesign")}
               </Link>
               <Link
-                to="/Web_UI_UX_Design_Service"
+                to="/web-ui-ux-design-service"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
                 {t("Web_UIUX_Design")}

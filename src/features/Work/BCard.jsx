@@ -28,7 +28,7 @@ const BCard = () => {
               <img
                 key={index}
                 src={image.src}
-                alt={image.alt || `Image ${index + 1}`}
+                alt={image.alt || `Carte de visite par Artifice Atelier ${index + 1}`}
                 className={`w-full h-auto object-cover ${index % 3 === 0 ? "sm:col-span-2 md:col-span-2 lg:col-span-2" : "sm:col-span-1 md:col-span-1 lg:col-span-1"}`}
               />
             ))}

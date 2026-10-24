@@ -61,10 +61,10 @@ return (
         {/* Left Column */}
         <div className="space-y-8">
           <div className="space-y-2">
-            <h1 className="text-4xl font-bold tracking-tight">
+            <h2 className="text-4xl font-bold tracking-tight">
               {t("We’re Just a Message Away!")}
-            </h1>
-            <h2 className="text-3xl">{t("Say Hello")}</h2>
+            </h2>
+            <h3 className="text-3xl">{t("Say Hello")}</h3>
           </div>
 
           <div className="space-y-4">
@@ -176,7 +176,7 @@ return (
     {/* <div className="w-full mb-1">
         <img
           src={customercare}
-          alt="Contact Us"
+          alt="Contacter Artifice Atelier"
           className="w-full h-auto object-cover"
         />
     </div> */}

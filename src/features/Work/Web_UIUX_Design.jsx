@@ -54,7 +54,7 @@ const Web_UIUX_Design = () => {
             >
               <img
                 src={src}
-                alt={`Logo ${index + 1}`}
+                alt={`Maquette web UI/UX par Artifice Atelier ${index + 1}`}
                 className="w-full h-full object-contain"
               />
             </div>

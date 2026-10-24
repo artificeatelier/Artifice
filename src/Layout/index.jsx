@@ -4,6 +4,7 @@ import { Footer } from "../features/Footer/Footer"
 import { Box } from "@mantine/core"
 
 import {useEffect} from "react"
+import Seo from "../Seo"
 
 const Layout = () => {
     const { pathname } = useLocation();
@@ -15,6 +16,7 @@ const Layout = () => {
     return (
         <>
 
+        <Seo/>
         <Header/>
         <Box>
         <Outlet/>

@@ -27,7 +27,7 @@ const Packaging  = () => {
             >
               <img
                 src={src}
-                alt={`Logo ${index + 1}`}
+                alt={`Design packaging par Artifice Atelier ${index + 1}`}
                 className="w-full h-full object-contain"
               />
             </div>

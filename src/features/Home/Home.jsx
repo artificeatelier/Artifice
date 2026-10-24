@@ -1,8 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 import { FaPenFancy, FaFacebookF,FaBoxOpen, FaLaptopCode, FaClipboard } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Reviews from './Reviews/Reviews';
+import Reveal from '../../Layout/Reveal';
 
 
 import about from '../../Assets/About.jpg';
@@ -20,13 +22,18 @@ import Img_Nine from '../../Assets/Slider/9.jpg'
 import Img_Ten from '../../Assets/Slider/10.jpg'
 import Img_Eleven from '../../Assets/Slider/11.jpg'
 
+import Proj_Logo from '../../Assets/Logo_Design.jpg'
+import Proj_Social from '../../Assets/Social_Media_Page.jpg'
+import Proj_BCard from '../../Assets/B_Card.jpg'
+import Proj_Flyer from '../../Assets/Flyer/Racing_Mockup.jpg'
+import Proj_RealEstate from '../../Assets/REAL-ESTATE-RODEO/Logo.jpg'
+import Proj_Packaging from '../../Assets/Packging/Packging.jpg'
+import Proj_UIUX from '../../Assets/UI_UX/19.jpg'
+
 
 const Home = () => {
-    const { t } = useTranslation(); 
-    const canvasRef = useRef(null);
+    const { t } = useTranslation();
     const [, setIsMobile] = useState(window.innerWidth < 640);
-    const [, setShowText] = useState(false);
-    const [, setShowImages] = useState(false);
 
 
   useEffect(() => {
@@ -38,32 +45,6 @@ const Home = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    resizeCanvas();
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-  }, []);
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setShowText(true);
-      setShowImages(true);
-    }, 500);
-
-    return () => clearTimeout(timeoutId);
   }, []);
 
   const testimonials = [
@@ -109,40 +90,50 @@ const services = [
     icon: <FaPenFancy />,
     title: t("Branding"),
     description: t("BrandingDetail"),
-    link: "/Real_Estate_Rodeo"
+    link: "/real-estate-rodeo"
   },
   {
     icon: <FaFacebookF />,
     title: t("SocialMediaDesign"),
     description: t("SocialMediaDetail"),
-    link: "/Social_Media"
+    link: "/social-media"
   },
   {
     icon: <FaClipboard />,
     title: t("PrintingDesign"),
     description: t("PrintingDetail"),
-    link: "/Flyers"
+    link: "/flyers"
   },
   {
     icon: <FaLaptopCode />,
     title: t("Web_UIUX_Design"),
     description: t("webDetail"),
-    link: "/Web_UI_UX_Design"
+    link: "/web-ui-ux-design"
   },
   {
     icon: <DiIllustrator />,
     title: t("LogoDesign"),
     description: t("LogoDesignDetail"),
-    link: "/Logos"
+    link: "/logos"
   },
   {
     icon: <FaBoxOpen />,
     title: t("PackagingDesign"),
     description: t("PackagingDesignDetail"),
-    link: "/Packaging"
+    link: "/packaging"
   }
 ];
 
+
+  const projectItems = [
+    { title: t("LogoDesign"), image: Proj_Logo, link: "/logos", span: "md:col-span-2 md:row-span-2" },
+    { title: t("SocialMediaDesign"), image: Proj_Social, link: "/social-media", span: "" },
+    { title: t("Business Card"), image: Proj_BCard, link: "/business-cards", span: "" },
+    { title: t("PrintingDesign"), image: Proj_Flyer, link: "/flyers", span: "md:col-span-2" },
+    { title: t("BrandIdentity"), image: Proj_RealEstate, link: "/real-estate-rodeo", span: "" },
+    { title: t("PackagingDesign"), image: Proj_Packaging, link: "/packaging", span: "" },
+    { title: t("Web_UIUX_Design"), image: Proj_UIUX, link: "/web-ui-ux-design", span: "md:col-span-2" },
+  ];
 
   const countData = [
   { label: t("YearOfExp"), target: 10 },
@@ -206,9 +197,13 @@ const services = [
   <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
       {/* Left content */}
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
         <p className="text-lg font-normal tracking-widest text-gray-300 uppercase">{t("FirstLine")}</p>
-        <h1 className="mt-6 text-5xl text-white sm:mt-10 sm:text-5xl lg:text-8xl xl:text-9xl font-bold">
+        <h1 className="mt-6 text-6xl text-white sm:mt-10 sm:text-6xl lg:text-9xl xl:text-[10rem] font-bold leading-[0.95]">
           ARTIFICE <br /> ATELIER
         </h1>
         <p className="max-w-lg mt-4 text-xl font-normal text-white sm:mt-8">
@@ -216,25 +211,29 @@ const services = [
         </p>
 
         <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
-          <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-tl from-black to-white group-hover:shadow-lg group-hover:shadow-white/50"></div>
           <Link
             to="/contact"
             title="Start Exploring Inspiration"
-            className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full"
+            className="relative inline-flex items-center justify-center px-8 py-3 text-base font-bold uppercase text-black bg-[#76B900] border border-transparent rounded-full transition-transform duration-300 hover:scale-105"
           >
             {t("Contactez-nous")}
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       {/* Right image */}
-      <div className="flex justify-center lg:justify-end">
+      <motion.div
+        className="flex justify-center lg:justify-end"
+        initial={{ opacity: 0, scale: 0.94 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
+      >
         <img
           className="w-full max-w-xl mx-auto"
           src={hero}
-          alt=""
+          alt="Artifice Atelier, studio créatif à Paris"
         />
-      </div>
+      </motion.div>
     </div>
   </div>
     </section>
@@ -246,7 +245,7 @@ const services = [
         <img
           key={index}
           src={src}
-          alt={`slide-${index}`}
+          alt={`Artifice Atelier, réalisation ${index + 1} sur ${images.length}`}
           className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
@@ -258,19 +257,65 @@ const services = [
     {/* -----Service Section----- */}
     <section className="py-10 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-2xl md:text-5xl font-bold text-center mb-5">{t("WhatWeProvide")}</h1>
-        <div className="text-center mb-8">
-          <p className="max-w-4xl mx-auto">{t("WhatWeProvideDetail")}</p>
-        </div>
+        <Reveal><h2 className="text-2xl md:text-5xl font-bold text-center mb-5">{t("WhatWeProvide")}</h2></Reveal>
+        <Reveal delay={0.1}>
+          <div className="text-center mb-8">
+            <p className="max-w-4xl mx-auto">{t("WhatWeProvideDetail")}</p>
+          </div>
+        </Reveal>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {services.map((service, index) => (
-            <Link key={index} to={service.link} >
-              <div className="bg-white/5 rounded-lg p-6 transition-transform transform hover:scale-105 cursor-pointer text-white shadow-[0_0_60px_-15px_rgba(255,255,255,0.7)] border border-white/10 flex flex-col h-full ">
-                <div className="text-5xl mb-4 text-center">{service.icon}</div>
-                <h3 className="text-2xl font-semibold text-center">{service.title}</h3>
-                <p className="text-white py-3 text-center transition-colors duration-300 flex-grow">{service.description}</p>
-              </div>
+            <Reveal key={index} delay={(index % 3) * 0.1}>
+              <Link to={service.link} >
+                <div className="bg-white/5 rounded-lg p-6 transition-transform transform hover:scale-105 cursor-pointer text-white shadow-[0_0_60px_-15px_rgba(118,185,0,0.5)] border border-white/10 hover:border-[#76B900]/50 flex flex-col h-full ">
+                  <div className="text-5xl mb-4 text-center text-[#76B900]">{service.icon}</div>
+                  <h3 className="text-2xl font-semibold text-center">{service.title}</h3>
+                  <p className="text-white py-3 text-center transition-colors duration-300 flex-grow">{service.description}</p>
+                </div>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
+    {/* -----Projects----- */}
+    <section className="py-16 bg-black text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
+          <Reveal>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold uppercase">{t("OUR WORK") || "Projects"}</h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <Link
+              to="/work"
+              className="inline-block px-6 py-3 bg-[#76B900] text-black font-bold uppercase text-sm rounded-full -rotate-6 transition-transform duration-300 hover:scale-105 hover:rotate-0"
+            >
+              {t("See All Projects") || "See All Projects"}
             </Link>
+          </Reveal>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[160px] md:auto-rows-[180px] gap-3">
+          {projectItems.map((item, index) => (
+            <Reveal
+              key={index}
+              delay={(index % 4) * 0.08}
+              className={`relative overflow-hidden rounded-lg group ${item.span}`}
+            >
+              <Link to={item.link} className="block h-full">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 flex items-end p-4">
+                  <h3 className="text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {item.title}
+                  </h3>
+                </div>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -280,14 +325,14 @@ const services = [
     {/* -----Counter----- */}
     <section className="bg-black py-10 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-4xl font-bold text-center text-white mb-12">{t("CounterHead")}</h2>
+        <Reveal><h2 className="text-2xl md:text-4xl font-bold text-center text-white mb-12">{t("CounterHead")}</h2></Reveal>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {countData.map((item, index) => (
-            <div key={item.label} className="text-center">
+            <Reveal key={item.label} delay={index * 0.1} className="text-center">
               <span className="text-6xl font-bold text-white">{counts[index]}</span>
-              <span className="text-2xl font-bold text-white">+</span>
+              <span className="text-2xl font-bold text-[#76B900]">+</span>
               <p className="mt-4 text-xl font-semibold text-white">{item.label}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>  
@@ -299,29 +344,29 @@ const services = [
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex flex-col lg:flex-row gap-12">
       {/* Static Image Side */}
-      <div className="w-full h-full lg:w-1/2 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)]">
+      <Reveal className="w-full h-full lg:w-1/2 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)]" y={0}>
         <div className="relative h-full  overflow-hidden">
           <img
             src={about}
-            alt="About Us"
+            alt="L'équipe et l'atelier Artifice Atelier"
             className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
-      </div>
+      </Reveal>
 
       {/* Scrolling Text Side */}
       <div className="w-full lg:w-1/2">
         <div className="space-y-16 text-white">
-          <div>
+          <Reveal>
             <div>
               <h2 className="text-4xl font-bold mb-6 text-center lg:text-left">{t("WhoWeAre")}</h2>
               <p className="text-lg text-gray-300 mb-8 text-center lg:text-left">{t("DecribeWhoWeAre")}</p>
             </div>
-          </div>
+          </Reveal>
 
           <div className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-6">
-              <div className="space-y-6 p-4 rounded-xl bg-white/5 dark:bg-white/5 border border-gray-100 dark:border-gray-900">
+              <Reveal className="space-y-6 p-4 rounded-xl bg-white/5 dark:bg-white/5 border border-gray-100 dark:border-gray-900">
                 <span className="rounded-full bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 w-max p-3 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
@@ -329,9 +374,9 @@ const services = [
                 </span>
                 <h2 className="font-semibold text-xl text-white dark:text-white">{t("OurMission")}</h2>
                 <p>{t("OurMissionText")}</p>
-              </div>
+              </Reveal>
 
-              <div className="space-y-6 p-4 rounded-xl bg-white/5 dark:bg-white/5 border border-gray-100 dark:border-gray-900">
+              <Reveal delay={0.1} className="space-y-6 p-4 rounded-xl bg-white/5 dark:bg-white/5 border border-gray-100 dark:border-gray-900">
                 <span className="rounded-full bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 w-max p-3 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
@@ -340,11 +385,11 @@ const services = [
                 </span>
                 <h2 className="font-semibold text-xl text-white dark:text-white">{t("OurVision")}</h2>
                 <p>{t("OurVisionText")}</p>
-              </div>
+              </Reveal>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6">
-              <div className="space-y-6 p-4 rounded-xl bg-white/5 dark:bg-white/5 border border-gray-100 dark:border-gray-900">
+              <Reveal className="space-y-6 p-4 rounded-xl bg-white/5 dark:bg-white/5 border border-gray-100 dark:border-gray-900">
                 {/* New Icon for Our Values: Heart */}
                 <span className="rounded-full bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 w-max p-3 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
@@ -353,9 +398,9 @@ const services = [
                 </span>
                 <h2 className="font-semibold text-xl text-white dark:text-white">{t("OurValue")}</h2>
                 <p>{t("OurValueText")}</p>
-              </div>
+              </Reveal>
 
-              <div className="space-y-6 p-4 rounded-xl bg-white/5 dark:bg-white/5 border border-gray-100 dark:border-gray-900">
+              <Reveal delay={0.1} className="space-y-6 p-4 rounded-xl bg-white/5 dark:bg-white/5 border border-gray-100 dark:border-gray-900">
                 <span className="rounded-full bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 w-max p-3 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7M5 6l7 7 7-7" />
@@ -363,7 +408,7 @@ const services = [
                 </span>
                 <h2 className="font-semibold text-xl text-white dark:text-white">{t("OurApproach")}</h2>
                 <p>{t("OurApproachText")}</p>
-              </div>
+              </Reveal>
             </div>
           </div>
         </div>
@@ -378,7 +423,7 @@ const services = [
   {/* Highlight Background Glow */}
   <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-black blur-2xl rounded-3xl z-0" />
 
-  <div className="relative z-10 bg-black/90 backdrop-blur-md rounded-3xl shadow-[0_0_60px_-15px_rgba(255,255,255,0.7)] border border-white/10">
+  <Reveal className="relative z-10 bg-black/90 backdrop-blur-md rounded-3xl shadow-[0_0_60px_-15px_rgba(255,255,255,0.7)] border border-white/10">
     <div className="text-white py-10 flex items-center justify-center">
       <div className="w-full max-w-6xl">
         <h2 className="text-2xl sm:text-5xl font-extrabold text-center mb-8 sm:mb-12">
@@ -396,7 +441,7 @@ const services = [
                   <div className="text-center px-4 sm:px-8">
                     <div className="mb-4 sm:mb-8">
                       <svg
-                        className="w-12 h-12 sm:w-16 sm:h-16 mx-auto text-white opacity-25"
+                        className="w-12 h-12 sm:w-16 sm:h-16 mx-auto text-[#76B900] opacity-60"
                         fill="currentColor"
                         viewBox="0 0 32 32"
                       >
@@ -436,7 +481,7 @@ const services = [
         </div>
       </div>
     </div>
-  </div>
+  </Reveal>
     </section>
 
 

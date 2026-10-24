@@ -29,7 +29,7 @@ const Social_Media = () => {
             >
               <img
                 src={src}
-                alt={`Logo ${index + 1}`}
+                alt={`Visuel réseaux sociaux par Artifice Atelier ${index + 1}`}
                 className="w-full h-fit object-contain"
               />
             </div>
