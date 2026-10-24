@@ -203,7 +203,7 @@ const services = [
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <p className="text-lg font-normal tracking-widest text-gray-300 uppercase">{t("FirstLine")}</p>
-        <h1 className="mt-6 text-6xl text-white sm:mt-10 sm:text-6xl lg:text-9xl xl:text-[10rem] font-bold leading-[0.95]">
+        <h1 className="mt-6 text-5xl text-white sm:mt-10 sm:text-5xl lg:text-8xl xl:text-9xl font-bold">
           ARTIFICE <br /> ATELIER
         </h1>
         <p className="max-w-lg mt-4 text-xl font-normal text-white sm:mt-8">
@@ -211,10 +211,11 @@ const services = [
         </p>
 
         <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
+          <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-tl from-black to-white group-hover:shadow-lg group-hover:shadow-white/50"></div>
           <Link
             to="/contact"
             title="Start Exploring Inspiration"
-            className="relative inline-flex items-center justify-center px-8 py-3 text-base font-bold uppercase text-black bg-[#76B900] border border-transparent rounded-full transition-transform duration-300 hover:scale-105"
+            className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full"
           >
             {t("Contactez-nous")}
           </Link>
@@ -267,8 +268,8 @@ const services = [
           {services.map((service, index) => (
             <Reveal key={index} delay={(index % 3) * 0.1}>
               <Link to={service.link} >
-                <div className="bg-white/5 rounded-lg p-6 transition-transform transform hover:scale-105 cursor-pointer text-white shadow-[0_0_60px_-15px_rgba(118,185,0,0.5)] border border-white/10 hover:border-[#76B900]/50 flex flex-col h-full ">
-                  <div className="text-5xl mb-4 text-center text-[#76B900]">{service.icon}</div>
+                <div className="bg-white/5 rounded-lg p-6 transition-transform transform hover:scale-105 cursor-pointer text-white shadow-[0_0_60px_-15px_rgba(255,255,255,0.7)] border border-white/10 flex flex-col h-full ">
+                  <div className="text-5xl mb-4 text-center">{service.icon}</div>
                   <h3 className="text-2xl font-semibold text-center">{service.title}</h3>
                   <p className="text-white py-3 text-center transition-colors duration-300 flex-grow">{service.description}</p>
                 </div>
@@ -290,7 +291,7 @@ const services = [
           <Reveal delay={0.1}>
             <Link
               to="/work"
-              className="inline-block px-6 py-3 bg-[#76B900] text-black font-bold uppercase text-sm rounded-full -rotate-6 transition-transform duration-300 hover:scale-105 hover:rotate-0"
+              className="inline-block px-6 py-3 bg-white text-black font-bold uppercase text-sm rounded-full -rotate-6 transition-transform duration-300 hover:scale-105 hover:rotate-0"
             >
               {t("See All Projects") || "See All Projects"}
             </Link>
@@ -330,7 +331,7 @@ const services = [
           {countData.map((item, index) => (
             <Reveal key={item.label} delay={index * 0.1} className="text-center">
               <span className="text-6xl font-bold text-white">{counts[index]}</span>
-              <span className="text-2xl font-bold text-[#76B900]">+</span>
+              <span className="text-2xl font-bold text-white">+</span>
               <p className="mt-4 text-xl font-semibold text-white">{item.label}</p>
             </Reveal>
           ))}
@@ -441,7 +442,7 @@ const services = [
                   <div className="text-center px-4 sm:px-8">
                     <div className="mb-4 sm:mb-8">
                       <svg
-                        className="w-12 h-12 sm:w-16 sm:h-16 mx-auto text-[#76B900] opacity-60"
+                        className="w-12 h-12 sm:w-16 sm:h-16 mx-auto text-white opacity-25"
                         fill="currentColor"
                         viewBox="0 0 32 32"
                       >
