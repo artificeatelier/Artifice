@@ -1,5 +1,5 @@
-// Privacy-friendly analytics (Plausible). Loads only when REACT_APP_PLAUSIBLE_DOMAIN is set;
-// track() is a no-op otherwise, so callers never need to check.
+// Analytics events. Every track() call feeds Google Tag Manager (dataLayer) and, when
+// REACT_APP_PLAUSIBLE_DOMAIN is set, Plausible (the script loads only with that env var).
 const DOMAIN = process.env.REACT_APP_PLAUSIBLE_DOMAIN;
 
 export function initAnalytics() {
@@ -14,5 +14,8 @@ export function initAnalytics() {
 }
 
 export function track(name, props) {
-  if (typeof window !== "undefined" && window.plausible) window.plausible(name, props ? { props } : undefined);
+  if (typeof window === "undefined") return;
+  // Google Tag Manager: each event lands in dataLayer as { event: name, ...props }.
+  (window.dataLayer = window.dataLayer || []).push({ event: name, ...props });
+  if (window.plausible) window.plausible(name, props ? { props } : undefined);
 }
