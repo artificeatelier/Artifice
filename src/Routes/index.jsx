@@ -1,4 +1,4 @@
-import {  createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom"
 import Layout from "../Layout"
 import Home from "../features/Home/Home"
 import AboutUs from '../features/AboutUs/AboutUs'
@@ -13,6 +13,7 @@ import REAL_ESTATE_RODEO from "../features/Work/REAL_ESTATE_RODEO"
 import SocialMedia from "../features/Work/Social_Media"
 import Packaging from "../features/Work/PackagingDesign"
 import WebUIUXDesign from '../features/Work/Web_UIUX_Design'
+import NotFound from "../features/NotFound/NotFound"
 import WebUIUXDesignService from '../features/Services/Web_UI_UX_Design_Service'
 
 const router = createBrowserRouter([
@@ -21,11 +22,7 @@ const router = createBrowserRouter([
         element: <Layout />,
         children:[
             {
-                path: "",
-                element : <Home/>
-            },
-            {
-                path: "/",
+                index: true,
                 element : <Home/>
             },
 
@@ -38,16 +35,25 @@ const router = createBrowserRouter([
                 path: "/contact",
                 element: <ContactUS />,
             },
-            {
-                path: "/contactus",
-                element: <ContactUS />,
-            },
+            // ponytail: client-side redirects for legacy URLs (GitHub Pages cannot 301); canonical tag points at new slug
+            ...Object.entries({
+                "/contactus": "/contact",
+                "/LogoDesign": "/logo-design",
+                "/Logos": "/logos",
+                "/BCard": "/business-cards",
+                "/Flyers": "/flyers",
+                "/Real_Estate_Rodeo": "/real-estate-rodeo",
+                "/Packaging": "/packaging",
+                "/Social_Media": "/social-media",
+                "/Web_UI_UX_Design": "/web-ui-ux-design",
+                "/Web_UI_UX_Design_Service": "/web-ui-ux-design-service",
+            }).map(([from, to]) => ({ path: from, caseSensitive: true, element: <Navigate to={to} replace /> })),
             {
                 path: "/branding",
                 element: <Branding />,
             },
             {
-                path: "/LogoDesign",
+                path: "/logo-design",
                 element: <LogoDesign />,
             },
             {
@@ -55,38 +61,41 @@ const router = createBrowserRouter([
                 element: <Work />,
             },
             {
-                path: "/Web_UI_UX_Design",
+                path: "/web-ui-ux-design",
                 element: <WebUIUXDesign/>,
             },
             {
-                path: "/Logos",
+                path: "/logos",
                 element: <Logos />,
             },
             {
-                path: "/BCard",
+                path: "/business-cards",
                 element: <BCard />,
             },
             {
-                path: "/Flyers",
+                path: "/flyers",
                 element: <Flyers />,
             },
             {
-                path: "/Real_Estate_Rodeo",
+                path: "/real-estate-rodeo",
                 element: <REAL_ESTATE_RODEO />,
             },
             {
-                path: "/Packaging",
+                path: "/packaging",
                 element: <Packaging />,
             },
             {
-                path: "/Social_Media",
+                path: "/social-media",
                 element: <SocialMedia/>,
             },
             {
-                path: "/Web_UI_UX_Design_Service",
+                path: "/web-ui-ux-design-service",
                 element: <WebUIUXDesignService/>,
             },
-            
+            {
+                path: "*",
+                element: <NotFound />,
+            },
         ]
     }
 ])

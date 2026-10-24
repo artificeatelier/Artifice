@@ -52,9 +52,9 @@ const Web_UIUX_Design = () => {
               key={index}
               className="flex items-center justify-center rounded-lg shadow-lg"
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src={src}
-                alt={`Logo ${index + 1}`}
+                alt={`Maquette web UI/UX par Artifice Atelier ${index + 1}`}
                 className="w-full h-full object-contain"
               />
             </div>

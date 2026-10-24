@@ -19,13 +19,13 @@ export function Header() {
   const getNavItems = () => [
     { to: "/", text: t("Accueil") },
     { to: "/about", text: t("À propos de nous") },
-    { to: "/Work", text: t("Portfolio") },
+    { to: "/work", text: t("Portfolio") },
     {
       text: t("Prestations"),
       dropdown: [
         { to: "/branding", text: t("Branding & Design") },
-        { to: "/LogoDesign", text: t("LogoDesign") },
-        { to: "/Web_UI_UX_Design_Service", text: t("Web_UIUX_Design") },
+        { to: "/logo-design", text: t("LogoDesign") },
+        { to: "/web-ui-ux-design-service", text: t("Web_UIUX_Design") },
       ],
     },
     { to: "/contact", text: t("contact") },
@@ -195,7 +195,7 @@ const LanguageToggle = () => (
             <div className="flex flex-row items-center cursor-pointer space-x-3">
               <img
                 src={logo || "/placeholder.svg"}
-                alt="Artifice Graphic"
+                alt="Artifice Atelier logo"
                 className="w-24 h-24 md:w-20 md:h-20 xl:h-28 xl:w-28 object-contain"
               />
             </div>

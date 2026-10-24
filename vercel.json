@@ -1,0 +1,17 @@
+{
+  "redirects": [
+    { "source": "/contactus", "destination": "/contact", "permanent": true },
+    { "source": "/LogoDesign", "destination": "/logo-design", "permanent": true },
+    { "source": "/BCard", "destination": "/business-cards", "permanent": true },
+    { "source": "/Real_Estate_Rodeo", "destination": "/real-estate-rodeo", "permanent": true },
+    { "source": "/Social_Media", "destination": "/social-media", "permanent": true },
+    { "source": "/Web_UI_UX_Design_Service", "destination": "/web-ui-ux-design-service", "permanent": true },
+    { "source": "/Web_UI_UX_Design", "destination": "/web-ui-ux-design", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/static/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}

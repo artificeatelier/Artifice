@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Reveal from '../../Layout/Reveal';
 import Logo from '../../Assets/Logo_Design.jpg'
 import Social_Media from '../../Assets/Social_Media_Page.jpg'
 import B_Card from '../../Assets/B_Card.jpg'
@@ -14,43 +15,43 @@ export const Work = ({ images, className }) => {
     id: 1,
     title: t("Logo Design"),
     image: Logo,
-    link: "/Logos",
+    link: "/logos",
   },
   {
     id: 2,
     title: t("SocialMediaDesign"),
     image: Social_Media,
-    link: "/Social_Media",
+    link: "/social-media",
   },
   {
     id: 3,
     title: t("Business Card"),
     image: B_Card,
-    link: "/BCard",
+    link: "/business-cards",
   },
   {
     id: 4,
     title: t("PrintingDesign"),
     image: Flyer,
-    link: "/Flyers",
+    link: "/flyers",
   },
   {
     id: 5,
     title: t("BrandIdentity"),
     image: REAL_ESTATE_RODEO,
-    link: "/Real_Estate_Rodeo",
+    link: "/real-estate-rodeo",
   },
   {
     id: 6,
     title: t("PackagingDesign"),
     image: Packging,
-    link: "/Packaging",
+    link: "/packaging",
   },
   {
     id: 7,
     title: t("Web_UIUX_Design"),
     image: UI_UX,
-    link: "/Web_UI_UX_Design",
+    link: "/web-ui-ux-design",
   },
   
 ];
@@ -62,21 +63,25 @@ export const Work = ({ images, className }) => {
       {/* -----Heading----- */}
       <div className="bg-black py-12 px-6">
       <div className="max-w-7xl">
-        <div className="flex items-center justify-start relative">
-          <div className="w-32 h-[1px] bg-white mr-4"></div>
-          <h2 className="text-sm tracking-widest text-white uppercase">{t("OUR WORK")}</h2>
-        </div>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white md:mx-36 mt-6">{t("PORTFOLIO")}</h1>
+        <Reveal>
+          <div className="flex items-center justify-start relative">
+            <div className="w-32 h-[1px] bg-white mr-4"></div>
+            <h2 className="text-sm tracking-widest text-white uppercase">{t("OUR WORK")}</h2>
+          </div>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white md:mx-36 mt-6">{t("PORTFOLIO")}</h1>
+        </Reveal>
       </div>
       </div>
 
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
-          {portfolioItems.map((item) => (
-            <div key={item.id} className="relative overflow-hidden group">
+          {portfolioItems.map((item, index) => (
+            <Reveal key={item.id} delay={(index % 3) * 0.1} className="relative overflow-hidden group">
               <a href={item.link} className="block">
                 <div className="relative h-[250px] sm:h-[400px] overflow-hidden">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={item.image || "/placeholder.svg"}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
@@ -93,7 +98,7 @@ export const Work = ({ images, className }) => {
                   </div>
                 </div>
               </a>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

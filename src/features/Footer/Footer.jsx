@@ -16,7 +16,7 @@ export function Footer () {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="">
             <div className="flex items-center space-x-4">
-              <img
+              <img loading="lazy" decoding="async"
                 src={logo}
                 alt="Artifice Atelier"
                 className="w-24 h-auto shadow-lg"
@@ -43,7 +43,7 @@ export function Footer () {
                 {t("aboutUs")}
               </Link>
               <Link
-                to="/Work"
+                to="/work"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
                 {t("Portfolio")}
@@ -69,13 +69,13 @@ export function Footer () {
                 {t("Branding & Design")}
               </Link>
               <Link
-                to="/LogoDesign"
+                to="/logo-design"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
                 {t("LogoDesign")}
               </Link>
               <Link
-                to="/Web_UI_UX_Design_Service"
+                to="/web-ui-ux-design-service"
                 className="block text-gray-400 hover:text-white transition duration-300"
               >
                 {t("Web_UIUX_Design")}

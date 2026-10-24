@@ -25,10 +25,10 @@ const BCard = () => {
         <div className="container mx-auto p-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
             {images.map((image, index) => (
-              <img
+              <img loading="lazy" decoding="async"
                 key={index}
                 src={image.src}
-                alt={image.alt || `Image ${index + 1}`}
+                alt={image.alt || `Carte de visite par Artifice Atelier ${index + 1}`}
                 className={`w-full h-auto object-cover ${index % 3 === 0 ? "sm:col-span-2 md:col-span-2 lg:col-span-2" : "sm:col-span-1 md:col-span-1 lg:col-span-1"}`}
               />
             ))}

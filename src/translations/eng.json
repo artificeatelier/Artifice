@@ -77,7 +77,7 @@
   "ReviewSubmittedThanks": "Thanks — your review is live.",
 
   "description": "Artifice Atelier is a creative firm that offer diverse services including Logo Design, Poster Design, Custom Web Design, SEO, Branding & UI/UX.",
-  "FirstLine": "A Hub for Designing, SEO, Branding, Web Design and UI/UX",
+  "FirstLine": "Brand identity, logos and websites for brands in Paris and beyond",
 
   "CounterHead": "WHY CHOOSE US",
   "YearOfExp": "Years of Experience",
@@ -134,6 +134,13 @@
   "Web_Content_Four" : "Let’s turn your ideas into a visually stunning and highly interactive digital presence. Connect with us today — and let’s build experiences that truly make an impact.",
 
   "contactUs": "Contact Us",
+  "CtaBandButton": "Start a project",
+  "CtaBandText": "Tell us about your project.",
+  "CtaBandTitle": "Have a brand or website project?",
+  "ContactError": "Sending failed. Email us at contact@artificeatelier.com.",
+  "ContactSent": "Thanks, your message is sent. We will reply shortly.",
+  "SendRequest": "Send my request",
+  "AddressLabel": "Address:",
   "LetTalk": "LET'S TALK",
   "contactUSLine1" : "Whether you have a question, need support, or want to discuss a project, we're here to help. Fill out the form below or reach us via the details provided.",
   "contactUSLine2" : "Great! We're excited to connect with you and look forward to creating something special together. Feel free to reach out with any inquiries.",

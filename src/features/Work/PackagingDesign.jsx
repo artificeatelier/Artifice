@@ -25,9 +25,9 @@ const Packaging  = () => {
               key={index}
               className="flex items-center justify-center rounded-lg shadow-lg"
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src={src}
-                alt={`Logo ${index + 1}`}
+                alt={`Design packaging par Artifice Atelier ${index + 1}`}
                 className="w-full h-full object-contain"
               />
             </div>
