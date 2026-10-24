@@ -71,7 +71,7 @@ const Logos = () => {
             key={index}
             className="flex items-center justify-center rounded-lg shadow-lg"
           >
-            <img src={src} alt={`Logo créé par Artifice Atelier, ${index + 1}`} className="w-72 h-72 object-contain" />
+            <img loading="lazy" decoding="async" src={src} alt={`Logo créé par Artifice Atelier, ${index + 1}`} className="w-72 h-72 object-contain" />
           </div>
         ))}
       </div>

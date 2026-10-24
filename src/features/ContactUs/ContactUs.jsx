@@ -83,7 +83,7 @@ return (
           </div>
 
           <div>
-            <p className="font-bold mb-2">Address :</p>
+            <p className="font-bold mb-2">{t("AddressLabel")}</p>
             <p className="text-gray-300">
               Paris, France
             </p>
@@ -162,7 +162,7 @@ return (
                 type="submit"
                 className="rounded-full relative w-auto h-auto px-6 py-2 bg-[#090909] text-white border border-gray-300 flex items-center justify-center overflow-hidden group"
             >
-                <span className="relative z-10">Submit</span>
+                <span className="relative z-10">{t("SendRequest")}</span>
                 <span className="absolute left-0 top-0 w-full h-full bg-black group-hover:translate-x-full transition-transform duration-300"></span>
             </button>
             </div>
@@ -174,7 +174,7 @@ return (
 
 
     {/* <div className="w-full mb-1">
-        <img
+        <img loading="lazy" decoding="async"
           src={customercare}
           alt="Contacter Artifice Atelier"
           className="w-full h-auto object-cover"

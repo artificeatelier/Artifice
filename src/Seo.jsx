@@ -80,6 +80,15 @@ const ORG = {
   sameAs: ["https://www.instagram.com/artifice_atelier"],
 };
 
+const WEBSITE = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Artifice Atelier",
+  url: SITE,
+};
+
+const SERVICES = ["/branding", "/logo-design", "/web-ui-ux-design-service"];
+
 const Seo = () => {
   const { pathname } = useLocation();
   const { i18n } = useTranslation();
@@ -89,6 +98,24 @@ const Seo = () => {
   if (!page) return null; // NotFound sets its own tags
   const [title, description] = page[lang];
   const url = SITE + path;
+  const crumbs = path === "/" ? null : {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Artifice Atelier", item: SITE },
+      { "@type": "ListItem", position: 2, name: title.split(" | ")[0], item: url },
+    ],
+  };
+  const service = SERVICES.includes(path) ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: title.split(" | ")[0],
+    description,
+    url,
+    areaServed: "FR",
+    provider: { "@type": "ProfessionalService", name: "Artifice Atelier", url: SITE },
+  } : null;
+  const ld = (o) => JSON.stringify(o).replace(/</g, "\\u003c");
 
   return (
     <>
@@ -109,11 +136,10 @@ const Seo = () => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={`${SITE}/og-image.png`} />
-      {path === "/" && (
-        <script type="application/ld+json">
-          {JSON.stringify(ORG).replace(/</g, "\\u003c")}
-        </script>
-      )}
+      {path === "/" && <script type="application/ld+json">{ld(ORG)}</script>}
+      {path === "/" && <script type="application/ld+json">{ld(WEBSITE)}</script>}
+      {crumbs && <script type="application/ld+json">{ld(crumbs)}</script>}
+      {service && <script type="application/ld+json">{ld(service)}</script>}
     </Helmet>
     </>
   );

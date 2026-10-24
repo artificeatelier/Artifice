@@ -124,7 +124,7 @@ export default function AboutUS() {
       <div className="relative w-full overflow-hidden">
       <div className="flex w-max animate-slide gap-0">
         {[...images, ...images].map((src, index) => (
-          <img
+          <img loading="lazy" decoding="async"
             key={index}
             src={src}
             alt={`Artifice Atelier, réalisation ${index + 1}`}
@@ -141,7 +141,7 @@ export default function AboutUS() {
     <div className="min-h-screen flex flex-col relative">
 
       <div className="relative md:absolute md:inset-0">
-        <img
+        <img loading="lazy" decoding="async"
           src={aboutus}
           alt="Atelier Artifice Atelier à Paris"
           className="w-full h-full object-cover"
@@ -207,7 +207,7 @@ export default function AboutUS() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <Reveal className="relative">
-            <img
+            <img loading="lazy" decoding="async"
               src={FAQ}
               alt="Questions fréquentes"
               className="rounded-lg w-full h-full object-cover"

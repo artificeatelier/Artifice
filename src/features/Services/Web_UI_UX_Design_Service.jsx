@@ -26,7 +26,7 @@ const Web_UI_UX_Design_Service = () => {
         <section className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <img 
+            <img loading="lazy" decoding="async" 
               src= {Web}
               alt="Collaboration avec un client sur un projet web" 
               className="w-fit rounded-xl"

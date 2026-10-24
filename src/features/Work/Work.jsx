@@ -81,7 +81,7 @@ export const Work = ({ images, className }) => {
             <Reveal key={item.id} delay={(index % 3) * 0.1} className="relative overflow-hidden group">
               <a href={item.link} className="block">
                 <div className="relative h-[250px] sm:h-[400px] overflow-hidden">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={item.image || "/placeholder.svg"}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"

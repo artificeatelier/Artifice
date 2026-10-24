@@ -117,9 +117,9 @@ const Branding = () => {
             <div key={item.id} className="relative overflow-hidden group">
               <a href={item.link} className="block">
                 <div className="relative h-full overflow-hidden">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={item.image || "/placeholder.svg"}
-                    alt={item.title}
+                    alt={`Identité visuelle Ottico, projet de branding ${item.id}`}
                     className="w-full h-full object-cover"
                   />
                 </div>  

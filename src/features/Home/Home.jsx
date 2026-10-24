@@ -228,7 +228,7 @@ const services = [
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
       >
-        <img
+        <img fetchpriority="high"
           className="w-full max-w-xl mx-auto"
           src={hero}
           alt="Artifice Atelier, studio créatif à Paris"
@@ -242,7 +242,7 @@ const services = [
     {/*-----Slider-----*/}
     <section className="relative w-full h-[50vh] md:h-[70vh] lg:h-screen bg-black overflow-hidden">
       {images.map((src, index) => (
-        <img
+        <img loading="lazy" decoding="async"
           key={index}
           src={src}
           alt={`Artifice Atelier, réalisation ${index + 1} sur ${images.length}`}
@@ -304,7 +304,7 @@ const services = [
               className={`relative overflow-hidden rounded-lg group ${item.span}`}
             >
               <Link to={item.link} className="block h-full">
-                <img
+                <img loading="lazy" decoding="async"
                   src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -346,7 +346,7 @@ const services = [
       {/* Static Image Side */}
       <Reveal className="w-full h-full lg:w-1/2 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)]" y={0}>
         <div className="relative h-full  overflow-hidden">
-          <img
+          <img loading="lazy" decoding="async"
             src={about}
             alt="L'équipe et l'atelier Artifice Atelier"
             className="absolute inset-0 w-full h-full object-cover"

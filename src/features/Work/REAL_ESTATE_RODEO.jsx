@@ -25,7 +25,7 @@ const REAL_ESTATE_RODEO = () => {
             key={index}
             className="flex items-center justify-center rounded-lg shadow-lg"
           >
-            <img src={src} alt={`Real Estate Rodeo, identité de marque ${index + 1}`} className="w-full h-fit object-contain" />
+            <img loading="lazy" decoding="async" src={src} alt={`Real Estate Rodeo, identité de marque ${index + 1}`} className="w-full h-fit object-contain" />
           </div>
         ))}
       </div>
