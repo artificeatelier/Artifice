@@ -1,3 +1,4 @@
+import { initAnalytics } from "./analytics";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
@@ -23,3 +24,5 @@ if (rootElement.hasChildNodes()) {
 }
 
 reportWebVitals();
+
+initAnalytics();

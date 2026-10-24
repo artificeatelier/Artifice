@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useTranslation } from "react-i18next";
+import { track } from "../../analytics";
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5216';
 
@@ -15,6 +16,7 @@ export default function ContactUS() {
     phone: '',
     message: ''
   })
+  const [status, setStatus] = useState('idle') // idle | sending | sent | error
 
 //   const handleSubmit = (e: React.FormEvent) => {
 //     e.preventDefault()
@@ -97,7 +99,7 @@ return (
         {/* Right Column - Form */}
         <form className="space-y-6" onSubmit={(e)=>{
           e.preventDefault();
-          console.log("Form Submitting")
+          setStatus('sending');
           fetch(`${API_BASE_URL}/api/ContactUS`,{
             method : "POST",
             body : JSON.stringify(formData) ,
@@ -105,14 +107,15 @@ return (
               "Content-Type": "application/json"
             },
           }).then((res)=>{
-            setFormData({
-              name: '',
-              email: '',
-              phone: '',
-              message: ''
-            })
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            setFormData({ name: '', email: '', phone: '', message: '' });
+            setStatus('sent');
+            track('contact_form_submitted');
+          }).catch(()=>{
+            setStatus('error');
+            track('contact_form_failed');
           })
-        }}>
+        }}>>
           <div className="space-y-4">
             <div>
               <input
@@ -155,14 +158,18 @@ return (
             </div>
           </div>
 
+          {status === 'sent' && <p role="status" className="text-center text-green-400">{t("ContactSent")}</p>}
+          {status === 'error' && <p role="alert" className="text-center text-red-400">{t("ContactError")}</p>}
+
           <div className="flex justify-center">
             <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
             <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-tl from-black to-white group-hover:shadow-md group-hover:shadow-white/50"></div>
             <button
                 type="submit"
+                disabled={status === 'sending'}
                 className="rounded-full relative w-auto h-auto px-6 py-2 bg-[#090909] text-white border border-gray-300 flex items-center justify-center overflow-hidden group"
             >
-                <span className="relative z-10">{t("SendRequest")}</span>
+                <span className="relative z-10">{status === 'sending' ? t("Submitting") : t("SendRequest")}</span>
                 <span className="absolute left-0 top-0 w-full h-full bg-black group-hover:translate-x-full transition-transform duration-300"></span>
             </button>
             </div>

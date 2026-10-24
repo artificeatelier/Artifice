@@ -134,6 +134,11 @@
   "Web_Content_Four" : "Let’s turn your ideas into a visually stunning and highly interactive digital presence. Connect with us today — and let’s build experiences that truly make an impact.",
 
   "contactUs": "Contact Us",
+  "CtaBandButton": "Start a project",
+  "CtaBandText": "Tell us about your project.",
+  "CtaBandTitle": "Have a brand or website project?",
+  "ContactError": "Sending failed. Email us at contact@artificeatelier.com.",
+  "ContactSent": "Thanks, your message is sent. We will reply shortly.",
   "SendRequest": "Send my request",
   "AddressLabel": "Address:",
   "LetTalk": "LET'S TALK",
