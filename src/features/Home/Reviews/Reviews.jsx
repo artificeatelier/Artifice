@@ -14,6 +14,8 @@ const Reviews = () => {
   const [loadMoreError, setLoadMoreError] = useState(null);
 
   useEffect(() => {
+    // react-snap prerender: skip the fetch so the snapshot keeps the loading text, not an error.
+    if (/ReactSnap/.test(navigator.userAgent)) return undefined;
     let cancelled = false;
     fetchReviews({ skip: 0, limit: DEFAULT_PAGE_SIZE })
       .then(({ items, hasMore: more } = {}) => {
