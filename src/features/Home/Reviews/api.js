@@ -1,8 +1,6 @@
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5216';
-
-if (process.env.NODE_ENV === 'production' && !process.env.REACT_APP_API_BASE_URL) {
-  console.error('REACT_APP_API_BASE_URL is not set — the reviews API will not work in production.');
-}
+// Production falls back to the deployed backend; REACT_APP_API_BASE_URL still overrides it.
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL ||
+  (process.env.NODE_ENV === 'production' ? 'https://astudio-backend.onrender.com' : 'http://localhost:5216');
 
 export const DEFAULT_PAGE_SIZE = 6;
 
