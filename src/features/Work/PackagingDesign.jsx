@@ -19,8 +19,8 @@ const images = [
 const Packaging  = () => {
   return (
     <div className="bg-black min-h-screen text-white">
-      <div className="bg-black min-h-screen flex items-center justify-center p-4">
-        <div className="grid grid-cols-1 gap-6">
+      <div className="bg-black min-h-screen flex items-start justify-center p-4">
+        <div className="grid w-full grid-cols-1 gap-6">
           {images.map((src, index) => (
             <div
               key={index}
@@ -29,7 +29,7 @@ const Packaging  = () => {
               <Img
                 src={src}
                 alt={`Design packaging par Artifice Atelier ${index + 1}`}
-                className="w-full h-full object-contain"
+                className="w-full h-auto object-contain"
               />
             </div>
           ))}

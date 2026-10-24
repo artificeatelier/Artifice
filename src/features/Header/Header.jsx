@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import logo from "../../Assets/Artifice Studio.jpeg";
 import { ActionIcon, rem } from "@mantine/core";
-import { IconBrandInstagram, IconBrandGmail, IconPhone } from "@tabler/icons-react";
+import { IconBrandInstagram, IconBrandLinkedin, IconBrandGmail, IconPhone } from "@tabler/icons-react";
 import Img from "../../Layout/Img";
 
 export function Header() {
@@ -263,6 +263,11 @@ const LanguageToggle = () => (
                 <a href="https://www.instagram.com/artifice_atelier?igsh=MWtiMmlyNTV4b2h4dw==" target="_blank" rel="noopener noreferrer">
                   <ActionIcon size="lg" color="gray" variant="subtle">
                     <IconBrandInstagram style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
+                  </ActionIcon>
+                </a>
+                <a href="https://www.linkedin.com/in/artifice-atelier" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <ActionIcon size="lg" color="gray" variant="subtle">
+                    <IconBrandLinkedin style={{ width: rem(30), height: rem(30) }} stroke={1.5} />
                   </ActionIcon>
                 </a>
                 <a href="tel:+33668672365">

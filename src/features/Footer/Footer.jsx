@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../Assets/Artifice Studio.jpeg";
 import { Link } from "react-router-dom";
 import { Container, ActionIcon, Group, rem } from '@mantine/core';
-import { IconBrandInstagram, IconBrandGmail, IconPhone } from '@tabler/icons-react';
+import { IconBrandInstagram, IconBrandLinkedin, IconBrandGmail, IconPhone } from '@tabler/icons-react';
 import { LuMail } from "react-icons/lu";
 import { HiOutlinePhoneArrowUpRight } from "react-icons/hi2";
 import { RiMapPinLine } from "react-icons/ri";
@@ -140,6 +140,18 @@ export function Footer () {
       variant="subtle"
     >
       <IconBrandInstagram style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
+    </ActionIcon>
+    <ActionIcon
+      component="a"
+      href="https://www.linkedin.com/in/artifice-atelier"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      size="lg"
+      color="gray"
+      variant="subtle"
+    >
+      <IconBrandLinkedin style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
     </ActionIcon>
     <ActionIcon
       component="a"

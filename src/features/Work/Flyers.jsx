@@ -18,14 +18,14 @@ const Flyers = () => {
     <div className="bg-black min-h-screen text-white">
     
     <section>
-        <div className="bg-black min-h-screen flex items-center justify-center p-4">
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-black min-h-screen flex items-start justify-center p-4">
+      <div className="grid w-full sm:grid-cols-1 md:grid-cols-2 gap-6">
         {images.map((src, index) => (
           <div
             key={index}
             className="flex items-center justify-center rounded-lg shadow-lg"
           >
-            <Img src={src} alt={`Flyer conçu par Artifice Atelier ${index + 1}`} className="w-full h-fit object-contain" />
+            <Img src={src} alt={`Flyer conçu par Artifice Atelier ${index + 1}`} className="w-full h-auto object-contain" />
           </div>
         ))}
       </div>

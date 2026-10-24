@@ -77,7 +77,7 @@ const ORG = {
   telephone: "+33668672365",
   areaServed: "FR",
   address: { "@type": "PostalAddress", addressLocality: "Paris", addressCountry: "FR" },
-  sameAs: ["https://www.instagram.com/artifice_atelier"],
+  sameAs: ["https://www.instagram.com/artifice_atelier", "https://www.linkedin.com/in/artifice-atelier"],
 };
 
 const WEBSITE = {
